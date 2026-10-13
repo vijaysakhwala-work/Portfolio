@@ -1,6 +1,28 @@
+# ---- Dependencies and build output (rebuilt by npm install / npm run build) ----
 node_modules/
-.env
-.env.local
 dist/
 .sites-runtime/
 .cache/
+
+# ---- Files the scripts generate on every dev and build run ----
+src/content/gen/
+src/lib/images.gen.js
+
+# ---- Local-only folder: put anything here that must never be committed ----
+_local/
+
+# ---- Secrets (the .env.example template IS committed) ----
+.env
+.env.local
+.env.*.local
+
+# ---- Operating system, editor and log files ----
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+npm-debug.log*
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
