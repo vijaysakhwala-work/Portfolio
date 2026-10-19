@@ -63,10 +63,10 @@
   .beam-hero{padding:42px 16px 34px}
   .beam-hero .beam-hero-diagram,.beam-hero .beam-mobile-services{display:none}
   .beam-phone-diagram{display:block;width:100%;height:auto;max-width:440px;margin:0 auto 12px;overflow:visible}
-  .beam-phone-node circle{fill:#fff;stroke:#b9d7fb;stroke-width:1}
-  .beam-phone-node svg{color:#0965ff}
+  .beam-phone-node circle{fill:#fff;stroke:var(--fg-b9d7fb,#b9d7fb);stroke-width:1}
+  .beam-phone-node svg{color:var(--fg-0965ff,#0965ff)}
   .beam-phone-node:focus-visible{outline:none}
-  .beam-phone-node:focus-visible circle{stroke:#0965ff;stroke-width:3}
+  .beam-phone-node:focus-visible circle{stroke:var(--fg-0965ff,#0965ff);stroke-width:3}
   .beam-hero-copy{margin:0 auto}
   .beam-hero-copy>p{font-size:18px;line-height:1.5;margin:0 0 28px}
   .beam-hero h1{font-size:clamp(25px,7.4vw,34px);line-height:1.22;letter-spacing:-.035em}

@@ -1,0 +1,48 @@
+{
+  "status": "Owner supplied business figures and owner-confirmed awards published; invented testimonial drafts remain unpublished.",
+  "businessFigures": [
+    {
+      "value": "10+ years",
+      "label": "Combined team experience",
+      "verified": false,
+      "source": "Owner supplied Changes.docx",
+      "publicationAuthorized": true
+    },
+    {
+      "value": "15+",
+      "label": "Clients served",
+      "verified": false,
+      "source": "Owner supplied Changes.docx",
+      "publicationAuthorized": true
+    },
+    {
+      "value": "21+",
+      "label": "Engineering team and network",
+      "verified": false,
+      "source": "Owner supplied Changes.docx",
+      "publicationAuthorized": true
+    },
+    {
+      "value": "100%",
+      "label": "Client retention",
+      "verified": false,
+      "source": "Owner supplied Changes.docx",
+      "publicationAuthorized": true
+    }
+  ],
+  "testimonialDraftsVerbatim": "Five review drafts in an elegant testimonial carousel\nRetain the five submitted quotes verbatim below. They are publication drafts, not independently verified reviews; obtain each client\u2019s approval of name, title, company, words, rating and photograph before putting them live.\n01  Anil Sathe\nFounder, Nidan360  |  India  |  Proposed rating: 5/5\n\u201cCubusify didn't just build what we asked for. They understood our vision and helped us turn it into something practical and meaningful. Their attention to detail, willingness to improve, and commitment throughout the process really stood out.\u201d\n02  Ankit Patel\nMarketing & Operations Head, Nidan360  |  India  |  Proposed rating: 5/5\n\u201cWhat I appreciate most about Cubusify is their approach to solving problems. They listen carefully, communicate clearly, and genuinely care about the final outcome. Working with them felt more like a partnership than a typical development engagement.\u201d\n03  Arrow\nEcommerce Brand  |  Proposed rating: 5/5\n\u201cWe wanted an online shopping experience that looked premium but remained simple for our customers. Cubusify understood that balance. From the design to the smallest user interactions, their approach was thoughtful and focused on what our business actually needed.\u201d\n04  Michael Anderson\nOperations Director, Veltrix Solutions  |  Austin, Texas, USA  |  Proposed rating: 5/5\n\u201cCubusify helped us identify opportunities to simplify our daily operations through AI automation. What stood out was their ability to understand our business challenges and recommend practical solutions rather than just technology.\u201d\n05  Daniel Carter\nFounder & CEO, Northvale Technologies  |  New York, USA  |  Proposed rating: 5/5\n\u201cCubusify brings something valuable to the table: they think beyond the code. Their proactive approach, attention to detail, and genuine commitment to business outcomes made the entire experience feel like a true partnership.\u201d\n",
+  "awards": {
+    "publicationAuthorized": true,
+    "source": "Owner supplied photos and explicit confirmation that all pictured awards were received and genuine, 2026-10-18",
+    "artwork": "Six separate generated PNGs, horizontal row, WebP display variants. Full-resolution originals in design/awards-original-png.",
+    "badges": [
+      "IT Rate \u2014 Top Web Development Company",
+      "AppFutura \u2014 Top Web Development Companies",
+      "GoodFirms \u2014 Profile badge",
+      "DesignRush \u2014 Ecommerce Development Companies",
+      "Clutch \u2014 Top IT Services Firms",
+      "GoodFirms \u2014 Top Web Development Company"
+    ]
+  },
+  "clientHeadshots": []
+}

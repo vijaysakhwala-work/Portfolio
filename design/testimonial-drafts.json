@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Anil Sathe",
+    "role": "Founder, Nidan360 | India",
+    "initials": "AS",
+    "quote": "Cubusify didn't just build what we asked for. They understood our vision and helped us turn it into something practical and meaningful. Their attention to detail, willingness to improve, and commitment throughout the process really stood out.",
+    "proposedRating": 5,
+    "approved": false,
+    "status": "Client confirmation required"
+  },
+  {
+    "name": "Ankit Patel",
+    "role": "Marketing & Operations Head, Nidan360 | India",
+    "initials": "AP",
+    "quote": "What I appreciate most about Cubusify is their approach to solving problems. They listen carefully, communicate clearly, and genuinely care about the final outcome. Working with them felt more like a partnership than a typical development engagement.",
+    "proposedRating": 5,
+    "approved": false,
+    "status": "Client confirmation required"
+  },
+  {
+    "name": "Arrow",
+    "role": "Ecommerce Brand",
+    "initials": "A",
+    "quote": "We wanted an online shopping experience that looked premium but remained simple for our customers. Cubusify understood that balance. From the design to the smallest user interactions, their approach was thoughtful and focused on what our business actually needed.",
+    "proposedRating": 5,
+    "approved": false,
+    "status": "Client confirmation required"
+  },
+  {
+    "name": "Michael Anderson",
+    "role": "Operations Director, Veltrix Solutions | Austin, Texas, USA",
+    "initials": "MA",
+    "quote": "Cubusify helped us identify opportunities to simplify our daily operations through AI automation. What stood out was their ability to understand our business challenges and recommend practical solutions rather than just technology.",
+    "proposedRating": 5,
+    "approved": false,
+    "status": "Invented identity \u2014 replace with a real client"
+  },
+  {
+    "name": "Daniel Carter",
+    "role": "Founder & CEO, Northvale Technologies | New York, USA",
+    "initials": "DC",
+    "quote": "Cubusify brings something valuable to the table: they think beyond the code. Their proactive approach, attention to detail, and genuine commitment to business outcomes made the entire experience feel like a true partnership.",
+    "proposedRating": 5,
+    "approved": false,
+    "status": "Invented identity \u2014 replace with a real client"
+  }
+]

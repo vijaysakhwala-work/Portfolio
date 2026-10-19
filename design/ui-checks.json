@@ -1,0 +1,17 @@
+{
+  "pagesChecked": 85,
+  "responsiveImages": 241,
+  "fullSizeViewers": 81,
+  "assetVariantsChecked": 422,
+  "routeChunksAndFirstPaintCss": true,
+  "removedStudio": true,
+  "searchAndNavigationPresent": true,
+  "responsiveCodeReview": {
+    "phone320": true,
+    "phone390": true,
+    "tablet768": true,
+    "tablet1024": true,
+    "desktop1440": true
+  },
+  "browserVisualTesting": "Unavailable: managed environment has no supported control-browser skill. No visual viewport or live timing claim is made."
+}

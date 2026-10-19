@@ -1,77 +1,57 @@
-# Cubusify — updated React project
+# Cubusify portfolio
 
-This updates the original React + Vite project to the selected white, cobalt, cyan and orange design. The complete production build is included in `dist/`.
+The existing React 19 and Vite website is retained, with the white, navy, cobalt, cyan and orange identity and all 211 reviewed showcase images. A small Vinext/Cloudflare Worker runtime adds secure enquiry storage. The deployment remains the same private Cubusify Site.
 
-## Run
+## Local setup
 
-Requires Node.js 22+ and npm.
+Use Node.js 24 or newer for the included SQLite tests.
 
-```bash
+```sh
 npm ci
+npm --prefix server-runtime ci
 npm run dev
 ```
 
-Then open the address printed by Vite. To create and verify the Cloudflare build:
+The Vite development command serves the frontend. Server enquiries require the complete Worker runtime; frontend-only development will show an honest submission error when no API is available. Use direct email in that case.
 
-```bash
+```sh
 npm run build
 npm run check
+npm test
 ```
 
-`npm run preview` serves the built site locally.
+The complete build first produces 85 prerendered pages and a 404, validates them, then builds the supported Sites Worker runtime. Output is `dist/client` for assets and `dist/server` for the Worker. Publish that complete artifact through Sites. A static-only host can serve `dist/client`, but `/api/enquiries` requires the Worker and DB binding.
 
-## Updated website
+For a standalone built Worker preview, run Wrangler from the project root with `server-runtime/node_modules/wrangler/bin/wrangler.js dev --config dist/server/wrangler.json --local --persist-to server-runtime/.wrangler/state` after applying the committed D1 migration locally. This preview is for environments that support it; it was not used for browser QA here.
 
-- New homepage: business-focused hero, trust area, four core services, Results as a Service, product demos, photo industry cards, Why Cubusify, solution showcases and project enquiry.
-- Technology section removed from the homepage and navigation.
-- Desktop service mega menu with Build, Experience & growth, and Operate & improve groups.
-- Mobile accordion navigation with usable service and company links.
-- About Us, Careers, Our Team, Blog and Contact Us remain separate pages. The team page presents capabilities rather than unapproved personal profiles.
-- All 73 existing routes remain available, including 12 service categories, 38 subsections and eight industry pages.
-- Distinct product experiences for the service subsections, including production scheduling, customer workspaces, storefronts, document intake, source-supported sample answers, QA, releases, sample wallet transfers, Snake and Memory Garden.
-- A short introductory developer animation with skip and reduced-motion support.
-- Local fonts and assets, prerendered HTML, page metadata, sitemap and a 404 page.
+## Enquiries
 
-## Add your client evidence
+The Sites manifest declares D1 as `DB`; the generated schema-only migration is in `server-runtime/drizzle`. Sites applies hosted migrations during publication. Enquiries appear in the Site's database viewer under `enquiries`. Store rows contain consent, submitted fields, a reference and email delivery status. Raw request IP addresses are not stored; a daily one-way hash supports the submission limit.
 
-Edit `src/content.js` to add verified counts, authorised client logos and approved reviews. Metrics and review cards appear when their data is supplied. The source leaves these empty rather than publishing invented figures or testimonials.
+Optional email notifications require three runtime variables: `RESEND_API_KEY` (secret), `ENQUIRY_FROM` (a verified sender) and `ENQUIRY_TO` (approved recipient). No values are shipped or invented. ENQUIRY_TO is configured as hello@cubusify.com. RESEND_API_KEY and the verified ENQUIRY_FROM sender are still missing, so storage works without email notifications. Do not claim email delivery was tested. Direct contact is hello@cubusify.com. Configure values in the hosting settings and republish before testing real delivery.
 
-```js
-export const proof = {
-  clientsServed: null,
-  yearsExperience: null,
-  projectsDelivered: null,
-  clientSatisfaction: null,
-  logos: [], // { name, image, url }
-  testimonials: [], // { quote, name, company, project }
-};
-```
+Use the request reference to avoid duplicate retries. The server rejects cross-origin requests, invalid fields, honeypot submissions, suspicious timing, oversized bodies and more than five submissions per client per hour. Do not send sensitive documents through this form.
 
-## Files to edit
+## Content and handoff
 
-| File | Purpose |
-| --- | --- |
-| `src/Redesign.jsx` | Header, homepage sections, footer and enquiry form |
-| `src/redesign.css` | Selected brand theme and responsive page layouts |
-| `src/JourneyDemos.jsx` | Distinct service demo flows |
-| `src/journeys.css` | Product interface and game styling |
-| `src/Demos.jsx` | Shared demo shell and retained interactive components |
-| `src/catalog.js` | Service routes, descriptions, industries and articles |
-| `src/content.js` | Client proof and contact address |
-| `src/App.jsx` | Routing and supporting pages |
+See CHANGELOG.md, CHECKS.md, ASSET_NOTES.md and design/brief-checks.json. All seven supplied screenshots, their implementation map and exact unpublished testimonial drafts are retained in design. Public proof must be genuine; set approval only after verification. No client results, awards, formal platform partnerships or headshots are fabricated.
 
-## Cloudflare Pages
+Showcase images illustrate product capabilities, not verified delivered client relationships. Full-size images are lossless WebP with high-quality 640px previews. The founder photo is supplied. Existing technology details remain on relevant service/about pages. No new image generation was needed for this update.
 
-Upload the contents of `dist/` using your existing Cloudflare Pages project. `index.html` must be at the upload root. Alternatively, connect this source to your repository with build command `npm run build` and output directory `dist`.
+The original GitHub branch remains unchanged because its connection was read-only. Source is saved in the native Site repository; this bundle can be committed to GitHub by an authorized maintainer.
 
-Set `SITE_URL` at build time if the production origin differs from `https://cubusify.com`. The default is your existing Cubusify domain. No deployment or DNS change was made by this update.
+## Verification limits
 
-## Enquiries and demos
+Automated checks cover routes, headings, links, metadata, structured data, all 422 approved original/legacy variants plus 569 optimized delivery variants, preservation of the full image set, menu order and content safeguards. Nine automated tests cover real SQLite storage, atomic rate limits, mounted carousel controls, viewport geometry and jQuery field validation. Browser visual checks, primary UI interactions across devices, and measured Core Web Vitals remain unverified because no supported browser-control skill is available.
 
-The enquiry form opens an email draft in the visitor's email application. The visitor must send it there. A server-side email service is not connected in this source.
 
-Product demos use sample data. AI responses are scripted; payments, wallet transfers, releases, bookings and messages remain local demonstrations. They do not act on external services.
-
-The industry photographs and shoe thumbnail are extracted from the approved design reference. Full-size original project assets remain included. Use higher-resolution owned or licensed photography when replacing these assets for larger display sizes.
-
-See `CHECKS.md` for build and browser validation.
+## October 18 corrections
+- Restored the requested business counters from the owner's supplied figures: 10+ years combined experience, 15+ happy clients, 21+ expert engineers, 100% client retention. These are owner supplied, not independently audited.
+- Services and industries use a repaired centered carousel, 4.5-second autoplay, arrows, pagination, mouse dragging and native touch scrolling. Reduced motion, hover and focus pause are respected; resume controls work while focused.
+- Homepage industries use seven original isometric vector illustrations. Product screenshots stay on industry pages.
+- Hero buttons and footer have a distinct new design; all 15 platform logos have source provenance. They identify integrations, not formal partnerships.
+- Added a practical SEO/AEO/GEO article with primary-source links. There are 85 routes.
+- jQuery validation loads when the enquiry form approaches the viewport or receives focus. Independent server validation remains mandatory.
+- All 211 original showcase images remain unchanged. Pages use 480/960/1440 WebP variants at quality 92. Original images load only in the full-size viewer. The largest display variants are about 90% smaller in aggregate; this is byte reduction, not measured page-load timing.
+- Duplicate legacy previews remain in source for the review audit but are omitted from the deployment. scripts/trim-build.mjs keeps the hosted package within its limits.
+- Genuine Clutch and GoodFirms company profile links replace unsupported award badges. Invented review identities and arbitrary portraits remain excluded.

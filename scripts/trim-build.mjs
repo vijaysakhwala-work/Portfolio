@@ -1,0 +1,11 @@
+import fs from 'node:fs/promises';
+import {existsSync} from 'node:fs';
+const output=existsSync('dist/client/index.html')?'dist/client':'dist';
+// Preserve audited originals in source; omit obsolete previews and retired delivery URLs.
+await fs.rm(output+'/images/showcases/responsive',{recursive:true,force:true});
+const manifest=JSON.parse(await fs.readFile('src/image-delivery.json','utf8'));
+const keep=new Set(Object.values(manifest).flatMap(a=>a.variants.map(v=>v.src.split('/').at(-1))));
+for(const name of await fs.readdir(output+'/images/delivery'))if(!keep.has(name))await fs.rm(output+'/images/delivery/'+name);
+// A composite Worker build serves static files from client/. Remove duplicate
+// frontend output at the root, retaining the Worker and deployment metadata.
+if(output==='dist/client')for(const name of await fs.readdir('dist'))if(!['client','server','.openai'].includes(name))await fs.rm('dist/'+name,{recursive:true,force:true});

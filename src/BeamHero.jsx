@@ -21,6 +21,8 @@ function TechnologyPanel({bottom = false}) {
 
 export default function BeamHero() {
   const [reduced, setReduced] = useState(true);
+  const [foreground,setForeground]=useState(true);
+  useEffect(()=>{const update=()=>setForeground(!document.hidden);document.addEventListener('visibilitychange',update);update();return()=>document.removeEventListener('visibilitychange',update)},[]);
   const [active, setActive] = useState(1);
   const [typing, setTyping] = useState({index:0,text:words[0],deleting:false});
   useEffect(()=>{
@@ -29,12 +31,12 @@ export default function BeamHero() {
     return ()=>media.removeEventListener('change',update);
   },[]);
   useEffect(()=>{
-    if(reduced)return;
+    if(reduced||!foreground)return;
     const timer=window.setInterval(()=>setActive(value=>(value+1)%categories.length),3000);
     return ()=>window.clearInterval(timer);
-  },[reduced]);
+  },[reduced,foreground]);
   useEffect(()=>{
-    if(reduced)return;
+    if(reduced||!foreground)return;
     const delay=!typing.deleting&&typing.text===words[typing.index]?2600:typing.deleting?45:90;
     const timer=window.setTimeout(()=>setTyping(value=>{
       if(!value.deleting&&value.text===words[value.index])return {...value,deleting:true};
@@ -42,7 +44,7 @@ export default function BeamHero() {
       return {...value,text:value.deleting?value.text.slice(0,-1):words[value.index].slice(0,value.text.length+1)};
     }),delay);
     return ()=>window.clearTimeout(timer);
-  },[typing,reduced]);
+  },[typing,reduced,foreground]);
   return <section className={`beam-hero${reduced?' beam-static':''}`} aria-labelledby="beam-hero-heading">
     <div className="beam-hero-visual">
       <svg className="beam-hero-diagram" viewBox="0 0 1800 600" role="group" aria-label="Cubusify connects six services through one team">

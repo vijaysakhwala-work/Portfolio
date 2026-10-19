@@ -1,0 +1,8 @@
+Use case: text-localization.
+Asset type: existing mobile inventory application portfolio screenshot, 941 x 1672 pixels.
+Input images: Image 1 is the exact edit target. Image 2 is ONLY a business-workflow context reference: the actual Anques enterprise ERP/HRM/CRM/customer-support case-study image. Its relevant lesson is authentic enterprise operational workflow presentation across inventory and records. Do not copy its office photograph, visual style, colors, composition, or redesign the target.
+Primary request: Carefully debrand Image 1. Remove the entire teal leaf company logo and the text "Everwell Partners" from the top header, leaving clean original white background and keeping the existing hamburger icon where it is. Do not insert any replacement branding, icon, title, monogram or empty badge.
+Keep every other element identical to Image 1: full original canvas, dimensions, whitespace and layout, the heading "Stock count", the entire box photograph and barcode, all original teal scan corners, cards, outlines, icons, colors, typography, all text and numbers.
+Text to preserve exactly: "Stock count", "BOX-01", "Packaging boxes", "SKU", "BOX-01", "Bin", "A-12", "Recorded stock", "24", "Counted stock", "26", "+2 units", "Save count", "Scan next item". Preserve minus and plus controls.
+Remove any remaining company identity or brand marks anywhere, including records if any; preserve personal names if present. Do not alter functional product identifiers such as BOX-01.
+Constraints: precise minimal edit, original photograph unchanged, sharp upright readable text, all content in original positions, full original canvas without cropping or extensions. No blur, browser chrome, concept/sample/demo labels, watermark or new branding.

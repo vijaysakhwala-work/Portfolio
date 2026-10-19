@@ -1,0 +1,11 @@
+Use case: text-localization.
+Asset type: existing mobile delivery-message-review application screenshot, original 1024 x 1536.
+Input images: Image 1 exact edit target. Image 2 ONLY relevant business-workflow reference from the actual Anques ERP/HRM/CRM/customer-support case study: credible enterprise records linked to customer communication and operational status. Do not copy its office photo or visual style; do not redesign Image 1.
+Primary request: minimal, precise debranding of Image 1:
+1. Remove the white leaf logo and both "Westbridge" and "PARTNERS" completely from the dark green header; fill their former region with the exact surrounding dark green. Keep full header and all other positions.
+2. Replace business/carrier identity "Northline Express" with neutral "Delivery" in the same Carrier value position and typography.
+3. Replace brand heading "WhatsApp message" with "Messaging" at the same heading position and style. Replace the recognizable WhatsApp telephone-in-chat-bubble logo to its left with a simple generic green outlined speech-bubble icon WITHOUT handset, lettering or brand shape, same footprint.
+Preserve all personal names: "Nisha Shah" and the "Hi Nisha" greeting unchanged. Preserve every other original word, number, date, label, card, border, button, icon, color, spacing, font style and full canvas.
+Exact preserved copy: "Review delivery update", "Customer", "Nisha Shah", "Linked order", "Order number", "ORD-2084", "Status", "Dispatched", "Carrier", "Expected delivery", "16 Oct 2026", "Hi Nisha, order ORD-2084 is on its way.", "Expected delivery: 16 Oct 2026.", "Message details", "Language", "English", "Template", "Delivery update", "Edit update", "Send update".
+Scan entire image and remove any company/brand names, logos and monograms, including business record values, vendor/carrier/payment marks, emails and domains. Keep personal names and functional order identifiers unchanged.
+Constraints: full original 1024 x1536 canvas and unchanged layout, crisp upright readable text, no cropping, no extensions, no blur, no browser chrome, no added concept/sample/demo text or watermark, no replacement branding.

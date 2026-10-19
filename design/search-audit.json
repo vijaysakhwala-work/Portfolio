@@ -1,0 +1,16 @@
+{
+  "pages": 85,
+  "uniqueTitles": 85,
+  "uniqueDescriptions": 85,
+  "reachableFromHomepage": 85,
+  "canonicalAndSitemap": "Production domain, trailing slash consistent with hosting",
+  "structuredData": "Organization, WebSite, WebPage, Service, BreadcrumbList and BlogPosting as applicable",
+  "articleNavigation": "Answer summaries, descriptive headings and linked tables of contents",
+  "awardCards": 6,
+  "contactFieldGroups": 2,
+  "failures": [],
+  "publicIndexability": "Blocked by owner-private hosting; public production launch required",
+  "searchConsole": "Not connected or verified in this session",
+  "browserAndCoreWebVitals": "Not measured; supported browser-control capability unavailable",
+  "trafficForecast": "No ranking or traffic guarantee"
+}

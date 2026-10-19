@@ -1,0 +1,14 @@
+{
+  "routes": 85,
+  "referenceScreenshots": 7,
+  "menuOrder": true,
+  "themeControl": true,
+  "homepageCarousels": 2,
+  "allShowcasesPreserved": 211,
+  "ownerSuppliedBusinessFiguresPublished": true,
+  "inventedTestimonialsPublished": false,
+  "structuredDataDocuments": 85,
+  "enquiryValidation": "jQuery field validation plus server checks; automated DOM, carousel geometry and SQLite tests",
+  "browserAndDeviceInteractionTests": "Unavailable: no supported browser-control skill; not claimed",
+  "emailDelivery": "Recipient configured; RESEND_API_KEY and verified ENQUIRY_FROM are still required"
+}

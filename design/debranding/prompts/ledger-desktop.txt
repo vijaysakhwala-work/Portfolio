@@ -1,0 +1,1 @@
+Precise anonymization: remove Harbor Partners and its sailboat logo. Replace Northline Supplies/Cedar Retail/Willow Foods with Customer 01/02/03 everywhere, including right-side detail. Preserve all other UI text, amounts and exact full canvas. No brands, logos, domain strings, browser chrome or concept/sample/demo labels. Built-in image_gen edit; approved style.

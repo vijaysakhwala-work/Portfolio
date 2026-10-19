@@ -1,0 +1,64 @@
+html[data-theme=dark]{color-scheme:dark;--surface:#0d1528;--surface-soft:#121f37;--ink:#e4edff;--muted:#a4b5d0;--line:#2b3a54;--accent:#76adff;--orange:#ed763c;background:var(--surface);color:var(--ink)}html[data-theme=dark] body{background:var(--surface);color:var(--ink)}html[data-theme=dark] :is(h1,h2,h3,h4,blockquote){color:var(--ink)}html[data-theme=dark] :is(p,small,.eyebrow){color:var(--muted)}html[data-theme=dark] :is(.site-header,.redesign-footer,.redesign-dropdown,.mobile-navigation,.site-search-dialog,.cp-page,.ai-page,.is-page,.wp-page,.hp-page,.ap-page,.about-page,.team-page,.hire-page,.image-viewer,.page-intro,.sd-page){background:var(--surface);color:var(--ink);border-color:var(--line)}html[data-theme=dark] :is(input,select,textarea){background:var(--surface);color:var(--ink);border-color:var(--line)}html[data-theme=dark] :is(.company-dropdown h3,.ai-dropdown h3,.service-dropdown b,.industry-dropdown b,.mobile-nav-group>button,.mobile-navigation>a,.search-input-row input,.site-search-dialog strong,.service-dropdown h3){color:var(--ink)}html[data-theme=dark] :is(.company-dropdown a:hover,.industry-dropdown a:hover,.service-dropdown a:hover,.ai-dropdown a:hover,.site-search-dialog li[aria-selected=true],.search-input-row,.search-help,.home-faq,.article-callout,.article-takeaways){background:var(--surface-soft);border-color:var(--line)}html[data-theme=dark] :is(.cp-workspace,.cp-info,.cp-global,.cp-listening,.cp-trust,.cp-faq details,.is-benefits article,.is-cards a,.is-process article,.sd-benefits article,.sd-groups section,.sd-process article,.ai-benefits article,.ai-solutions article,.wp-card,.wd-meta,.hp-benefits article,.hp-expertise article,.about-value-card,.team-card,.redesign-service-card,.commitment-values article){background:var(--surface-soft);border-color:var(--line);color:var(--ink)}html[data-theme=dark] :is(.cp-workspace aside,.cp-trust,.cp-email,.is-solutions,.is-process,.is-faq,.is-cta,.sd-process,.sd-cta,.ai-solutions,.ai-cta,.wp-cta,.wd-overview,.hp-cta,.hp-process,.ap-values,.ap-process,.reference-commitment,.industry-gallery,.foundation-section){background:var(--surface-soft);color:var(--ink);border-color:var(--line)}html[data-theme=dark] :is(.beam-service-pill,.beam-tech-panel>path:first-child,.beam-phone-node circle,.beam-icon-node circle){fill:#14233c;stroke:#405879}html[data-theme=dark] :is(.beam-service-link text,.beam-mobile-services a){fill:var(--ink);color:var(--ink)}html[data-theme=dark] .beam-hero{background:var(--surface)}html[data-theme=dark] .beam-hero-copy>p{color:var(--muted)}html[data-theme=dark] .beam-hero-copy h1{color:var(--ink)}html[data-theme=dark] .brand img{mix-blend-mode:normal;border-radius:5px}html[data-theme=dark] .brand{color:var(--ink)}html[data-theme=dark] :is(.ai-icon,.cp-icon,.is-icon,.industry-menu-icon,.company-menu-icon,.experience-icon){background:#203454;color:#8abaff}html[data-theme=dark] .button{color:white;background:#245fd7;border-color:#245fd7}html[data-theme=dark] .button.secondary{background:transparent;color:#a6c9ff;border-color:#597ba9}html[data-theme=dark] :is(.desktop-quote,.hero-actions>.button:first-child,.enquiry-bottom .button){background:#d65c27;border-color:#d65c27;color:white}html[data-theme=dark] :is(.experience-controls button,.round-link,.back-to-top){background:var(--surface-soft);color:var(--ink);border-color:var(--line)}html[data-theme=dark] :is(.search-input-row button,.gallery-controls button,.viewer-close,.viewer-tools button){background:var(--surface-soft);color:var(--ink);border-color:var(--line)}html[data-theme=dark] .sharp-visual{border-color:var(--line)}html[data-theme=dark] :is(.gallery-image,.image-gallery,.image-gallery-heading,.image-gallery-footer){background:var(--surface-soft);color:var(--ink);border-color:var(--line)}html[data-theme=dark] .field-error,html[data-theme=dark] :is(.enquiry-error,.enquiry-invalid){color:#ffb2a9!important}html[data-theme=dark] .enquiry-sent{color:#7de1b7!important}html[data-theme=dark] .growth-orbit{background:radial-gradient(circle,#76adff10,transparent 70%)}html[data-theme=dark] .industry-experience-card>.eyebrow{color:var(--muted)}html[data-theme=dark] .industry-sculpture{--industry-tone:#8ab8ff}html[data-theme=dark] :is(.cp-page h2,.cp-page h3,.is-page h2,.is-page h3,.ai-page h2,.ai-page h3,.wp-page h2,.wp-page h3,.hp-page h2,.hp-page h3){color:var(--ink)}
+/* ── Services Directory – dark mode ── */
+html[data-theme=dark] .sd-groups>section{background:var(--surface-soft);border-color:var(--line)}
+html[data-theme=dark] .sd-groups a{background:var(--surface);border-color:var(--line)}
+html[data-theme=dark] .sd-groups h2,html[data-theme=dark] .sd-groups h3{color:var(--ink)}
+html[data-theme=dark] .sd-groups a p{color:var(--muted)}
+html[data-theme=dark] .sd-groups>section>p{color:var(--muted)}
+html[data-theme=dark] .directory-icon{background:#1e3052;color:#76adff}
+html[data-theme=dark] .sd-arrow{background:#245fd7}
+html[data-theme=dark] .sd-groups a:hover{border-color:var(--accent)}
+html[data-theme=dark] .sd-hero-frame-inner{background:var(--surface-soft);border-color:var(--line);outline-color:#ed763c}
+html[data-theme=dark] .sd-frame-chrome{background:#0d1f38;border-color:var(--line)}
+html[data-theme=dark] .sd-chrome-address{background:#162540;color:#7a90aa}
+html[data-theme=dark] .sd-frame-screen{background:#0d1a2e}
+html[data-theme=dark] .sd-overlay-card{background:#0e1d35;border-color:var(--line);color:var(--muted)}
+html[data-theme=dark] .sd-overlay-name{color:var(--ink)}
+html[data-theme=dark] .sd-overlay-row b{color:var(--ink)}
+html[data-theme=dark] .sd-overlay-badge{background:#1a2e50;color:#76adff}
+html[data-theme=dark] .sd-overlay-divider{background:var(--line)}
+html[data-theme=dark] .sd-overlay-label{color:var(--ink)}
+html[data-theme=dark] .sd-benefits article{border-color:var(--line)}
+html[data-theme=dark] .sd-process{background:#121f37}
+html[data-theme=dark] .sd-process h3{color:var(--ink)}
+html[data-theme=dark] .sd-process p{color:var(--muted)}
+html[data-theme=dark] .ai-button,.sd-hero-cta{color:#fff}
+
+/* ── SEO / AEO / GEO page – dark mode ── */
+html[data-theme=dark] .sg-page{background:var(--surface);color:var(--ink)}
+html[data-theme=dark] .sg-page h1,html[data-theme=dark] .sg-page h2,html[data-theme=dark] .sg-page h3{color:var(--ink)}
+html[data-theme=dark] .sg-page p{color:var(--muted)}
+html[data-theme=dark] .sg-breadcrumb{color:var(--muted)}
+html[data-theme=dark] .sg-stat{border-color:var(--line)}
+html[data-theme=dark] .sg-stats{border-color:var(--line)}
+html[data-theme=dark] .sg-stat strong{color:var(--ink)}
+html[data-theme=dark] .sg-stat span{color:var(--muted)}
+html[data-theme=dark] .sg-stat-icon{background:#1e3052;color:#76adff}
+html[data-theme=dark] .sg-discipline-card{border-color:var(--line);background:var(--surface-soft)}
+html[data-theme=dark] .sg-discipline-card h3{color:var(--ink)}
+html[data-theme=dark] .sg-discipline-card li{color:var(--muted)}
+html[data-theme=dark] .sg-dc-copy{color:var(--muted)}
+html[data-theme=dark] .sg-dc-label{opacity:.9}
+html[data-theme=dark] .sg-orbit-pill{background:var(--surface-soft);border-color:var(--line)}
+html[data-theme=dark] .sg-orbit-center{background:#162540;border-color:#2b4a72}
+html[data-theme=dark] .sg-orbit-ring{border-color:var(--line)}
+html[data-theme=dark] .sg-ring-inner{border-color:#2b3a5480}
+html[data-theme=dark] .sg-deliverables-list{background:var(--surface-soft);border-color:var(--line)}
+html[data-theme=dark] .sg-deliverables-list li{color:var(--muted)}
+html[data-theme=dark] .sg-check-circle{background:#1a3226;color:#4ade80}
+html[data-theme=dark] .sg-usecase-card{background:var(--surface-soft);border-color:var(--line)}
+html[data-theme=dark] .sg-usecase-card h3{color:var(--ink)}
+html[data-theme=dark] .sg-usecase-card p{color:var(--muted)}
+html[data-theme=dark] .sg-usecase-arrow{background:#1e3052;color:#76adff}
+html[data-theme=dark] .sg-usecase-card:hover{border-color:#3a5a8a}
+html[data-theme=dark] .sg-faq{border-color:var(--line)}
+html[data-theme=dark] .sg-faq[open]{background:var(--surface-soft)}
+html[data-theme=dark] .sg-faq summary{color:var(--ink)}
+html[data-theme=dark] .sg-faq-icon{border-color:var(--line);color:#76adff}
+html[data-theme=dark] .sg-faq p{color:var(--muted)}
+html[data-theme=dark] .sg-section-head h2{color:var(--ink)}
+
+/* ── Services page callout banner – already dark, just ensure text readable ── */
+html[data-theme=dark] .growth-directory-link h2{color:#fff}
+html[data-theme=dark] .growth-directory-link p{color:#8aafd8}
+html[data-theme=dark] .growth-directory-link .eyebrow{color:#7fc8ff}

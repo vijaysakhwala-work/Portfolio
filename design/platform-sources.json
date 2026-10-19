@@ -1,0 +1,191 @@
+{
+  "retrieved_at": "2026-10-18",
+  "usage": "Integration platform identification only. These logos do not assert a formal partnership, certification, endorsement or client relationship.",
+  "sanitization": "All SVGs parsed; scripts, foreign objects, style elements, event handlers and external href attributes removed. Local geometry and internal clip paths retained.",
+  "reference": {
+    "url": "https://www.anques.com/",
+    "note": "Studied its distinct horizontal client-logo strip, generous spacing and separation from industry tiles. No Anques assets copied."
+  },
+  "assets": [
+    {
+      "name": "Paytm",
+      "slug": "paytm",
+      "path": "/images/platforms/paytm.svg",
+      "source_url": "https://paytm.com",
+      "download_url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/paytm.svg",
+      "source_type": "simple-icons",
+      "wordmark": true,
+      "bytes": 2142,
+      "sha256": "83722f8fc92e9a10b6f466c62f2fa6a2733ce69a6ac393d6fc30d6535f1c791b",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "name": "Razorpay",
+      "slug": "razorpay",
+      "path": "/images/platforms/razorpay.svg",
+      "source_url": "https://razorpay.com/newsroom/brand-assets/",
+      "download_url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/razorpay.svg",
+      "source_type": "simple-icons",
+      "wordmark": false,
+      "bytes": 270,
+      "sha256": "cbcb30821bb3b6163a37278c83908a64452f1833356d10250cf4766ba569cc20",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "name": "Shopify",
+      "slug": "shopify",
+      "path": "/images/platforms/shopify.svg",
+      "source_url": "https://www.shopify.com/brand-assets",
+      "download_url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/shopify.svg",
+      "source_type": "simple-icons",
+      "wordmark": false,
+      "bytes": 1266,
+      "sha256": "98a4c6a2b29619855661058309a2565f6635dc39c592202322beae20cf8a701c",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "name": "Zoho",
+      "slug": "zoho",
+      "path": "/images/platforms/zoho.svg",
+      "source_url": "https://www.zoho.com/branding",
+      "download_url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/zoho.svg",
+      "source_type": "simple-icons",
+      "wordmark": true,
+      "bytes": 2668,
+      "sha256": "1976ee20e95355ef1abc60bad61a5e93b47ad0dce88592fcdd43743095d8b2f8",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "name": "Make",
+      "slug": "make",
+      "path": "/images/platforms/make.svg",
+      "source_url": "https://www.make.com/en/press",
+      "download_url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/make.svg",
+      "source_type": "simple-icons",
+      "wordmark": false,
+      "bytes": 630,
+      "sha256": "dc1d9a9966f4414a4945cff2ab005fd4afa06b664ed134702ba21be7ed839766",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "name": "Retell AI",
+      "slug": "retellai",
+      "path": "/images/platforms/retellai.svg",
+      "source_url": "https://www.retellai.com/",
+      "download_url": "https://cdn.prod.website-files.com/64ada0f2685b2d18caa5e699/6a6100c9991b0523680dff6a_logo.svg",
+      "source_type": "official-wordmark",
+      "wordmark": true,
+      "bytes": 3048,
+      "sha256": "8c1db77e43df6ca8a77375b8b772796f1758b0ca560a238f7d51175758a0d697",
+      "viewBox": "0 0 72 20"
+    },
+    {
+      "name": "Vapi",
+      "slug": "vapi",
+      "path": "/images/platforms/vapi.svg",
+      "source_url": "https://vapi.ai/",
+      "download_url": "https://vapi.ai/",
+      "source_type": "official-wordmark",
+      "wordmark": true,
+      "bytes": 1376,
+      "sha256": "704b5d54384ce71460acce7dd1c33fff55ff6933436d1dcc409b78db357421c7",
+      "viewBox": "0 0 101 33"
+    },
+    {
+      "name": "ElevenLabs",
+      "slug": "elevenlabs",
+      "path": "/images/platforms/elevenlabs.svg",
+      "source_url": "https://elevenlabs.io/brand",
+      "download_url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/elevenlabs.svg",
+      "source_type": "simple-icons",
+      "wordmark": false,
+      "bytes": 190,
+      "sha256": "6a3b90fc0138bf9ed3790a80969106a33efdb1507bdcbeb16d0a53ef7d07e961",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "name": "Botpress",
+      "slug": "botpress",
+      "path": "/images/platforms/botpress.svg",
+      "source_url": "https://www.botpress.com/docs",
+      "download_url": "https://www.botpress.com/docs/logo/light.svg",
+      "source_type": "official-wordmark",
+      "wordmark": true,
+      "bytes": 5332,
+      "sha256": "59de53a4e26fe842dfb584b0574709262bdff5024dfd99b7f565e3af1fe2d8e2",
+      "viewBox": "0 0 801 210"
+    },
+    {
+      "name": "Voiceflow",
+      "slug": "voiceflow",
+      "path": "/images/platforms/voiceflow.svg",
+      "source_url": "https://www.voiceflow.com/",
+      "download_url": "https://www.voiceflow.com/",
+      "source_type": "official-wordmark",
+      "wordmark": true,
+      "bytes": 9043,
+      "sha256": "027d04af76f5250abdf21ca227d407edc77d26d52253bac27bb9c797db0c5be2",
+      "viewBox": "0 0 112 23"
+    },
+    {
+      "name": "Synthflow",
+      "slug": "synthflow",
+      "path": "/images/platforms/synthflow.svg",
+      "source_url": "https://synthflow.ai/",
+      "download_url": "https://synthflow.ai/",
+      "source_type": "official-wordmark",
+      "wordmark": true,
+      "bytes": 8637,
+      "sha256": "7403a57f57232f46a1e428a9338a0a685c4fe29a48e9c172c0309a5d0dced3b0",
+      "viewBox": "0 0 130 24"
+    },
+    {
+      "name": "Relevance AI",
+      "slug": "relevanceai",
+      "path": "/images/platforms/relevanceai.svg",
+      "source_url": "https://relevanceai.com/",
+      "download_url": "https://cdn.relevanceai.com/images/logo.svg?v=1",
+      "source_type": "official-wordmark",
+      "wordmark": true,
+      "bytes": 9798,
+      "sha256": "9404a634bf9777ce6c68310082413a5c2e840b55539ed3496f683f1cfde480e4",
+      "viewBox": "0 0 157 27"
+    },
+    {
+      "name": "Zapier",
+      "slug": "zapier",
+      "path": "/images/platforms/zapier.svg",
+      "source_url": "https://www.figma.com/file/NQFxTCE5pGR3dHZt0DkOyy/Zapier-Brand-Guidelines-%5BExternal%5D?type=design&node-id=101-9701&mode=design",
+      "download_url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/zapier.svg",
+      "source_type": "simple-icons",
+      "wordmark": false,
+      "bytes": 2864,
+      "sha256": "7687f7bf527fc3e11269bada3d1b3024880e4f0960a8c755ea274dfe119478d2",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "name": "HubSpot",
+      "slug": "hubspot",
+      "path": "/images/platforms/hubspot.svg",
+      "source_url": "https://www.hubspot.com/style-guide",
+      "download_url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/hubspot.svg",
+      "source_type": "simple-icons",
+      "wordmark": false,
+      "bytes": 695,
+      "sha256": "1f9474b315ddd026ad055e43f276998f409b0b6fde423f7e059e3d162bd431c8",
+      "viewBox": "0 0 24 24"
+    },
+    {
+      "name": "Google Cloud",
+      "slug": "googlecloud",
+      "path": "/images/platforms/googlecloud.svg",
+      "source_url": "https://cloud.google.com",
+      "download_url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/googlecloud.svg",
+      "source_type": "simple-icons",
+      "wordmark": false,
+      "bytes": 715,
+      "sha256": "844044910993b25d1238c47ae1e40a6452e2fcc0de2f6180e9af277b952487d1",
+      "viewBox": "0 0 24 24"
+    }
+  ]
+}

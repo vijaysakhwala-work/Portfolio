@@ -15,6 +15,7 @@ export default defineConfig({
     strictPort: false
   },
   build: {
-    chunkSizeWarningLimit: 650
+    manifest: true,
+    chunkSizeWarningLimit: 500
   }
 });

@@ -1,0 +1,90 @@
+{
+  "status": "All six completed and reviewed",
+  "generationMode": "Built-in imagegen",
+  "assets": [
+    {
+      "id": "stockroom-mobile",
+      "manifest": {
+        "src": "/images/showcases/stockroom-mobile.webp",
+        "width": 941,
+        "height": 1672,
+        "alt": "Barcode stock count",
+        "srcSet": "/images/showcases/responsive/stockroom-mobile-640.webp 640w, /images/showcases/stockroom-mobile.webp 941w",
+        "thumbnail": "/images/showcases/responsive/stockroom-mobile-640.webp",
+        "label": "Barcode stock count"
+      },
+      "previousIssue": "Image generation daily limit before edit completed.",
+      "resolution": "Visually accepted: company leaf logo and Everwell Partners removed from header; complete original stock count workflow, box photo, controls, text and numbers preserved with sharp upright readable text and full canvas."
+    },
+    {
+      "id": "relay-mobile",
+      "manifest": {
+        "src": "/images/showcases/relay-mobile.webp",
+        "width": 1024,
+        "height": 1536,
+        "alt": "Review delivery update",
+        "srcSet": "/images/showcases/responsive/relay-mobile-640.webp 640w, /images/showcases/relay-mobile.webp 1024w",
+        "thumbnail": "/images/showcases/responsive/relay-mobile-640.webp",
+        "label": "Review delivery update"
+      },
+      "previousIssue": "Image generation daily limit before edit completed.",
+      "resolution": "Visually accepted: Westbridge Partners header/logo removed; Northline Express replaced with Delivery; WhatsApp heading/logo replaced with Messaging and generic speech bubble. Nisha Shah, greeting, order number, date, labels, cards, controls, palette and full canvas preserved with sharp upright readable text."
+    },
+    {
+      "id": "intake-homepage-showcase",
+      "manifest": {
+        "src": "/images/showcases/intake-homepage-showcase.webp",
+        "width": 1536,
+        "height": 1024,
+        "alt": "intake: Sales intake cover",
+        "srcSet": "/images/showcases/responsive/intake-homepage-showcase-640.webp 640w, /images/showcases/intake-homepage-showcase.webp 1536w",
+        "thumbnail": "/images/showcases/responsive/intake-homepage-showcase-640.webp",
+        "label": "intake: Sales intake cover"
+      },
+      "previousIssue": "Image generation daily limit before edit started.",
+      "resolution": "Visually accepted: Brightwell Solutions logo/header removed; Elm Studio replaced consistently by Customer01 in selected list and Company field; Harris & Cole replaced by Customer02; Rivermere Trading replaced by Customer03. Personal names Mira Shah/Kiran Rao, enquiry IDs, date/time, all functional copy, layout, colors, controls and full canvas preserved with sharp upright readable text."
+    },
+    {
+      "id": "ledger-cover",
+      "manifest": {
+        "src": "/images/showcases/ledger-cover.webp",
+        "width": 1536,
+        "height": 1024,
+        "alt": "Invoice software cover",
+        "srcSet": "/images/showcases/responsive/ledger-cover-640.webp 640w, /images/showcases/ledger-cover.webp 1536w",
+        "thumbnail": "/images/showcases/responsive/ledger-cover-640.webp",
+        "label": "Invoice software cover"
+      },
+      "previousIssue": "Company names removed, but attachment still has a proprietary mark; retry hit daily limit.",
+      "resolution": "Visually accepted: Acrobat attachment logo replaced by neutral folded-corner document icon; invoice INV-2026-014, customer identifier, item values, GST18% and total \u20b953,100 remain readable. Full canvas and original layout preserved; no company names or browser chrome."
+    },
+    {
+      "id": "real-estate-workflow-workspace",
+      "manifest": {
+        "src": "/images/showcases/real-estate-workflow-workspace.webp",
+        "width": 1672,
+        "height": 941,
+        "alt": "Property search \u2192 viewing \u2192 enquiry \u2192 agent follow-up",
+        "srcSet": "/images/showcases/responsive/real-estate-workflow-workspace-640.webp 640w, /images/showcases/real-estate-workflow-workspace.webp 1672w",
+        "thumbnail": "/images/showcases/responsive/real-estate-workflow-workspace-640.webp",
+        "label": "Property search \u2192 viewing \u2192 enquiry \u2192 agent follow-up"
+      },
+      "previousIssue": "Company names removed, but email text has overlapping glyphs; retry hit daily limit.",
+      "resolution": "Visually accepted after targeted repair: email reads riya@example.com with distinct nonoverlapping glyphs. Personal names, functional Cedar Heights property address, room data, viewing time, photos and complete original layout preserved. No company branding or browser chrome."
+    },
+    {
+      "id": "ledger-mobile",
+      "manifest": {
+        "src": "/images/showcases/ledger-mobile.webp",
+        "width": 941,
+        "height": 1672,
+        "alt": "Payment reminder approval",
+        "srcSet": "/images/showcases/responsive/ledger-mobile-640.webp 640w, /images/showcases/ledger-mobile.webp 941w",
+        "thumbnail": "/images/showcases/responsive/ledger-mobile-640.webp",
+        "label": "Payment reminder approval"
+      },
+      "previousIssue": "Company names removed, but vendor channel name remains and needs neutralization; daily limit blocks edit.",
+      "resolution": "Visually accepted: WhatsApp word and logo replaced by Messaging and generic speech bubble; customer identifier, invoice INV-014, total \u20b953,100, due date and recipient remain sharp and readable. Full canvas and original layout preserved."
+    }
+  ]
+}

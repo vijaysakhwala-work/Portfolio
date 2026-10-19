@@ -1,7 +1,10 @@
-// Replace null values with verified figures. Client quotes and logos require permission.
+// Business figures supplied by Cubusify in Changes.docx and requested for publication.
+// Invented testimonial drafts remain unpublished.
 export const proof = {
-  clientsServed: null,
-  yearsExperience: null,
+  clientsServed: '15+',
+  yearsExperience: '10+',
+  engineers: '21+',
+  clientRetention: '100%',
   projectsDelivered: null,
   clientSatisfaction: null,
   logos: [], // { name, image, url }

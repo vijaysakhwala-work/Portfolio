@@ -1,0 +1,28 @@
+{
+  "baselineZip": "cubusify-react.zip",
+  "baseline": {
+    "js": {
+      "rawBytes": 624964,
+      "gzipBytes": 184033
+    },
+    "css": {
+      "rawBytes": 214909,
+      "gzipBytes": 41375
+    }
+  },
+  "current": {
+    "js": {
+      "file": "index-DLIKELtg.js",
+      "rawBytes": 304357,
+      "gzipBytes": 94258
+    },
+    "css": {
+      "file": "index-5lbJIoTV.css",
+      "rawBytes": 154828,
+      "gzipBytes": 29839
+    }
+  },
+  "sharedJsGzipReductionPercent": 49,
+  "sharedCssGzipReductionPercent": 28,
+  "measurement": "Fresh Vite builds of the uploaded ZIP and revised project. Build transfer sizes only; route modules and images are additional. Live loading time and Core Web Vitals were not measured."
+}
