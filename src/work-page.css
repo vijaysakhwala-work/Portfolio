@@ -5,3 +5,5 @@
 .wp-art{aspect-ratio:4/3}.wp-art img{position:static;width:100%;height:100%;object-fit:contain;max-width:100%}.wp-next .wp-art{height:auto;aspect-ratio:4/3;max-height:none}.wp-screens .wp-art{max-width:1000px!important;margin:auto}.wp-next{grid-template-columns:minmax(0,1fr) minmax(0,1fr) 50px}.wp-hero-grid>div{min-width:0}@media(max-width:800px){.wp-next{grid-template-columns:minmax(0,1fr) 48px}.wp-next .wp-art{max-height:none}}
 
 .wp-art img{position:absolute;width:200%;height:400%;max-width:none;object-fit:fill}.wp-next .wp-art{aspect-ratio:4/3;height:auto}.wp-next .wp-art img{width:200%;height:400%}.wp-grid{align-items:start}.wp-screens .wp-art{max-width:800px!important}
+.wp-page .wp-process{margin-top:72px;margin-bottom:48px}.wp-page .wp-process h2{margin-bottom:40px}
+@media(max-width:800px){.wp-page .wp-process{margin-top:52px;margin-bottom:36px}.wp-page .wp-process h2{margin-bottom:28px}}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect,useRef,useState} from 'react';
 import {
   ArrowUpRight, Search, MessageCircle, Sparkles,
   FileSearch, Route, ChartNoAxesColumnIncreasing, Check,
@@ -90,6 +90,20 @@ const stats = [
   [Zap,        '2 wks', 'to first audit delivery'],
 ];
 
+function CountUp({value}){
+  const m=/^(d+)(.*)$/.exec(value),end=m?+m[1]:0,suffix=m?m[2]:'';
+  const [n,setN]=useState(end),ref=useRef(null);
+  useEffect(()=>{
+    if(!m||matchMedia('(prefers-reduced-motion: reduce)').matches||typeof IntersectionObserver==='undefined')return;
+    let raf,start;setN(0);
+    const o=new IntersectionObserver(([e])=>{if(!e.isIntersecting)return;o.disconnect();
+      const tick=t=>{start=start??t;const p=Math.min(1,(t-start)/1400);setN(Math.round(end*(1-Math.pow(1-p,3))));if(p<1)raf=requestAnimationFrame(tick)};raf=requestAnimationFrame(tick)},{threshold:.4});
+    o.observe(ref.current);
+    return()=>{o.disconnect();cancelAnimationFrame(raf)};
+  },[value]);
+  return <strong ref={ref} aria-label={value}>{m?n+suffix:value}</strong>;
+}
+
 export default function SeoGrowthPage() {
   return (
     <div className="sg-page">
@@ -137,7 +151,7 @@ export default function SeoGrowthPage() {
           {stats.map(([Icon, val, label]) => (
             <div key={label} className="sg-stat">
               <span className="sg-stat-icon"><Icon size={18}/></span>
-              <strong>{val}</strong>
+              <CountUp value={val}/>
               <span>{label}</span>
             </div>
           ))}
@@ -251,11 +265,6 @@ export default function SeoGrowthPage() {
         <p>Share your current site, target customers and goals. We'll discuss a focused first phase.</p>
         <div className="sg-cta-actions">
           <a className="sg-btn-primary" href="/contact">Talk to Cubusify <ArrowUpRight size={17}/></a>
-          <a className="sg-cta-note"
-             href="https://developers.google.com/search/docs/fundamentals/ai-optimization-guide"
-             target="_blank" rel="noopener noreferrer">
-            Our approach follows established search fundamentals ↗
-          </a>
         </div>
       </section>
 

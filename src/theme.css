@@ -8,7 +8,7 @@ html[data-theme=dark] .sd-groups>section>p{color:var(--muted)}
 html[data-theme=dark] .directory-icon{background:#1e3052;color:#76adff}
 html[data-theme=dark] .sd-arrow{background:#245fd7}
 html[data-theme=dark] .sd-groups a:hover{border-color:var(--accent)}
-html[data-theme=dark] .sd-hero-frame-inner{background:var(--surface-soft);border-color:var(--line);outline-color:#ed763c}
+html[data-theme=dark] .sd-hero-frame-inner{background:var(--surface-soft);border-color:var(--line)}
 html[data-theme=dark] .sd-frame-chrome{background:#0d1f38;border-color:var(--line)}
 html[data-theme=dark] .sd-chrome-address{background:#162540;color:#7a90aa}
 html[data-theme=dark] .sd-frame-screen{background:#0d1a2e}
@@ -62,3 +62,41 @@ html[data-theme=dark] .sg-section-head h2{color:var(--ink)}
 html[data-theme=dark] .growth-directory-link h2{color:#fff}
 html[data-theme=dark] .growth-directory-link p{color:#8aafd8}
 html[data-theme=dark] .growth-directory-link .eyebrow{color:#7fc8ff}
+
+html[data-theme=dark] .platform-logo{background:#eef3fc;color:#102446;border-radius:14px;width:176px;min-height:56px;margin:0 9px;padding:10px 18px}
+html[data-theme=dark] .platform-logo strong{color:#102446}
+html[data-theme=dark] .ecosystem-simple .platform-logo{min-height:56px}
+html[data-theme=dark] .home-faq{padding:8px 22px;margin-bottom:12px;border:1px solid var(--line);border-radius:14px}
+html[data-theme=dark] .home-faq:last-child{margin-bottom:0}
+html[data-theme=dark] .ai-benefits{gap:16px;border-bottom:0}
+html[data-theme=dark] .ai-benefits article,html[data-theme=dark] .ai-benefits article+article{padding:18px 20px;border:1px solid var(--line);border-radius:14px}
+html[data-theme=dark] .ai-solutions{padding:40px;border:1px solid var(--line);border-radius:20px}
+@media(max-width:900px){html[data-theme=dark] .ai-solutions{padding:30px 24px}}
+@media(max-width:600px){html[data-theme=dark] .ai-solutions{padding:24px 18px}html[data-theme=dark] .ai-benefits article,html[data-theme=dark] .ai-benefits article+article{padding:16px}}
+html[data-theme=dark] .is-benefits{gap:16px;border-bottom:0}
+html[data-theme=dark] .is-benefits article,html[data-theme=dark] .is-benefits article+article{padding:18px 20px;border:1px solid var(--line);border-radius:14px}
+html[data-theme=dark] :is(.is-solutions,.is-process,.is-faq){padding:36px 40px;border:1px solid var(--line);border-radius:20px}
+html[data-theme=dark] .is-solutions{margin-top:8px}
+html[data-theme=dark] :is(.is-process,.is-faq){margin-top:24px}
+html[data-theme=dark] .is-faq{margin-bottom:24px}
+html[data-theme=dark] .is-process article{padding:16px;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+@media(max-width:900px){html[data-theme=dark] :is(.is-solutions,.is-process,.is-faq){padding:28px 24px}}
+@media(max-width:600px){html[data-theme=dark] :is(.is-solutions,.is-process,.is-faq){padding:22px 16px}html[data-theme=dark] .is-benefits article,html[data-theme=dark] .is-benefits article+article{padding:16px}}
+html[data-theme=dark] .company-dropdown>div:last-child a{background:var(--surface-soft);border:1px solid var(--line);color:var(--ink)}
+html[data-theme=dark] .company-dropdown>div:last-child a:hover{background:#1a2a47;border-color:var(--accent)}
+html[data-theme=dark] .company-dropdown b{color:var(--ink)}
+html[data-theme=dark] .search-input-row input{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 16px}
+html[data-theme=dark] .search-input-row input:focus-visible{border-color:var(--accent);outline:0}
+html[data-theme=dark] .ap-gradient,html[data-theme=dark] .ap-section-title{background-image:linear-gradient(100deg,#f2f6ff,#8abaff 55%,#4fd1f0)}
+html[data-theme=dark] .ap-values{padding:36px 40px;border:1px solid var(--line);border-radius:20px;box-sizing:border-box}
+@media(max-width:600px){html[data-theme=dark] .ap-values{padding:24px 16px}}
+html[data-theme=dark] .contact-refined .cp-faq details{padding:16px 22px;margin-bottom:12px;border:1px solid var(--line);border-radius:14px}
+html[data-theme=dark] .contact-refined .cp-faq details:last-child{margin-bottom:0}
+html[data-theme=dark] .wd-meta{background:var(--surface-soft);border:1px solid var(--line)}
+html[data-theme=dark] .wd-meta>div+div{border-left-color:var(--line)}
+html[data-theme=dark] .wd-meta dt{color:var(--muted)}
+html[data-theme=dark] .wd-overview{padding:36px 40px;border:1px solid var(--line);border-radius:20px;box-sizing:border-box}
+@media(max-width:700px){html[data-theme=dark] .wd-overview{padding:24px 18px}}
+html[data-theme=dark] .sd-benefits{gap:16px;border-bottom:0}
+html[data-theme=dark] .sd-benefits article,html[data-theme=dark] .sd-benefits article+article{padding:18px 20px;border:1px solid var(--line);border-radius:14px}
+html[data-theme=dark] :is(.sd-process,.sd-groups section){padding:32px 36px;border:1px solid var(--line);border-radius:20px;box-sizing:border-box}

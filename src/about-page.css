@@ -604,4 +604,6 @@
   .ap-purpose-heading {
     font-size: 30px
   }
-}
+}.ap-founder{grid-template-columns:minmax(0,.55fr) minmax(0,1fr);gap:56px;padding:40px 0}
+.ap-portrait{max-width:380px;justify-self:center;object-fit:cover}
+@media(max-width:900px){.ap-founder{grid-template-columns:minmax(0,1fr);gap:28px}.ap-portrait{max-width:300px}}
