@@ -1,16 +1,16 @@
 {
-  "pages": 85,
-  "uniqueTitles": 85,
-  "uniqueDescriptions": 85,
-  "reachableFromHomepage": 85,
+  "pages": 84,
+  "uniqueTitles": 84,
+  "uniqueDescriptions": 84,
+  "reachableFromHomepage": 84,
   "canonicalAndSitemap": "Production domain, trailing slash consistent with hosting",
   "structuredData": "Organization, WebSite, WebPage, Service, BreadcrumbList and BlogPosting as applicable",
   "articleNavigation": "Answer summaries, descriptive headings and linked tables of contents",
   "awardCards": 6,
   "contactFieldGroups": 2,
   "failures": [],
-  "publicIndexability": "Blocked by owner-private hosting; public production launch required",
+  "publicIndexability": "Not tested by this local build check; verify the intended public deployment. The 2026-10-20 live audit found a different homepage and 83 portfolio routes returning 404.",
   "searchConsole": "Not connected or verified in this session",
-  "browserAndCoreWebVitals": "Not measured; supported browser-control capability unavailable",
+  "browserAndCoreWebVitals": "Local unthrottled Chrome LCP/CLS observations recorded; field Core Web Vitals not measured.",
   "trafficForecast": "No ranking or traffic guarantee"
 }

@@ -1,6 +1,6 @@
 {
-  "pagesChecked": 85,
-  "responsiveImages": 241,
+  "pagesChecked": 84,
+  "responsiveImages": 320,
   "fullSizeViewers": 81,
   "assetVariantsChecked": 422,
   "routeChunksAndFirstPaintCss": true,
@@ -13,5 +13,5 @@
     "tablet1024": true,
     "desktop1440": true
   },
-  "browserVisualTesting": "Unavailable: managed environment has no supported control-browser skill. No visual viewport or live timing claim is made."
+  "browserVisualTesting": "Local Chrome mobile/desktop smoke checks: design/seo-browser-checks.json. No field Core Web Vitals claim."
 }

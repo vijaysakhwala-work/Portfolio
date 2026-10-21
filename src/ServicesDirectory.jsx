@@ -7,19 +7,19 @@ import './ai-sample.css';
 import './services-directory.css';
 
 const groups = [
-  ['Build & launch', 'Turn your ideas into powerful digital products.', [
+  ['Build & launch', 'Choose custom software for internal workflows, web development for browser-based experiences, mobile development for device-specific tasks, or product engineering for a focused release.', [
     ['software', 'Custom CRM · Business dashboards'],
     ['web',      'Business websites · Web applications'],
     ['mobile',   'iOS & Android · Cross-platform apps'],
     ['product',  'MVP development · SaaS engineering'],
   ]],
-  ['Experience & growth', 'Create engaging experiences and reach more customers.', [
+  ['Experience & growth', 'Clarify a product journey with UI/UX design, build a practical store, improve existing content or develop a focused interactive experience.', [
     ['design',     'User experience · Interface design'],
     ['ecommerce',  'Shopify · WooCommerce'],
     ['marketing',  'SEO · Content & campaigns'],
     ['games',      '2D games · Interactive experiences'],
   ]],
-  ['Operate & improve', "Keep your products running smoothly and ready for what's next.", [
+  ['Operate & improve', "Connect routine work, test important journeys and establish a manageable release and operating process. Assess blockchain only where a shared-record requirement justifies it.", [
     ['ai',         'AI assistants · Business automation'],
     ['qa',         'Web & mobile testing · Test automation'],
     ['cloud',      'Cloud deployment · CI/CD pipelines'],
@@ -99,8 +99,8 @@ export default function ServicesDirectory() {
             <a href="/">Home</a><span>/</span>Services
           </nav>
           <span className="ai-eyebrow">CUBUSIFY SERVICES</span>
-          <h1>The right expertise.<br/><span>For your next move.</span></h1>
-          <p>Design, engineering and support built around your business.</p>
+          <h1>Software Development<br/><span>&amp; Digital Services.</span></h1>
+          <p>Compare services for a new product, an existing system or a workflow that needs improving. Start with the task and its constraints; we can help define the right mix of software, design, integration and support.</p>
           <a className="ai-button sd-hero-cta" href="/contact">
             Discuss your project <ArrowRight size={18}/>
           </a>
@@ -148,7 +148,7 @@ export default function ServicesDirectory() {
         <div>
           <span className="eyebrow">SEARCH & ANSWER DISCOVERY</span>
           <h2>SEO, AEO &amp; GEO.<br/>One connected approach.</h2>
-          <p>Technical foundations, useful answers and original expertise.</p>
+          <p>Use the broader search strategy service for crawling, indexing and measurement; choose page-level SEO for existing copy, metadata and contextual links.</p>
         </div>
         <a className="button sd-geo-btn" href="/services/seo-aeo-geo">
           Explore visibility services <ArrowRight size={18}/>
@@ -170,7 +170,7 @@ export default function ServicesDirectory() {
       <section className="sd-cta ai-width">
         <div>
           <h2>Not sure where to start?</h2>
-          <p>Tell us about your goals. We'll help shape a practical next step.</p>
+          <p>Bring the current workflow, existing systems and the outcome you want to improve. We can compare configuration, a focused enhancement and a new build before agreeing scope.</p>
         </div>
         <a className="ai-button" href="/contact">Start a conversation <ArrowUpRight size={18}/></a>
       </section>

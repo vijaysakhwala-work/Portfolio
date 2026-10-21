@@ -7,10 +7,13 @@
     "dev": "vite --host 0.0.0.0 --port 4173 --strictPort false",
     "build": "node scripts/build-complete.mjs",
     "preview": "vite preview --host 0.0.0.0 --port 4173 --strictPort false",
-    "check": "node scripts/check-build.mjs && node scripts/check-ui.mjs && node scripts/check-showcases.mjs && node scripts/check-brief.mjs && node scripts/check-delivery.mjs && node scripts/audit-search.mjs",
+    "check": "node scripts/check-build.mjs && node scripts/check-ui.mjs && node scripts/check-showcases.mjs && node scripts/check-brief.mjs && node scripts/check-delivery.mjs && node scripts/audit-search.mjs && node scripts/check-content.mjs && node scripts/check-image-seo.mjs",
     "build:frontend": "vite build && node scripts/prerender.mjs && node scripts/trim-build.mjs",
-    "check:frontend": "node scripts/check-build.mjs && node scripts/check-ui.mjs && node scripts/check-showcases.mjs && node scripts/check-brief.mjs && node scripts/check-delivery.mjs && node scripts/audit-search.mjs",
-    "test": "node --test tests/*.test.mjs"
+    "check:frontend": "node scripts/check-build.mjs && node scripts/check-ui.mjs && node scripts/check-showcases.mjs && node scripts/check-brief.mjs && node scripts/check-delivery.mjs && node scripts/audit-search.mjs && node scripts/check-content.mjs && node scripts/check-image-seo.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "report:seo": "node scripts/build-local-seo-score-report.mjs",
+    "check:seo-report": "node scripts/check-seo-report.mjs",
+    "report:seo-market": "node scripts/build-team-seo-market-review.mjs"
   },
   "dependencies": {
     "react": "^19.1.0",

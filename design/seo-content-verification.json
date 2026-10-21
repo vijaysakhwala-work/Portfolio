@@ -1,0 +1,802 @@
+{
+  "date": "2026-10-20",
+  "pages": [
+    {
+      "route": "/services/seo-aeo-geo",
+      "type": "growth",
+      "title": "SEO, AEO & GEO Strategy Services | Cubusify",
+      "description": "Plan technical search foundations, useful answer content and measurement with Cubusify. Explore an audit-led SEO, AEO and GEO strategy for your website.",
+      "images": 0,
+      "words": 556
+    },
+    {
+      "route": "/work/forma",
+      "type": "work-detail",
+      "title": "Interior Design Website Case Study: Forma | Cubusify",
+      "description": "An interior-design website bringing project photography, room details, material choices and consultation enquiries into one browsing journey.",
+      "images": 5,
+      "words": 350
+    },
+    {
+      "route": "/work/dew",
+      "type": "work-detail",
+      "title": "Skincare Ecommerce Case Study: Dew | Cubusify",
+      "description": "A skincare shopping experience with ingredient-led comparison, skin-preference filters and product information placed beside purchase actions.",
+      "images": 5,
+      "words": 312
+    },
+    {
+      "route": "/work/roam",
+      "type": "work-detail",
+      "title": "Travel Booking Website Case Study: Roam | Cubusify",
+      "description": "A travel-planning experience connecting a day-by-day itinerary with accommodation details, availability context and a reservation action.",
+      "images": 5,
+      "words": 327
+    },
+    {
+      "route": "/work/basil",
+      "type": "work-detail",
+      "title": "Food Ordering & Kitchen Workflow Case Study: Basil | Cubusify",
+      "description": "A food-ordering project connecting the customer’s mobile journey with a kitchen board organised around preparation and handover.",
+      "images": 5,
+      "words": 327
+    },
+    {
+      "route": "/work/pulse",
+      "type": "work-detail",
+      "title": "Fitness App & Programme Dashboard Case Study: Pulse | Cubusify",
+      "description": "A fitness product pairing member activity screens with a coach-facing programme view for sessions, schedules and progress.",
+      "images": 5,
+      "words": 320
+    },
+    {
+      "route": "/work/haven",
+      "type": "work-detail",
+      "title": "Appointment Booking App Case Study: Haven | Cubusify",
+      "description": "An appointment product connecting practitioner availability with a detailed booking review and the customer’s mobile appointment journey.",
+      "images": 5,
+      "words": 303
+    },
+    {
+      "route": "/work/orbit",
+      "type": "work-detail",
+      "title": "Project Planning Dashboard Case Study: Orbit | Cubusify",
+      "description": "A project-management workspace connecting task dependencies, ownership, deadlines and team workload in a single planning context.",
+      "images": 5,
+      "words": 304
+    },
+    {
+      "route": "/work/ledger",
+      "type": "work-detail",
+      "title": "Invoice Management Software Case Study: Ledger | Cubusify",
+      "description": "An invoice and receivables workspace connecting outstanding totals, due-date states and individual invoice review.",
+      "images": 5,
+      "words": 308
+    },
+    {
+      "route": "/work/stockroom",
+      "type": "work-detail",
+      "title": "Inventory Management Software Case Study: Stockroom | Cubusify",
+      "description": "An inventory workspace connecting low-stock recommendations with a reviewable purchase-order draft.",
+      "images": 5,
+      "words": 296
+    },
+    {
+      "route": "/work/nexa",
+      "type": "work-detail",
+      "title": "AI Customer Support Workspace Case Study: Nexa | Cubusify",
+      "description": "An AI-assisted support workspace bringing a customer question, suggested response and supporting source records into one review screen.",
+      "images": 5,
+      "words": 324
+    },
+    {
+      "route": "/work/relay",
+      "type": "work-detail",
+      "title": "Customer Messaging Workflow Case Study: Relay | Cubusify",
+      "description": "A customer-communications workspace connecting order status, message templates and a reviewable outbound message queue.",
+      "images": 5,
+      "words": 305
+    },
+    {
+      "route": "/work/intake",
+      "type": "work-detail",
+      "title": "Lead Qualification & Routing Case Study: Intake | Cubusify",
+      "description": "An enquiry-management workspace combining the project brief, qualification checklist and team assignment before the sales handoff.",
+      "images": 5,
+      "words": 313
+    },
+    {
+      "route": "/",
+      "type": "home",
+      "title": "Custom Software Development & AI Automation | Cubusify",
+      "description": "Cubusify builds custom software, AI workflows, websites and mobile apps. Explore service scope, product studies and a practical path to your next release.",
+      "images": 22,
+      "words": 1026
+    },
+    {
+      "route": "/services",
+      "type": "services",
+      "title": "Software, Web, Mobile & AI Development Services | Cubusify",
+      "description": "Compare Cubusify services for software, web, mobile apps, AI automation, ecommerce, design and product operations. Find the right starting point for your project.",
+      "images": 1,
+      "words": 313
+    },
+    {
+      "route": "/industries",
+      "type": "industries",
+      "title": "Industry Software Solutions & Workflows | Cubusify",
+      "description": "Explore software workflows for healthcare, ecommerce, manufacturing, logistics, education, finance and real estate, with relevant services and planning questions.",
+      "images": 7,
+      "words": 119
+    },
+    {
+      "route": "/work",
+      "type": "work",
+      "title": "Website, App & Software Project Case Studies | Cubusify",
+      "description": "Explore Cubusify project case studies across websites, mobile apps, dashboards and automation, with project briefs, screen walkthroughs and related services.",
+      "images": 24,
+      "words": 327
+    },
+    {
+      "route": "/about",
+      "type": "about",
+      "title": "About Our Software & AI Development Team | Cubusify",
+      "description": "Meet Cubusify founder Vijay Sakhwala and learn how we scope software and AI projects, collaborate on delivery and plan ownership and handover.",
+      "images": 3,
+      "words": 318
+    },
+    {
+      "route": "/team",
+      "type": "team",
+      "title": "Hire Software Developers, Designers & AI Specialists | Cubusify",
+      "description": "Discuss a project team, ongoing product support or specialist development capacity with Cubusify. Review roles, onboarding and engagement options.",
+      "images": 1,
+      "words": 349
+    },
+    {
+      "route": "/blog",
+      "type": "blog",
+      "title": "Software, AI, Ecommerce & MVP Planning Guides | Cubusify",
+      "description": "Practical guides to ecommerce platform selection, AI automation pilots, software MVP planning and search visibility. Compare options before commissioning a build.",
+      "images": 4,
+      "words": 177
+    },
+    {
+      "route": "/contact",
+      "type": "contact",
+      "title": "Contact Our Software & AI Development Team | Cubusify",
+      "description": "Discuss a software, AI, website or app project with Cubusify. Share your workflow, existing tools and desired outcome to start a focused scope conversation.",
+      "images": 0,
+      "words": 241
+    },
+    {
+      "route": "/privacy",
+      "type": "privacy",
+      "title": "Website Privacy & Enquiry Information | Cubusify",
+      "description": "Read how Cubusify handles project enquiries, consent, technical request data and device-local preferences, and how to contact us about your information.",
+      "images": 0,
+      "words": 117
+    },
+    {
+      "route": "/terms",
+      "type": "terms",
+      "title": "Website Terms & Project Agreement Principles | Cubusify",
+      "description": "Read the principles for using the Cubusify website, interpreting project screens and agreeing deliverables, ownership, rights and support.",
+      "images": 0,
+      "words": 71
+    },
+    {
+      "route": "/services/software",
+      "type": "service",
+      "service": "software",
+      "title": "Custom Software Development | Cubusify",
+      "description": "Replace disconnected spreadsheets and manual handoffs with software that supports your customer records, operations and reporting. Start with the workflow that creates the most avoidable work.",
+      "images": 7,
+      "words": 500
+    },
+    {
+      "route": "/services/software/custom-crm",
+      "type": "subservice",
+      "service": "software",
+      "title": "Custom CRM Development | Cubusify",
+      "description": "Build a CRM around your actual sales and service process: enquiries, customer records, follow-ups and the handoff after a deal closes.",
+      "images": 5,
+      "words": 408
+    },
+    {
+      "route": "/services/software/business-dashboards",
+      "type": "subservice",
+      "service": "software",
+      "title": "Business Dashboard Development | Cubusify",
+      "description": "Turn disconnected reports into an operational dashboard with agreed metrics, understandable filters and a clear route from a number to the underlying record.",
+      "images": 6,
+      "words": 414
+    },
+    {
+      "route": "/services/software/saas-platforms",
+      "type": "subservice",
+      "service": "software",
+      "title": "SaaS Platform Development | Cubusify",
+      "description": "Plan and build the first working version of a subscription software platform, from account setup and its core workflow to tenant permissions and administration.",
+      "images": 4,
+      "words": 356
+    },
+    {
+      "route": "/services/web",
+      "type": "service",
+      "service": "web",
+      "title": "Web Development Services | Cubusify",
+      "description": "Build a website people can understand or a web application they can use to complete a task. Choose the right mix of content, publishing tools and backend services for the job.",
+      "images": 7,
+      "words": 500
+    },
+    {
+      "route": "/services/web/business-websites",
+      "type": "subservice",
+      "service": "web",
+      "title": "Business Website Development | Cubusify",
+      "description": "Create a business website that explains your offer, makes services easy to find and helps visitors send a useful enquiry from any screen.",
+      "images": 5,
+      "words": 388
+    },
+    {
+      "route": "/services/web/web-applications",
+      "type": "subservice",
+      "service": "web",
+      "title": "Custom Web Application Development | Cubusify",
+      "description": "Build a browser-based tool for bookings, approvals, customer accounts or internal operations, with the permissions and business rules the workflow requires.",
+      "images": 6,
+      "words": 417
+    },
+    {
+      "route": "/services/web/cms-development",
+      "type": "subservice",
+      "service": "web",
+      "title": "CMS Development & Content Management | Cubusify",
+      "description": "Give editors a reliable way to create, review and publish website content without changing code for every update.",
+      "images": 4,
+      "words": 315
+    },
+    {
+      "route": "/services/web/api-backend",
+      "type": "subservice",
+      "service": "web",
+      "title": "API & Backend Development | Cubusify",
+      "description": "Build the services behind your application: authenticated APIs, business rules, database operations and reliable connections between systems.",
+      "images": 4,
+      "words": 317
+    },
+    {
+      "route": "/services/mobile",
+      "type": "service",
+      "service": "mobile",
+      "title": "Mobile App Development Services | Cubusify",
+      "description": "Plan and build mobile experiences for iOS, Android or the browser, based on device requirements, connectivity and the task users need to complete.",
+      "images": 7,
+      "words": 486
+    },
+    {
+      "route": "/services/mobile/ios-android-apps",
+      "type": "subservice",
+      "service": "mobile",
+      "title": "iOS & Android App Development | Cubusify",
+      "description": "Plan mobile applications around the actions people need on their phones, with deliberate choices about device features, permissions and app-store distribution.",
+      "images": 6,
+      "words": 397
+    },
+    {
+      "route": "/services/mobile/flutter-react-native",
+      "type": "subservice",
+      "service": "mobile",
+      "title": "Flutter & React Native Development | Cubusify",
+      "description": "Explore a shared-code mobile application when the same customer journey needs to work on iOS and Android with a manageable release process.",
+      "images": 5,
+      "words": 366
+    },
+    {
+      "route": "/services/mobile/progressive-web-apps",
+      "type": "subservice",
+      "service": "mobile",
+      "title": "Progressive Web App Development | Cubusify",
+      "description": "Add app-like capabilities to a web experience where browser access, a shareable URL and selective offline support fit the user’s task.",
+      "images": 4,
+      "words": 318
+    },
+    {
+      "route": "/services/product",
+      "type": "service",
+      "service": "product",
+      "title": "Product Engineering Services | Cubusify",
+      "description": "Turn a product assumption into a testable release, improve a running SaaS product or modernise an application without losing the workflows that already work.",
+      "images": 6,
+      "words": 472
+    },
+    {
+      "route": "/services/product/mvp-development",
+      "type": "subservice",
+      "service": "product",
+      "title": "MVP Development for Startups | Cubusify",
+      "description": "Build one complete product journey that tests a specific customer assumption, with scope and success criteria agreed before development.",
+      "images": 4,
+      "words": 351
+    },
+    {
+      "route": "/services/product/saas-engineering",
+      "type": "subservice",
+      "service": "product",
+      "title": "SaaS Engineering & Product Improvement | Cubusify",
+      "description": "Extend an existing SaaS product with maintainable features, safer releases and technical improvements informed by real customer workflows.",
+      "images": 4,
+      "words": 321
+    },
+    {
+      "route": "/services/product/product-modernisation",
+      "type": "subservice",
+      "service": "product",
+      "title": "Software Product Modernisation | Cubusify",
+      "description": "Improve an existing application’s usability, maintainability or infrastructure while preserving the business workflows people depend on.",
+      "images": 4,
+      "words": 320
+    },
+    {
+      "route": "/services/design",
+      "type": "service",
+      "service": "design",
+      "title": "UI/UX Design Services | Cubusify",
+      "description": "Make complex products easier to understand through user research, clearer journeys and consistent interfaces that developers can implement.",
+      "images": 6,
+      "words": 446
+    },
+    {
+      "route": "/services/design/user-experience",
+      "type": "subservice",
+      "service": "design",
+      "title": "User Experience Design Services | Cubusify",
+      "description": "Understand where a customer journey becomes confusing, then prototype a clearer path before committing to production development.",
+      "images": 6,
+      "words": 391
+    },
+    {
+      "route": "/services/design/interface-design",
+      "type": "subservice",
+      "service": "design",
+      "title": "User Interface Design Services | Cubusify",
+      "description": "Design clear product screens and reusable components so people can recognise actions, understand status and recover from mistakes.",
+      "images": 6,
+      "words": 373
+    },
+    {
+      "route": "/services/design/brand-visual-design",
+      "type": "subservice",
+      "service": "design",
+      "title": "Brand & Visual Design Services | Cubusify",
+      "description": "Create a coherent visual identity for your website, product and communications, with practical rules your team can apply consistently.",
+      "images": 6,
+      "words": 384
+    },
+    {
+      "route": "/services/ecommerce",
+      "type": "service",
+      "service": "ecommerce",
+      "title": "Ecommerce Development Services | Cubusify",
+      "description": "Choose and build an online store around your catalogue, payment journey and fulfilment operation, with a practical plan for content, integrations and maintenance.",
+      "images": 6,
+      "words": 441
+    },
+    {
+      "route": "/services/ecommerce/shopify-development",
+      "type": "subservice",
+      "service": "ecommerce",
+      "title": "Shopify Development Services | Cubusify",
+      "description": "Build or improve a Shopify storefront around your catalogue, merchandising and fulfilment workflow, with a clear plan for themes, apps and integrations.",
+      "images": 5,
+      "words": 387
+    },
+    {
+      "route": "/services/ecommerce/woocommerce-development",
+      "type": "subservice",
+      "service": "ecommerce",
+      "title": "WooCommerce Development Services | Cubusify",
+      "description": "Create or improve a WordPress commerce store with product structures, checkout behaviour and editorial control suited to your business.",
+      "images": 5,
+      "words": 355
+    },
+    {
+      "route": "/services/ecommerce/custom-ecommerce",
+      "type": "subservice",
+      "service": "ecommerce",
+      "title": "Custom Ecommerce Development | Cubusify",
+      "description": "Build a tailored commerce workflow when essential product, pricing or ordering rules cannot be handled sensibly by a standard store.",
+      "images": 5,
+      "words": 356
+    },
+    {
+      "route": "/services/ai",
+      "type": "service",
+      "service": "ai",
+      "title": "AI Development & Business Automation Services | Cubusify",
+      "description": "Scope AI assistants, workflow automation, sales support and API integrations with Cubusify. Start with a focused pilot, human review and measurable outcomes.",
+      "images": 12,
+      "words": 534
+    },
+    {
+      "route": "/services/ai/ai-assistants",
+      "type": "subservice",
+      "service": "ai",
+      "title": "AI Assistant Development | Cubusify",
+      "description": "Build a business knowledge assistant that searches approved information, explains its sources and gives people a way to review or escalate uncertain answers.",
+      "images": 5,
+      "words": 471
+    },
+    {
+      "route": "/services/ai/business-automation",
+      "type": "subservice",
+      "service": "ai",
+      "title": "Business Workflow Automation Services | Cubusify",
+      "description": "Connect repeated tasks across forms, inboxes and business systems, with explicit routing rules, recovery steps and human approval where the action matters.",
+      "images": 6,
+      "words": 475
+    },
+    {
+      "route": "/services/ai/sales-marketing-automation",
+      "type": "subservice",
+      "service": "ai",
+      "title": "Sales & Marketing Automation Services | Cubusify",
+      "description": "Connect inbound lead capture, CRM ownership and follow-up preparation so sales teams can respond with context and keep control of customer communication.",
+      "images": 5,
+      "words": 476
+    },
+    {
+      "route": "/services/ai/voice-customer-support",
+      "type": "subservice",
+      "service": "ai",
+      "title": "AI Customer Support & Voice Workflows | Cubusify",
+      "description": "Support customer conversations with approved knowledge, reviewable summaries and clear routes to a person when a request needs judgment or account access.",
+      "images": 5,
+      "words": 458
+    },
+    {
+      "route": "/services/ai/integration-solutions",
+      "type": "subservice",
+      "service": "ai",
+      "title": "API Integration & Data Synchronisation | Cubusify",
+      "description": "Connect existing software through supported APIs and event workflows, with clear ownership of records and a plan for failures, retries and reconciliation.",
+      "images": 6,
+      "words": 437
+    },
+    {
+      "route": "/services/qa",
+      "type": "service",
+      "service": "qa",
+      "title": "QA & Software Testing Services | Cubusify",
+      "description": "Evaluate the product journeys users depend on with functional checks, maintainable automation and targeted performance or API testing.",
+      "images": 4,
+      "words": 359
+    },
+    {
+      "route": "/services/qa/web-mobile-testing",
+      "type": "subservice",
+      "service": "qa",
+      "title": "Web & Mobile Application Testing | Cubusify",
+      "description": "Check the customer journeys that matter across agreed browsers and devices, with reproducible reports the delivery team can act on.",
+      "images": 4,
+      "words": 323
+    },
+    {
+      "route": "/services/qa/test-automation",
+      "type": "subservice",
+      "service": "qa",
+      "title": "Test Automation Services | Cubusify",
+      "description": "Create maintainable automated checks for stable, important product behaviour so changes can be evaluated during development and release.",
+      "images": 4,
+      "words": 300
+    },
+    {
+      "route": "/services/qa/performance-api-testing",
+      "type": "subservice",
+      "service": "qa",
+      "title": "Performance & API Testing Services | Cubusify",
+      "description": "Evaluate API behaviour and application response under agreed workloads, with findings tied to a realistic usage model and observable limits.",
+      "images": 4,
+      "words": 301
+    },
+    {
+      "route": "/services/cloud",
+      "type": "service",
+      "service": "cloud",
+      "title": "DevOps & Cloud Engineering Services | Cubusify",
+      "description": "Set up application environments, repeatable deployments and actionable monitoring with clear operating responsibilities.",
+      "images": 4,
+      "words": 344
+    },
+    {
+      "route": "/services/cloud/cloud-deployment",
+      "type": "subservice",
+      "service": "cloud",
+      "title": "Cloud Deployment Services | Cubusify",
+      "description": "Prepare application hosting, environment configuration and a repeatable release path matched to your workload and the people operating it.",
+      "images": 4,
+      "words": 288
+    },
+    {
+      "route": "/services/cloud/ci-cd-pipelines",
+      "type": "subservice",
+      "service": "cloud",
+      "title": "CI/CD Pipeline Development | Cubusify",
+      "description": "Connect code changes, meaningful checks and deployment steps so releases follow a visible, repeatable process.",
+      "images": 4,
+      "words": 282
+    },
+    {
+      "route": "/services/cloud/maintenance-monitoring",
+      "type": "subservice",
+      "service": "cloud",
+      "title": "Software Maintenance & Monitoring | Cubusify",
+      "description": "Keep visibility into application health, dependency changes and recurring faults with an agreed maintenance scope and response process.",
+      "images": 4,
+      "words": 308
+    },
+    {
+      "route": "/services/blockchain",
+      "type": "service",
+      "service": "blockchain",
+      "title": "Blockchain Application Development | Cubusify",
+      "description": "Assess shared-record and transaction workflows, then build contract interfaces or traceability tools where blockchain provides a defensible operational benefit.",
+      "images": 4,
+      "words": 356
+    },
+    {
+      "route": "/services/blockchain/smart-contracts",
+      "type": "subservice",
+      "service": "blockchain",
+      "title": "Smart Contract Development | Cubusify",
+      "description": "Explore on-chain agreement logic only where shared execution or verifiable state provides a practical advantage over a conventional application.",
+      "images": 4,
+      "words": 300
+    },
+    {
+      "route": "/services/blockchain/web3-applications",
+      "type": "subservice",
+      "service": "blockchain",
+      "title": "Web3 Application Development | Cubusify",
+      "description": "Design understandable wallet and transaction journeys for applications that need to interact with blockchain networks.",
+      "images": 4,
+      "words": 301
+    },
+    {
+      "route": "/services/blockchain/traceability-solutions",
+      "type": "subservice",
+      "service": "blockchain",
+      "title": "Supply Chain Traceability Software | Cubusify",
+      "description": "Connect product, batch and custody events so authorised teams can follow a record through the supply chain and investigate exceptions.",
+      "images": 4,
+      "words": 301
+    },
+    {
+      "route": "/services/marketing",
+      "type": "service",
+      "service": "marketing",
+      "title": "Digital Marketing & Content Services | Cubusify",
+      "description": "Help relevant buyers understand your offer through useful content, clearer service pages and measurable enquiry journeys.",
+      "images": 4,
+      "words": 377
+    },
+    {
+      "route": "/services/marketing/search-engine-optimisation",
+      "type": "subservice",
+      "service": "marketing",
+      "title": "On-page SEO & Content Optimisation | Cubusify",
+      "description": "Improve existing service and article pages so their titles, headings, answers and internal links explain the offer more clearly to people and search engines.",
+      "images": 4,
+      "words": 356
+    },
+    {
+      "route": "/services/marketing/content-campaigns",
+      "type": "subservice",
+      "service": "marketing",
+      "title": "Content Strategy & Campaign Planning | Cubusify",
+      "description": "Build a content plan around the questions buyers ask, the evidence your business can provide and a measurable next step.",
+      "images": 4,
+      "words": 320
+    },
+    {
+      "route": "/services/marketing/conversion-optimisation",
+      "type": "subservice",
+      "service": "marketing",
+      "title": "Website Conversion Optimisation | Cubusify",
+      "description": "Investigate where relevant visitors struggle to enquire, book or buy, then test focused improvements to the customer journey.",
+      "images": 6,
+      "words": 391
+    },
+    {
+      "route": "/services/games",
+      "type": "service",
+      "service": "games",
+      "title": "2D Games & Interactive Development | Cubusify",
+      "description": "Create playable 2D concepts and interactive digital experiences with a clear audience, responsive controls and a focused goal.",
+      "images": 4,
+      "words": 336
+    },
+    {
+      "route": "/services/games/2d-games",
+      "type": "subservice",
+      "service": "games",
+      "title": "2D Game Development | Cubusify",
+      "description": "Develop a focused 2D game around responsive controls, understandable rules and a playable core loop for the chosen platform.",
+      "images": 4,
+      "words": 294
+    },
+    {
+      "route": "/services/games/interactive-experiences",
+      "type": "subservice",
+      "service": "games",
+      "title": "Interactive Experience Development | Cubusify",
+      "description": "Create a purposeful interactive tool, learning activity or branded experience that helps people understand an idea by taking part.",
+      "images": 4,
+      "words": 302
+    },
+    {
+      "route": "/industries/healthcare",
+      "type": "industry",
+      "title": "Healthcare Software Development | Cubusify",
+      "description": "Design appointment, patient-portal and care-administration workflows that make the next step clear while respecting the sensitivity of the information involved.",
+      "images": 5,
+      "words": 389
+    },
+    {
+      "route": "/industries/ecommerce",
+      "type": "industry",
+      "title": "Ecommerce Operations Software | Cubusify",
+      "description": "Connect catalogue, inventory, order and customer-service workflows so the team behind the storefront can manage exceptions as well as routine purchases.",
+      "images": 6,
+      "words": 399
+    },
+    {
+      "route": "/industries/manufacturing",
+      "type": "industry",
+      "title": "Manufacturing Software Development | Cubusify",
+      "description": "Bring production status, material availability and quality records into practical tools for the people planning and reviewing shop-floor work.",
+      "images": 4,
+      "words": 308
+    },
+    {
+      "route": "/industries/logistics",
+      "type": "industry",
+      "title": "Logistics & Shipment Software Development | Cubusify",
+      "description": "Design shipment tracking, dispatch and customer-portal tools around reliable status events, understandable exceptions and clear operational ownership.",
+      "images": 4,
+      "words": 307
+    },
+    {
+      "route": "/industries/education",
+      "type": "industry",
+      "title": "Education Software Development | Cubusify",
+      "description": "Build enrolment, learning and administration journeys that help students find the next task and give educators useful control over content and progress.",
+      "images": 4,
+      "words": 302
+    },
+    {
+      "route": "/industries/finance",
+      "type": "industry",
+      "title": "Financial Workflow Software Development | Cubusify",
+      "description": "Create dashboards, document portals and approval workflows that help teams review financial information with clear definitions and accountable access.",
+      "images": 5,
+      "words": 351
+    },
+    {
+      "route": "/industries/real-estate",
+      "type": "industry",
+      "title": "Real Estate Software Development | Cubusify",
+      "description": "Connect property discovery, viewing requests and agent follow-up with clear listing information and a shared record of each enquiry.",
+      "images": 4,
+      "words": 328
+    },
+    {
+      "route": "/blog/seo-aeo-geo-where-to-start",
+      "type": "article",
+      "title": "SEO, AEO & GEO: A Practical Website Improvement Plan | Cubusify",
+      "description": "Learn where SEO, AEO and GEO overlap, how to prioritise website fixes and how to measure useful search visibility without ranking promises.",
+      "images": 1,
+      "words": 1062
+    },
+    {
+      "route": "/blog/choosing-your-ecommerce-platform",
+      "type": "article",
+      "title": "Shopify vs WooCommerce vs Custom Ecommerce: How to Choose | Cubusify",
+      "description": "Compare Shopify, WooCommerce and custom ecommerce by catalogue complexity, integrations, operating costs and the team running your store.",
+      "images": 5,
+      "words": 2107
+    },
+    {
+      "route": "/blog/where-ai-automation-saves-time",
+      "type": "article",
+      "title": "AI Automation for Business: 7 Workflows Worth Testing | Cubusify",
+      "description": "Explore seven business automation workflows, how to rank them, where human review matters and how to measure a focused AI pilot.",
+      "images": 5,
+      "words": 2120
+    },
+    {
+      "route": "/blog/planning-your-first-software-mvp",
+      "type": "article",
+      "title": "How to Plan an MVP: Scope, Features & Validation | Cubusify",
+      "description": "Plan a software MVP around one customer journey. Compare build options, prioritise features, set milestones and validate assumptions with real users.",
+      "images": 5,
+      "words": 2482
+    }
+  ],
+  "uniqueTitles": 84,
+  "uniqueDescriptions": 84,
+  "imageAssetsPreserved": "Existing asset hashes pass; additional placements of existing project images are intentional",
+  "projectAuthenticity": "Business owner confirmed all supplied projects are genuine on 2026-10-20",
+  "specialistPages": 38,
+  "specialistComparisonCount": 44,
+  "maximumSiblingFiveWordJaccard": {
+    "a": "/services/ecommerce/custom-ecommerce",
+    "b": "/services/ecommerce/woocommerce-development",
+    "similarity": 0.186
+  },
+  "scope": "Built HTML and local source only. Live deployment unchanged. Image bytes are checked separately by check-showcases and check-delivery.",
+  "failures": [],
+  "mostSimilarSpecialistPairs": [
+    {
+      "a": "/services/ecommerce/custom-ecommerce",
+      "b": "/services/ecommerce/woocommerce-development",
+      "similarity": 0.186
+    },
+    {
+      "a": "/services/ecommerce/shopify-development",
+      "b": "/services/ecommerce/woocommerce-development",
+      "similarity": 0.182
+    },
+    {
+      "a": "/services/ecommerce/custom-ecommerce",
+      "b": "/services/ecommerce/shopify-development",
+      "similarity": 0.178
+    },
+    {
+      "a": "/services/design/brand-visual-design",
+      "b": "/services/design/user-experience",
+      "similarity": 0.168
+    },
+    {
+      "a": "/services/design/brand-visual-design",
+      "b": "/services/design/interface-design",
+      "similarity": 0.149
+    },
+    {
+      "a": "/services/design/interface-design",
+      "b": "/services/design/user-experience",
+      "similarity": 0.142
+    },
+    {
+      "a": "/services/web/business-websites",
+      "b": "/services/web/web-applications",
+      "similarity": 0.134
+    },
+    {
+      "a": "/services/software/business-dashboards",
+      "b": "/services/software/custom-crm",
+      "similarity": 0.129
+    },
+    {
+      "a": "/services/mobile/flutter-react-native",
+      "b": "/services/mobile/ios-android-apps",
+      "similarity": 0.129
+    },
+    {
+      "a": "/services/ai/business-automation",
+      "b": "/services/ai/integration-solutions",
+      "similarity": 0.129
+    },
+    {
+      "a": "/services/ai/ai-assistants",
+      "b": "/services/ai/voice-customer-support",
+      "similarity": 0.128
+    },
+    {
+      "a": "/services/ai/business-automation",
+      "b": "/services/ai/sales-marketing-automation",
+      "similarity": 0.119
+    }
+  ]
+}

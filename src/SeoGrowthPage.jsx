@@ -55,7 +55,7 @@ const processSteps = [
   [FileSearch,               'Audit the foundations',  'Review crawling, indexing, page structure, content, performance and the enquiry journey.'],
   [Route,                    'Agree the priorities',   'Separate urgent fixes from content opportunities and define a realistic first phase.'],
   [Search,                   'Improve what matters',   'Implement agreed technical changes, internal links, helpful pages and accurate metadata.'],
-  [ChartNoAxesColumnIncreasing, 'Measure and refine', 'Compare the agreed baseline, document changes and plan the next useful improvements.'],
+  [ChartNoAxesColumnIncreasing, 'Measure and refine', 'Compare relevant page and query performance with the agreed baseline. Record what changed, account for seasonality and campaigns, and prioritise qualified enquiries alongside traffic.'],
 ];
 
 const deliverables = [
@@ -84,10 +84,10 @@ const faqs = [
 ];
 
 const stats = [
-  [TrendingUp, '3×', 'avg. organic traffic lift'],
-  [Globe,      '40+', 'visibility projects delivered'],
-  [Brain,      '100%', 'AI-ready content structure'],
-  [Zap,        '2 wks', 'to first audit delivery'],
+  [TrendingUp, 'Audit', 'Crawling & indexing'],
+  [Globe, 'Content', 'Distinct useful pages'],
+  [Brain, 'Links', 'Connected customer journeys'],
+  [Zap, 'Measure', 'Queries & enquiries'],
 ];
 
 function CountUp({value}){
@@ -123,8 +123,8 @@ export default function SeoGrowthPage() {
         <div className="sg-hero-layout">
           <div className="sg-hero-copy">
             <span className="sg-eyebrow">SEARCH &amp; ANSWER DISCOVERY</span>
-            <h1>Useful answers.<br/><span>Stronger foundations.</span></h1>
-            <p>One connected approach to search visibility, clear answers and AI-assisted discovery. Built around your customers, your expertise and measurable improvements.</p>
+            <h1>SEO, AEO &amp; GEO.<br/><span>Strategy &amp; Implementation.</span></h1>
+            <p>Build a practical search plan around public accessibility, distinct service content, useful answers and a measurable enquiry journey. Start with a website audit and agree the highest-value implementation work.</p>
             <div className="sg-hero-actions">
               <a className="sg-btn-primary" href="/contact">
                 Discuss your goals <ArrowUpRight size={17}/>
@@ -262,7 +262,7 @@ export default function SeoGrowthPage() {
         <div className="sg-cta-orb" aria-hidden="true"/>
         <span className="sg-eyebrow sg-eyebrow-light">LET'S MAKE THE NEXT STEP CLEAR</span>
         <h2>Start with your website.<br/><span>Agree what to improve.</span></h2>
-        <p>Share your current site, target customers and goals. We'll discuss a focused first phase.</p>
+        <p>Share your website, target customers and available search data. We can define a technical and content roadmap, then scope the implementation against your commercial priorities.</p><p>For focused page rewrites, explore <a href="/services/marketing/search-engine-optimisation">on-page SEO and content optimisation</a>. Prepare with our <a href="/blog/seo-aeo-geo-where-to-start">website improvement planning guide</a>.</p>
         <div className="sg-cta-actions">
           <a className="sg-btn-primary" href="/contact">Talk to Cubusify <ArrowUpRight size={17}/></a>
         </div>

@@ -1,0 +1,162 @@
+{
+  "date": "2026-10-21",
+  "scope": "Local Chrome layout and content smoke checks at 320, 390 and 1440 pixels. No field performance measurement.",
+  "results": [
+    {
+      "route": "/work/intake/",
+      "width": 320,
+      "title": "Lead Qualification & Routing Case Study: Intake | Cubusify",
+      "overflow": false,
+      "reference": 1,
+      "stackCards": 5,
+      "acceptance": 0,
+      "faq": 0
+    },
+    {
+      "route": "/work/intake/",
+      "width": 390,
+      "title": "Lead Qualification & Routing Case Study: Intake | Cubusify",
+      "overflow": false,
+      "reference": 1,
+      "stackCards": 5,
+      "acceptance": 0,
+      "faq": 0
+    },
+    {
+      "route": "/work/intake/",
+      "width": 1440,
+      "title": "Lead Qualification & Routing Case Study: Intake | Cubusify",
+      "overflow": false,
+      "reference": 1,
+      "stackCards": 5,
+      "acceptance": 0,
+      "faq": 0
+    },
+    {
+      "route": "/work/nexa/",
+      "width": 320,
+      "title": "AI Customer Support Workspace Case Study: Nexa | Cubusify",
+      "overflow": false,
+      "reference": 1,
+      "stackCards": 5,
+      "acceptance": 0,
+      "faq": 0
+    },
+    {
+      "route": "/work/nexa/",
+      "width": 390,
+      "title": "AI Customer Support Workspace Case Study: Nexa | Cubusify",
+      "overflow": false,
+      "reference": 1,
+      "stackCards": 5,
+      "acceptance": 0,
+      "faq": 0
+    },
+    {
+      "route": "/work/nexa/",
+      "width": 1440,
+      "title": "AI Customer Support Workspace Case Study: Nexa | Cubusify",
+      "overflow": false,
+      "reference": 1,
+      "stackCards": 5,
+      "acceptance": 0,
+      "faq": 0
+    },
+    {
+      "route": "/work/ledger/",
+      "width": 320,
+      "title": "Invoice Management Software Case Study: Ledger | Cubusify",
+      "overflow": false,
+      "reference": 1,
+      "stackCards": 5,
+      "acceptance": 0,
+      "faq": 0
+    },
+    {
+      "route": "/work/ledger/",
+      "width": 390,
+      "title": "Invoice Management Software Case Study: Ledger | Cubusify",
+      "overflow": false,
+      "reference": 1,
+      "stackCards": 5,
+      "acceptance": 0,
+      "faq": 0
+    },
+    {
+      "route": "/work/ledger/",
+      "width": 1440,
+      "title": "Invoice Management Software Case Study: Ledger | Cubusify",
+      "overflow": false,
+      "reference": 1,
+      "stackCards": 5,
+      "acceptance": 0,
+      "faq": 0
+    },
+    {
+      "route": "/services/ai/ai-assistants/",
+      "width": 320,
+      "title": "AI Assistant Development | Cubusify",
+      "overflow": false,
+      "reference": 0,
+      "stackCards": 0,
+      "acceptance": 4,
+      "faq": 3
+    },
+    {
+      "route": "/services/ai/ai-assistants/",
+      "width": 390,
+      "title": "AI Assistant Development | Cubusify",
+      "overflow": false,
+      "reference": 0,
+      "stackCards": 0,
+      "acceptance": 4,
+      "faq": 3
+    },
+    {
+      "route": "/services/ai/ai-assistants/",
+      "width": 1440,
+      "title": "AI Assistant Development | Cubusify",
+      "overflow": false,
+      "reference": 0,
+      "stackCards": 0,
+      "acceptance": 4,
+      "faq": 3
+    },
+    {
+      "route": "/services/software/",
+      "width": 320,
+      "title": "Custom Software Development | Cubusify",
+      "overflow": false,
+      "reference": 0,
+      "stackCards": 0,
+      "acceptance": 0,
+      "faq": 3
+    },
+    {
+      "route": "/services/software/",
+      "width": 390,
+      "title": "Custom Software Development | Cubusify",
+      "overflow": false,
+      "reference": 0,
+      "stackCards": 0,
+      "acceptance": 0,
+      "faq": 3
+    },
+    {
+      "route": "/services/software/",
+      "width": 1440,
+      "title": "Custom Software Development | Cubusify",
+      "overflow": false,
+      "reference": 0,
+      "stackCards": 0,
+      "acceptance": 0,
+      "faq": 3
+    }
+  ],
+  "report": {
+    "rows": 84,
+    "overflow": false,
+    "score": 10
+  },
+  "javascriptErrors": []
+}

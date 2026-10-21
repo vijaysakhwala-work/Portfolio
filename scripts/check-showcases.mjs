@@ -24,6 +24,6 @@ for(const [id,a]of Object.entries(assets)){
   try{const b=await fs.readFile(path);if(crypto.createHash('sha256').update(b).digest('hex')!==hash)failures.push(id+': hash differs');const [ew,eh]=size(b);if(ew!==w||eh!==h)failures.push(id+': dimension mismatch')}catch(e){failures.push(id+': '+e.message)}
  }
 }
-for(const p of await fs.readdir('public/images/showcases',{recursive:true})){const full='public/images/showcases/'+p;if((await fs.stat(full)).isFile()&&!expected.has(full))failures.push('Stray showcase file: '+p)}
+for(const p of await fs.readdir('public/images/showcases',{recursive:true})){const full='public/images/showcases/'+p.replaceAll('\\','/');if((await fs.stat(full)).isFile()&&!expected.has(full))failures.push('Stray showcase file: '+p)}
 if(failures.length)throw Error(failures.join('\n'));
 console.log(JSON.stringify({requestedImages:211,anonymizedImages:ids.length,deferredImages:approval.pending.length,approvedImages:approval.approved.length,verifiedFiles:expected.size,oldBrandedFiles:0,visualReviewRecords:true,textAudits:true,hashesAndDimensions:true},null,2));

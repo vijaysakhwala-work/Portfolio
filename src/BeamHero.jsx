@@ -9,7 +9,6 @@ const categories = [
   ['Cloud & integrations', Cloud, '/services/cloud'],
   ['Maintenance & support', Headset, '/contact'],
 ];
-const words = ['Development', 'AI & automation', 'Design', 'Cloud integration'];
 const leftX = [195, 170, 165, 170, 185, 205];
 
 function TechnologyPanel({bottom = false}) {
@@ -24,7 +23,6 @@ export default function BeamHero() {
   const [foreground,setForeground]=useState(true);
   useEffect(()=>{const update=()=>setForeground(!document.hidden);document.addEventListener('visibilitychange',update);update();return()=>document.removeEventListener('visibilitychange',update)},[]);
   const [active, setActive] = useState(1);
-  const [typing, setTyping] = useState({index:0,text:words[0],deleting:false});
   useEffect(()=>{
     const media=window.matchMedia('(prefers-reduced-motion: reduce)');
     const update=()=>setReduced(media.matches);update();media.addEventListener('change',update);
@@ -35,16 +33,7 @@ export default function BeamHero() {
     const timer=window.setInterval(()=>setActive(value=>(value+1)%categories.length),3000);
     return ()=>window.clearInterval(timer);
   },[reduced,foreground]);
-  useEffect(()=>{
-    if(reduced||!foreground)return;
-    const delay=!typing.deleting&&typing.text===words[typing.index]?2600:typing.deleting?45:90;
-    const timer=window.setTimeout(()=>setTyping(value=>{
-      if(!value.deleting&&value.text===words[value.index])return {...value,deleting:true};
-      if(value.deleting&&!value.text)return {index:(value.index+1)%words.length,text:'',deleting:false};
-      return {...value,text:value.deleting?value.text.slice(0,-1):words[value.index].slice(0,value.text.length+1)};
-    }),delay);
-    return ()=>window.clearTimeout(timer);
-  },[typing,reduced,foreground]);
+
   return <section className={`beam-hero${reduced?' beam-static':''}`} aria-labelledby="beam-hero-heading">
     <div className="beam-hero-visual">
       <svg className="beam-hero-diagram" viewBox="0 0 1800 600" role="group" aria-label="Cubusify connects six services through one team">
@@ -76,6 +65,6 @@ export default function BeamHero() {
       </svg>
       <div className="beam-mobile-services">{categories.map(([label,Icon,href])=><a href={href} key={label}><Icon size={22} aria-hidden="true"/>{label}</a>)}</div>
     </div>
-    <div className="beam-hero-copy"><p>We Deliver Creative Ideas</p><h1 id="beam-hero-heading">One Stop Solution for <span className="beam-typewriter" aria-hidden="true">{reduced?words[0]:typing.text}<i/></span><span className="beam-sr-only">Development, AI and automation, design, and cloud integration.</span></h1></div>
+    <div className="beam-hero-copy"><p>Software, websites and AI workflows built around your business.</p><h1 id="beam-hero-heading">Custom Software &amp; <span className="beam-typewriter">AI Automation<i/></span></h1></div>
   </section>;
 }

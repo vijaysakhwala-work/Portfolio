@@ -1,3 +1,3 @@
-export const reviewedDate='2026-10-18';
+export const reviewedDate='2026-10-20';
 export const articleImages={'seo-aeo-geo-where-to-start':'digital-marketing-overview','choosing-your-ecommerce-platform':'ecommerce-development-overview','where-ai-automation-saves-time':'ai-automation-overview','planning-your-first-software-mvp':'product-engineering-overview'};
 export const articleFigures={'seo-aeo-geo-where-to-start':[],'choosing-your-ecommerce-platform':['ecommerce-development-hero','ecommerce-development-desktop-1','ecommerce-development-desktop-2'],'where-ai-automation-saves-time':['ai-automation-hero','ai-automation-desktop-1','ai-automation-desktop-2'],'planning-your-first-software-mvp':['product-engineering-hero','product-engineering-desktop-1','product-engineering-desktop-2']};

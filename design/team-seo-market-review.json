@@ -1,0 +1,143 @@
+{
+  "date": "2026-10-21",
+  "route": "/team",
+  "market": "United States",
+  "requestedURL": "http://localhost:4173/team",
+  "canonicalToMeasure": "https://cubusify.com/team/",
+  "verdict": "Needs content and evidence improvements; overall organic competitiveness is not yet established.",
+  "overallScore": null,
+  "scoreExplanation": "No defensible overall SEO score can be calculated from the available evidence. The existing 10/10 is the separate local implementation checklist result, not a market, authority or organic-performance rating.",
+  "scope": "The team page only. Current local source and client-rendered page were inspected. English-language competitor pages were discovered with US-focused query terms; this is not a geolocated Google rank capture. No public-deployment URL check was performed.",
+  "websiteModified": false,
+  "factors": [
+    {
+      "name": "Keyword demand",
+      "status": "Unverified",
+      "finding": "Seven candidate queries were selected from the page’s hiring offer. Numeric US search volume and keyword difficulty were unavailable from the attempted connectors. Search-result presence is not a measure of query demand.",
+      "needed": "US keyword volumes, data month, commercial versus job-search intent, difficulty methodology and query-level SERP evidence."
+    },
+    {
+      "name": "Competitive strength",
+      "status": "Content comparison completed; authority unverified",
+      "finding": "The reviewed competitor pages publish more hiring decision support: talent profiles, screening, engagement boundaries, pricing context or detailed FAQs. The team page is behind this sample in those content dimensions. This is an editorial inference, not a ranking or authority measurement.",
+      "needed": "Keyword-specific US ranking snapshots and comparable page/domain backlink metrics before estimating ranking difficulty."
+    },
+    {
+      "name": "Editorial depth",
+      "status": "Reviewed — needs improvement",
+      "finding": "The local page has 6 role cards, 3 engagement models and 4 onboarding steps, but 0 hiring FAQs, 0 contextual project links and 0 contextual service links in its main content. It explains the offer, but does not yet give enough evidence and buying detail to distinguish the team.",
+      "needed": "Confirmed practitioner or delivery-lead information, relevant genuine work, an engagement comparison and substantive answers to buyer questions."
+    },
+    {
+      "name": "Backlinks",
+      "status": "Unverified",
+      "finding": "The exact team URL and domain-wide backlink requests returned an Ahrefs plan-access error. Referring domains, link relevance, anchor distribution and authority could not be measured. Unavailable data does not mean zero links.",
+      "needed": "An accessible backlink dataset for the canonical page, relevant URL variants and the root domain, plus comparable competitor-page data."
+    },
+    {
+      "name": "Actual organic performance",
+      "status": "Unverified",
+      "finding": "No authorised first-party clicks, impressions, query positions, organic landing sessions or qualified enquiries were available for this page. Localhost cannot establish its Google Search performance. The available Windsor.ai integration has not been connected.",
+      "needed": "Authorised Search Console and GA4 access, with the exact public page/version identified before applying historical metrics to this local content."
+    }
+  ],
+  "localEvidence": {
+    "source": "src/HireTeamPage.jsx and design/team-seo-browser-review.json",
+    "title": "Hire Software Developers, Designers & AI Specialists | Cubusify",
+    "h1": "Hire Developers & AI Specialists.",
+    "mainContentWordsApprox": 349,
+    "wordCountInterpretation": "An inventory measure, not a ranking target or a reason by itself to add copy.",
+    "roleCards": 6,
+    "engagementModels": 3,
+    "onboardingSteps": 4,
+    "hiringFAQs": 0,
+    "contextualProjectLinks": 0,
+    "contextualServiceLinks": 0,
+    "mainContentAnchorLinks": 1,
+    "linkScope": "Main content only; shared header/footer navigation is excluded.",
+    "roleButtonBehaviour": "Explore role selects the corresponding expertise field and focuses the enquiry form; it does not open a role-detail page.",
+    "formBehaviour": "Submitting creates a mailto email draft. A click or opened draft is not evidence that an enquiry was sent or received.",
+    "browserWidths": [390, 1440],
+    "horizontalOverflow": false,
+    "brokenImages": 0,
+    "missingAltAttributes": 0,
+    "javascriptErrors": 0,
+    "technicalImplementationScore": 10,
+    "technicalScoreMethod": "Separate 20-check local-implementation-v1 rubric."
+  },
+  "editorialCoverage": [
+    {"criterion": "Clear hiring purpose", "status": "Covered", "evidence": "The H1 and introduction identify developers and AI specialists for project or ongoing work."},
+    {"criterion": "Specific role capabilities", "status": "Partial", "evidence": "Six role categories explain scope at a high level; they do not provide confirmed practitioner experience, seniority, technical selection criteria or current availability."},
+    {"criterion": "Engagement comparison", "status": "Partial", "evidence": "Dedicated team, project team and flexible support are named. The page does not compare their commercial boundaries, capacity assumptions or ownership of day-to-day priorities."},
+    {"criterion": "Onboarding and delivery workflow", "status": "Covered", "evidence": "Four steps address context, roles, access, reviews and handover."},
+    {"criterion": "US collaboration and delivery terms", "status": "Partial", "evidence": "Working-hour overlap and ownership are mentioned as things to agree. Actual supported overlap, escalation arrangements and contract boundaries are not stated."},
+    {"criterion": "Evidence and accountable expertise", "status": "Missing", "evidence": "No team-specific biographies, approved delivery-lead credentials or contextual genuine-project evidence appear in the main content."},
+    {"criterion": "Commercial and hiring FAQs", "status": "Missing", "evidence": "There is no FAQ section answering selection, billing, IP, capacity or continuity questions."},
+    {"criterion": "Contextual service and project navigation", "status": "Missing", "evidence": "The main content links only to its own enquiry anchor. Role/model buttons select the form rather than linking to more information."},
+    {"criterion": "Distinctive reason to choose Cubusify", "status": "Partial", "evidence": "Collaboration, communication and flexibility are presented, but the page does not substantiate an advantage for a specific buyer situation."}
+  ],
+  "keywordCandidates": [
+    {"keyword":"hire dedicated developers","intent":"Commercial hiring","fit":"Potential primary phrase if the dedicated engagement is the main offer","monthlyUSVolume":null,"difficulty":null,"action":"Validate demand and SERP intent before selecting the primary query."},
+    {"keyword":"dedicated development team","intent":"Commercial; engagement-model research","fit":"Strong conceptual fit for the team model section","monthlyUSVolume":null,"difficulty":null,"action":"Explain team composition, client control and delivery responsibility without unconfirmed staffing promises."},
+    {"keyword":"hire software developers","intent":"Commercial hiring with possible recruitment overlap","fit":"Relevant broad variant","monthlyUSVolume":null,"difficulty":null,"action":"Make business hiring intent explicit and distinguish team augmentation from job vacancies."},
+    {"keyword":"hire AI developers","intent":"Commercial specialist hiring","fit":"Secondary role topic; possible separate page only with enough distinct evidence","monthlyUSVolume":null,"difficulty":null,"action":"Distinguish hiring a specialist from buying the AI implementation service; avoid duplicating the service page."},
+    {"keyword":"IT staff augmentation","intent":"Commercial team extension","fit":"Use only if the actual engagement matches this model","monthlyUSVolume":null,"difficulty":null,"action":"Confirm supervision, reporting and contractual responsibilities before adopting the term."},
+    {"keyword":"hire React developers","intent":"Technology-specific commercial hiring","fit":"Conditional on verified practitioner capability","monthlyUSVolume":null,"difficulty":null,"action":"Do not use proposed project reference architectures as proof of a developer’s production experience."},
+    {"keyword":"hire developers","intent":"Broad hiring; marketplace, freelance and employment ambiguity","fit":"Useful supporting language; primary intent needs validation","monthlyUSVolume":null,"difficulty":null,"action":"Test commercial intent against narrower phrases; do not assume the broadest phrase brings qualified enquiries."}
+  ],
+  "competitors": [
+    {
+      "name":"Full Scale",
+      "url":"https://fullscale.io/hire-dedicated-developers/",
+      "model":"Dedicated development / staff augmentation",
+      "observed":"Publishes a concrete definition of dedicated staffing, engagement comparisons, pricing context, screening steps, technology-specific links and hiring FAQs.",
+      "implication":"Explain what the client controls, what the provider handles and how hiring decisions are made. Pricing structure can be explained without inventing rates.",
+      "caveat":"Observed page content, not independently verified business claims; no measured ranking, traffic or authority comparison."
+    },
+    {
+      "name":"Toptal",
+      "url":"https://www.toptal.com/developers",
+      "model":"Freelance talent marketplace; a different delivery model",
+      "observed":"Displays named developer profiles and specialisms, a matching process, a trial proposition, skill-specific destinations and hiring FAQs.",
+      "implication":"Give buyers accountable expertise and useful role detail. Explain how a Cubusify team engagement differs from choosing a freelancer.",
+      "caveat":"Content benchmark rather than a like-for-like staffing model or an independently validated talent claim."
+    },
+    {
+      "name":"iQlance",
+      "url":"https://www.iqlance.com/hire-ai-developers/",
+      "model":"AI developer and project-team hiring",
+      "observed":"Publishes buyer answers about confidentiality, deliverable ownership, US collaboration, engagement pricing and getting started.",
+      "implication":"Answer those buyer questions using Cubusify’s actual agreements and operating practices. Do not copy another company’s availability, US-presence or onboarding promises.",
+      "caveat":"Observed FAQ coverage; competitor promises and testimonials were not independently audited."
+    }
+  ],
+  "actions": [
+    {"priority":"P1","action":"Connect the offer to genuine delivery evidence","detail":"Add two relevant existing case-study links and explain the actual team contribution once confirmed. Keep proposed enterprise architectures labelled as proposals; do not treat them as production-stack proof.","verification":"Main-content project links resolve and the accompanying responsibility statements are owner-confirmed."},
+    {"priority":"P1","action":"Make engagement selection useful","detail":"Compare dedicated, project and flexible support by suitable situation, ownership of priorities, review cadence, scope boundaries and commercial arrangement. Publish only confirmed commitments.","verification":"A buyer can explain which model fits their situation without relying on the labels alone."},
+    {"priority":"P1","action":"Add verified expertise and role context","detail":"Introduce an actual delivery lead or approved practitioner information. Connect role cards to relevant existing service scope, and align button labels with whether they open detail or start a discussion.","verification":"Role evidence is attributable; contextual service links work; button behaviour matches its wording."},
+    {"priority":"P2","action":"Answer the important hiring questions","detail":"Cover how specialists are assessed, working-hour overlap, who manages the backlog, how scope/capacity is agreed, confidentiality and IP, continuity, starting arrangements and handover. Describe the actual process rather than borrowing competitor guarantees.","verification":"Each FAQ resolves a distinct buying question with a substantive, accurate answer."},
+    {"priority":"P2","action":"Measure a real enquiry outcome","detail":"Record an email-draft click separately from an enquiry received. Plan organic landing-session and qualified-enquiry reporting; use a confirmed receipt or CRM outcome for the business conversion.","verification":"Reporting cannot count an opened mail application as a sent or qualified lead."},
+    {"priority":"P3","action":"Validate keywords and establish the acquisition baseline","detail":"Obtain authorised US demand, backlink and first-party performance data before prioritising new hiring pages or setting numeric traffic goals.","verification":"The baseline records the source, date range, market, exact page, query segmentation and data limitations."}
+  ],
+  "measurementPlan": {
+    "searchConsole":"Filter to the actual public team-page canonical and United States, Web search. Compare the latest complete 90-day period with the preceding 90 days; use the same availability cutoff and show the exact dates. Separate branded and non-branded queries. Report clicks, impressions, CTR calculated from totals, and average position with its aggregation context.",
+    "analytics":"Filter landing-page sessions to the team route and Organic Search; distinguish session geography from Search Console country filters. Review engaged sessions and downstream enquiry outcomes with consistent attribution and consent coverage.",
+    "backlinks":"Inspect the exact canonical and URL variants alongside domain-wide links. Review unique referring domains, topical relevance, actual referring pages, anchor patterns, follow/nofollow attributes and new/lost links. Compare equivalent competitor landing pages without treating a vendor authority score as a Google metric.",
+    "demand":"Retrieve US query volumes and difficulty with provider/date/method stated. Check commercial versus job-search intent and seasonal movement before mapping one primary query to the page.",
+    "localVersion":"Do not attribute historical public-domain performance to this local page version until the public page and content version have been identified."
+  },
+  "accessAttempts": [
+    {"provider":"Ahrefs","request":"US keyword metrics; exact team-page and domain backlinks; exact-page estimated traffic; project discovery","result":"Insufficient plan","metricsReturned":false},
+    {"provider":"Semrush","request":"Keyword research capability","result":"no_api_units — additional API units required","metricsReturned":false,"accountURL":"https://www.semrush.com/mcp-access"},
+    {"provider":"Similarweb","request":"US monthly keyword overview for hire dedicated developers, September 2026","result":"403 FORBIDDEN_ERROR — missing product access","metricsReturned":false},
+    {"provider":"Windsor.ai","request":"Integration discovery for Search Console and GA4","result":"Available but not connected; no performance query could be made","metricsReturned":false}
+  ],
+  "sources": [
+    {"label":"Full Scale hiring page","url":"https://fullscale.io/hire-dedicated-developers/","supports":"Observed dedicated-engagement, pricing-context, screening, role-link and FAQ coverage."},
+    {"label":"Toptal developer hiring page","url":"https://www.toptal.com/developers","supports":"Observed developer profiles, matching process, skill-specific destinations and FAQs."},
+    {"label":"iQlance AI developer hiring page","url":"https://www.iqlance.com/hire-ai-developers/","supports":"Observed confidentiality, ownership, pricing, collaboration and onboarding FAQ coverage."},
+    {"label":"Google: helpful, reliable, people-first content","url":"https://developers.google.com/search/docs/fundamentals/creating-helpful-content","supports":"Content self-assessment should consider usefulness, sourcing and evidence of expertise; a technical checklist does not establish these qualities."},
+    {"label":"Google: measuring search performance","url":"https://support.google.com/webmasters/answer/9131543?hl=en","supports":"Search Console provides first-party clicks, impressions, queries and average-position observations."},
+    {"label":"Google: performance-report filtering","url":"https://support.google.com/webmasters/answer/10268906?hl=en","supports":"Page and query-level investigation helps interpret search performance; third-party estimates are a different evidence source."}
+  ]
+}
