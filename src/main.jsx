@@ -16,3 +16,7 @@ async function start(){const path=window.location.pathname.replace(/\/$/,'')||'/
 start().catch(error=>{console.error(error);const message=document.createElement('p');message.textContent='Interactive features could not load. Please refresh, or use the links on this page.';message.setAttribute('role','status');document.body.appendChild(message)});
 
 import "./polish.css";
+
+import './document-review.css';
+
+import './hero-title-gradient.css';

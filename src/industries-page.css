@@ -1,0 +1,45 @@
+/* Approved industry-directory concept; shared header/footer and detail pages retain their styles. */
+#main .sectors-page{width:min(1240px,calc(100% - 64px));color:var(--ink);padding-bottom:4px}
+.sectors-intro{display:grid;grid-template-columns:1.65fr 1fr;gap:50px;align-items:center;padding:50px 0 36px}
+.sectors-eyebrow{display:block;color:var(--accent);font-size:11px;line-height:1.6;letter-spacing:.12em;font-weight:650;margin-bottom:16px}
+#main .sectors-intro h1{font-size:clamp(34px,3.3vw,48px);line-height:1.15;letter-spacing:-.045em;margin:0;padding:0;color:var(--ink)}
+#main .sectors-intro p{font-size:16px;line-height:1.8;color:var(--muted);margin:0 0 18px;max-width:440px}
+.sectors-link{display:inline-flex;align-items:center;gap:10px;color:var(--accent);font-size:14px;line-height:1.5;font-weight:550}
+.sectors-link svg{flex:none;transition:transform .2s}
+.sectors-topics{display:flex;align-items:center;gap:28px;border-top:1px solid var(--line);padding:20px 0 24px}
+.sectors-topics>span{font-weight:600;font-size:15px;white-space:nowrap}
+.sectors-topics>div{display:flex;flex-wrap:wrap;gap:10px}
+.sectors-topics a{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:9px 22px;border:1px solid var(--line);border-radius:999px;background:var(--surface-soft,#f3f8ff);font-size:12px;color:var(--ink);line-height:1.6}
+.sectors-topics a:hover{color:var(--accent);border-color:var(--accent)}
+.sectors-feature{border:1px solid var(--line);background:var(--surface-soft,#f3f8ff);border-radius:18px;overflow:hidden;scroll-margin-top:110px}
+.sectors-feature-link{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);align-items:center;gap:34px;padding:28px}
+.sectors-feature-copy{padding:4px 0 4px 6px;min-width:0}
+.sectors-icon{display:grid;place-items:center;width:62px;height:62px;border-radius:15px;background:var(--accent-pale,#e4f0ff);color:var(--accent);margin-bottom:22px}
+#main .sectors-feature h2{font-size:clamp(30px,3.2vw,44px);line-height:1.2;letter-spacing:-.04em;margin:0 0 18px;padding:0;color:var(--ink)}
+#main .sectors-feature p{font-size:16px;line-height:1.8;color:var(--muted);margin:0 0 22px;max-width:440px}
+.sectors-tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0 0 24px;padding:0}
+.sectors-tags li{border:1px solid var(--line);border-radius:7px;padding:7px 11px;font-size:11px;line-height:1.5;color:var(--muted);background:var(--surface,#fff)}
+.sectors-feature-image{background:var(--surface,#fff);border:1px solid var(--line);border-radius:12px;overflow:hidden;padding:12px;min-width:0}
+.sectors-feature-image img{display:block;width:100%;height:auto;aspect-ratio:1.7;object-fit:contain}
+.sectors-feature:has(a:hover),.sectors-card:hover{border-color:var(--accent)}
+.sectors-feature-link:hover .sectors-link svg,.sectors-card:hover .sectors-link svg{transform:translateX(3px)}
+.sectors-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:24px;align-items:stretch}
+.sectors-card{display:flex;flex-direction:column;min-width:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--surface,#fff);scroll-margin-top:110px;transition:border-color .2s,box-shadow .2s}
+.sectors-card:hover{box-shadow:0 8px 24px #071b500a}
+.sectors-card-image{padding:16px;background:var(--surface-soft,#f3f8ff)}
+.sectors-card-image img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:contain;border:1px solid var(--line);border-radius:9px;background:var(--surface,#fff)}
+.sectors-card-copy{display:flex;flex-direction:column;flex:1;padding:22px;min-width:0}
+#main .sectors-card h2{font-size:25px;line-height:1.3;letter-spacing:-.035em;margin:0 0 14px;padding:0;color:var(--ink)}
+#main .sectors-card p{font-size:14px;line-height:1.8;color:var(--muted);margin:0 0 22px}
+.sectors-card .sectors-link{margin-top:auto;padding-top:2px}
+.sectors-cta{display:flex;justify-content:space-between;align-items:center;gap:32px;background:var(--surface-soft,#f3f8ff);border:1px solid var(--line);border-radius:18px;padding:34px 38px;margin-top:24px}
+#main .sectors-cta h2{font-size:clamp(26px,2.5vw,34px);line-height:1.3;letter-spacing:-.035em;margin:0 0 10px;padding:0;color:var(--ink)}
+#main .sectors-cta p{font-size:15px;line-height:1.8;color:var(--muted);margin:0}
+.sectors-cta .button{flex:none;background:#ff7435;color:#071b50;border-color:#ff7435;border-radius:999px;gap:14px;font-size:14px;padding:14px 23px}
+.sectors-cta .button:hover{background:#ff854f;border-color:#ff854f}
+:is(.sectors-feature-link,.sectors-card,.sectors-link,.sectors-topics a):focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+.sectors-feature-link:focus-visible{outline-offset:-5px}
+@media(max-width:1000px){.sectors-intro{gap:30px;grid-template-columns:1.2fr 1fr}.sectors-feature-link{gap:24px;padding:24px}.sectors-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.sectors-topics{gap:20px}.sectors-topics a{padding-inline:16px}.sectors-cta{padding:28px}}
+@media(max-width:800px){#main .sectors-page{width:calc(100% - 36px)}.sectors-intro{grid-template-columns:1fr;gap:20px;padding:34px 0 28px}.sectors-intro>div:last-child{max-width:560px}.sectors-topics{align-items:flex-start;flex-direction:column;gap:14px;padding:18px 0 22px}.sectors-feature-link{grid-template-columns:1fr;gap:24px;padding:22px}.sectors-feature-copy{padding:0}.sectors-feature p{max-width:none}.sectors-icon{width:52px;height:52px;margin-bottom:18px}.sectors-cta{align-items:flex-start;flex-direction:column;gap:22px}}
+@media(max-width:600px){#main .sectors-intro h1{font-size:clamp(31px,8.5vw,42px)}.sectors-eyebrow{font-size:10px}#main .sectors-intro p{font-size:15px}#main .sectors-feature h2{font-size:32px}#main .sectors-feature p{font-size:15px}.sectors-feature-link{padding:20px}.sectors-feature-image{padding:8px}.sectors-grid{grid-template-columns:1fr;gap:20px;margin-top:20px}.sectors-card-copy{padding:20px}#main .sectors-card h2{font-size:24px}.sectors-card .sectors-link{min-height:32px}.sectors-topics a{min-height:44px;font-size:12px;padding:10px 16px}.sectors-cta{padding:24px;margin-top:20px}#main .sectors-cta h2{font-size:27px}.sectors-cta .button{max-width:100%;white-space:normal;text-align:center;min-height:48px}}
+@media(prefers-reduced-motion:reduce){.sectors-card,.sectors-link svg{transition:none}.sectors-feature-link:hover .sectors-link svg,.sectors-card:hover .sectors-link svg{transform:none}}

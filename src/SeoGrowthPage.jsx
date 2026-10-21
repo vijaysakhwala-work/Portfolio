@@ -114,11 +114,7 @@ export default function SeoGrowthPage() {
         <div className="sg-orb sg-orb-1" aria-hidden="true"/>
         <div className="sg-orb sg-orb-2" aria-hidden="true"/>
 
-        <nav className="sg-breadcrumb" aria-label="Breadcrumb">
-          <a href="/">Home</a><span>/</span>
-          <a href="/services">Services</a><span>/</span>
-          <span>SEO / AEO / GEO</span>
-        </nav>
+
 
         <div className="sg-hero-layout">
           <div className="sg-hero-copy">

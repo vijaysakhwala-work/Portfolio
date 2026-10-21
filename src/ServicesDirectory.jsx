@@ -95,10 +95,6 @@ export default function ServicesDirectory() {
       {/* ── Hero ── */}
       <section className="sd-hero ai-width">
         <div>
-          <nav aria-label="Breadcrumb">
-            <a href="/">Home</a><span>/</span>Services
-          </nav>
-          <span className="ai-eyebrow">CUBUSIFY SERVICES</span>
           <h1>Software Development<br/><span>&amp; Digital Services.</span></h1>
           <p>Compare services for a new product, an existing system or a workflow that needs improving. Start with the task and its constraints; we can help define the right mix of software, design, integration and support.</p>
           <a className="ai-button sd-hero-cta" href="/contact">

@@ -382,14 +382,14 @@
   display: block;
   font-weight: 700;
 }
-.growth-directory-link h2 {
+.sd-page .growth-directory-link h2 {
   font-size: clamp(26px, 2.8vw, 40px);
   letter-spacing: -.042em;
   line-height: 1.1;
   color: #fff;
   margin: 0 0 12px;
 }
-.growth-directory-link p {
+.sd-page .growth-directory-link p {
   font-size: 15px;
   color: #8aafd8;
   max-width: 440px;

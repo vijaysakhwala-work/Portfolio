@@ -21,7 +21,7 @@ export default function Testimonials(){
    <h2 id="tm-title">Trusted by teams who<br/><span>value real partnership.</span></h2>
    <p>Founders and operators share what it is like to build with Cubusify, in their own words.</p>
   </div>
-  <div className={'tm-marquee'} role="region" aria-label="Client reviews" tabIndex={0}>
+  <div className="tm-marquee" role="region" aria-label="Client reviews" tabIndex={0}>
    <div className="tm-track">
     {[0,1].map(copy=><ul className="tm-set" key={copy} aria-hidden={copy===1?'true':undefined}>{list.map((r,i)=><li key={r.name}><Card r={r}/></li>)}</ul>)}
    </div>

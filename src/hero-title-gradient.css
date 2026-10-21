@@ -1,0 +1,11 @@
+/* Website change3.0: only explicitly marked blog/directory hero titles. */
+#main h1.hero-title-gradient{
+  background:linear-gradient(100deg,var(--fg-071b50,#071b50),var(--fg-0748ef,#0748ef) 48%,var(--fg-00b7e9,#00b7e9));
+  background-clip:text;
+  -webkit-background-clip:text;
+  color:var(--fg-0965ff,#0965ff);
+  -webkit-text-fill-color:transparent;
+}
+@media(forced-colors:active){
+  #main h1.hero-title-gradient{background:none;color:CanvasText;-webkit-text-fill-color:CanvasText}
+}

@@ -16,7 +16,7 @@ const references={
 };
 export default function ProjectReferences({topic,className='ai-width service-gallery-section'}){
  const slugs=references[topic];if(!slugs)return null;
- return <section className={className} aria-label="Related project case studies">
+ return <section className={className+' project-references'} aria-label="Related project case studies">
   <span className="eyebrow">PROJECT CASE STUDIES</span><h2>See the workflow in our project work</h2>
   <p>Explore the screens and decisions behind related user journeys. Each case study explains its project context; the service choice for your own project follows your requirements.</p>
   <div className="article-grid">{slugs.slice(0,3).map(slug=>{const p=workContent[slug];return <a className="blog-card" href={'/work/'+slug} key={slug}>

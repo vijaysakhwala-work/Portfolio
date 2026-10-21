@@ -3,7 +3,7 @@ import delivery from './image-delivery.json' with {type:'json'};
 import {articleImages} from './editorial-meta.js';
 
 const servicePrefixes={software:'software-development',web:'web-development',mobile:'mobile-app-development',product:'product-engineering',design:'ui-ux-design',ecommerce:'ecommerce-development',ai:'ai-automation',qa:'qa-testing',cloud:'devops-cloud',marketing:'digital-marketing',games:'game-development'};
-const coreImages={'/':'dew-desktop','/services':'product-engineering-hero','/industries':'manufacturing-overview-tile','/work':'forma-cover','/team':'product-engineering-overview','/blog':'digital-marketing-overview','/services/seo-aeo-geo':'digital-marketing-hero'};
+const coreImages={'/':'dew-desktop','/services':'product-engineering-hero','/industries':'manufacturing-overview-tile','/work':'forma-cover','/blog':'digital-marketing-overview','/services/seo-aeo-geo':'digital-marketing-hero'};
 export function imageFromAsset(id){
  const asset=assets[id];if(!asset)throw Error('Unknown SEO image '+id);
  const variant=delivery[id]?.variants.at(-1);
@@ -11,6 +11,7 @@ export function imageFromAsset(id){
  return {id,src:variant?.src||asset.src,width,height:Math.round(asset.height*width/asset.width),alt:asset.alt,caption:asset.label,type:'image/webp'};
 }
 export function primaryPageImage(route,info){
+ if(route==='/team')return {src:'/images/hire-team-pair-programming-1536.jpg',width:1536,height:1024,alt:'Two developers reviewing code together in a bright studio',caption:'Pair programming and collaborative software development',type:'image/jpeg'};
  if(route==='/about')return {src:'/images/vijay-founder-1000.webp',width:1000,height:1000,alt:'Vijay Sakhwala, Founder of Cubusify',caption:'Cubusify founder Vijay Sakhwala',type:'image/webp'};
  if(info.type==='work-detail')return imageFromAsset(info.slug+'-cover');
  if(info.article)return imageFromAsset(articleImages[info.article.slug]);
