@@ -17,11 +17,11 @@ export const searchMetadata={
     "description": "A travel-planning experience connecting a day-by-day itinerary with accommodation details, availability context and a reservation action."
   },
   "/work/basil": {
-    "title": "Food Ordering & Kitchen Workflow Case Study: Basil | Cubusify",
+    "title": "Food Ordering & Kitchen Case Study: Basil | Cubusify",
     "description": "A food-ordering project connecting the customer’s mobile journey with a kitchen board organised around preparation and handover."
   },
   "/work/pulse": {
-    "title": "Fitness App & Programme Dashboard Case Study: Pulse | Cubusify",
+    "title": "Fitness App & Coach Dashboard Case Study: Pulse | Cubusify",
     "description": "A fitness product pairing member activity screens with a coach-facing programme view for sessions, schedules and progress."
   },
   "/work/haven": {
@@ -37,8 +37,8 @@ export const searchMetadata={
     "description": "An invoice and receivables workspace connecting outstanding totals, due-date states and individual invoice review."
   },
   "/work/stockroom": {
-    "title": "Inventory Management Software Case Study: Stockroom | Cubusify",
-    "description": "An inventory workspace connecting low-stock recommendations with a reviewable purchase-order draft."
+    "title": "Inventory Software Case Study: Stockroom | Cubusify",
+    "description": "An inventory workspace connecting low-stock recommendations with a reviewable purchase-order draft, shown through supplied screens and a project brief."
   },
   "/work/nexa": {
     "title": "AI Customer Support Workspace Case Study: Nexa | Cubusify",
@@ -58,11 +58,11 @@ export const searchMetadata={
   },
   "/services": {
     "title": "Software, Web, Mobile & AI Development Services | Cubusify",
-    "description": "Compare Cubusify services for software, web, mobile apps, AI automation, ecommerce, design and product operations. Find the right starting point for your project."
+    "description": "Compare Cubusify services for software, web, mobile apps, AI automation, ecommerce, design and product operations. Find the right place to start."
   },
   "/industries": {
     "title": "Industry Software Solutions & Workflows | Cubusify",
-    "description": "Explore software workflows for healthcare, ecommerce, manufacturing, logistics, education, finance and real estate, with relevant services and planning questions."
+    "description": "Explore software workflows for healthcare, ecommerce, manufacturing, logistics, education, finance and real estate, with matching services and planning prompts."
   },
   "/work": {
     "title": "Website, App & Software Project Case Studies | Cubusify",
@@ -73,12 +73,12 @@ export const searchMetadata={
     "description": "Meet Cubusify founder Vijay Sakhwala and learn how we scope software and AI projects, collaborate on delivery and plan ownership and handover."
   },
   "/team": {
-    "title": "Hire Software Developers, Designers & AI Specialists | Cubusify",
+    "title": "Hire Software Developers & AI Specialists | Cubusify",
     "description": "Discuss a project team, ongoing product support or specialist development capacity with Cubusify. Review roles, onboarding and engagement options."
   },
   "/blog": {
     "title": "Software, AI, Ecommerce & MVP Planning Guides | Cubusify",
-    "description": "Practical guides to ecommerce platform selection, AI automation pilots, software MVP planning and search visibility. Compare options before commissioning a build."
+    "description": "Practical guides to ecommerce platform selection, AI automation pilots, software MVP planning and search visibility. Compare options before you build."
   },
   "/contact": {
     "title": "Contact Our Software & AI Development Team | Cubusify",
@@ -94,7 +94,7 @@ export const searchMetadata={
   },
   "/services/software": {
     "title": "Custom Software Development | Cubusify",
-    "description": "Replace disconnected spreadsheets and manual handoffs with software that supports your customer records, operations and reporting. Start with the workflow that creates the most avoidable work."
+    "description": "Replace spreadsheets and manual handoffs with software for customer records, operations and reporting. Start with the workflow that causes the most rework."
   },
   "/services/software/custom-crm": {
     "title": "Custom CRM Development | Cubusify",
@@ -110,7 +110,7 @@ export const searchMetadata={
   },
   "/services/web": {
     "title": "Web Development Services | Cubusify",
-    "description": "Build a website people can understand or a web application they can use to complete a task. Choose the right mix of content, publishing tools and backend services for the job."
+    "description": "Build a website people understand or a web application they can use to finish a task. Choose the right mix of content, publishing tools and backend services."
   },
   "/services/web/business-websites": {
     "title": "Business Website Development | Cubusify",
@@ -178,7 +178,7 @@ export const searchMetadata={
   },
   "/services/ecommerce": {
     "title": "Ecommerce Development Services | Cubusify",
-    "description": "Choose and build an online store around your catalogue, payment journey and fulfilment operation, with a practical plan for content, integrations and maintenance."
+    "description": "Build an online store around your catalogue, payment journey and fulfilment, with a practical plan for content, integrations and maintenance."
   },
   "/services/ecommerce/shopify-development": {
     "title": "Shopify Development Services | Cubusify",
@@ -321,15 +321,15 @@ export const searchMetadata={
     "description": "Connect property discovery, viewing requests and agent follow-up with clear listing information and a shared record of each enquiry."
   },
   "/blog/seo-aeo-geo-where-to-start": {
-    "title": "SEO, AEO & GEO: A Practical Website Improvement Plan | Cubusify",
+    "title": "SEO, AEO & GEO: A Practical Improvement Plan | Cubusify",
     "description": "Learn where SEO, AEO and GEO overlap, how to prioritise website fixes and how to measure useful search visibility without ranking promises."
   },
   "/blog/choosing-your-ecommerce-platform": {
-    "title": "Shopify vs WooCommerce vs Custom Ecommerce: How to Choose | Cubusify",
+    "title": "Shopify vs WooCommerce vs Custom: How to Choose | Cubusify",
     "description": "Compare Shopify, WooCommerce and custom ecommerce by catalogue complexity, integrations, operating costs and the team running your store."
   },
   "/blog/where-ai-automation-saves-time": {
-    "title": "AI Automation for Business: 7 Workflows Worth Testing | Cubusify",
+    "title": "AI Automation: 7 Business Workflows Worth Testing | Cubusify",
     "description": "Explore seven business automation workflows, how to rank them, where human review matters and how to measure a focused AI pilot."
   },
   "/blog/planning-your-first-software-mvp": {
