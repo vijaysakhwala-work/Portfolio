@@ -1,3 +1,4 @@
+import {RelatedServices} from './RelatedLinks';
 import {canon} from './links';
 import ProjectReferences from './ProjectReferences';
 import CollaborationProcess from './CollaborationProcess';
@@ -16,5 +17,6 @@ export default function AILandingPage(){return <div className="ai-page ai-landin
 
 <section className="ai-faq ai-width"><div><h2>A little clarity<br/><span>before we begin.</span></h2><p>Straightforward answers to common questions.</p></div><div>{[['Where should we start?','Choose a frequent task with stable inputs, accessible systems and mistakes that can be checked. Our AI automation guide explains how to rank candidate workflows.'],['Can you connect our existing tools?','Feasibility depends on supported APIs, provider licensing, available events and permissions. A connection assessment comes before promises of synchronisation.'],['How do you keep people in control?','We agree review and approval steps for important actions. AI suggestions can be checked and edited, with clear paths to human support.']].map(([q,a],n)=><details key={q} open={n===0}><summary>{q}</summary><p>{a}</p></details>)}</div></section>
 <ProjectReferences topic={'ai'}/>
+<RelatedServices path="/services/ai"/>
 <section className="ai-cta ai-width"><div><h2>Let’s make your <span>next move clearer.</span></h2><p>Describe the repeated task, existing tools and review requirements. Read our AI automation planning guide to prepare an initial workflow brief.</p></div><a className="ai-button" href="/contact/">Start a conversation <ArrowRight size={18}/></a></section>
 </div>}

@@ -1,3 +1,4 @@
+import {ServiceIndex} from './RelatedLinks';
 import {canon} from './links';
 import {Image} from './Showcase';
 import {ServiceIcon} from './Redesign';
@@ -139,6 +140,8 @@ export default function ServicesDirectory() {
           </section>
         ))}
       </section>
+
+      <ServiceIndex/>
 
       {/* ── SEO/AEO/GEO callout ── */}
       <section className="container growth-directory-link">

@@ -1,3 +1,4 @@
+import {RelatedServices} from './RelatedLinks';
 import {lowerKeep} from './text';
 import {canon} from './links';
 import ServiceAcceptance from './ServiceAcceptance';
@@ -22,5 +23,6 @@ export default function AISamplePage({sub}){const d={...aiSamples[sub.slug],...a
 
 <ServiceAcceptance slug={sub.slug}/>
 <ProjectReferences topic={sub.slug}/>
+<RelatedServices path={sub.path}/>
 <section className="ai-cta ai-width"><div><h2>Let’s make your <span>next move clearer.</span></h2><p>Talk to our team about how {lowerKeep(sub.title)} can support your goals.</p></div><a className="ai-button" href="/contact/">Start a conversation <ArrowRight size={18}/></a></section>
 </div>}

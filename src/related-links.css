@@ -1,0 +1,18 @@
+.related-links{padding-top:56px;padding-bottom:12px}
+.related-links h2{font-size:clamp(24px,2.4vw,34px);letter-spacing:-.04em;line-height:1.2;margin-bottom:22px}
+.related-links ul{list-style:none;margin:0;padding:0}
+.related-links:not(.service-index)>ul{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.related-links:not(.service-index)>ul a{display:flex;align-items:center;justify-content:space-between;gap:16px;height:100%;padding:18px 20px;border:1px solid var(--line);border-radius:12px;background:var(--bg-ffffff,#fff);transition:border-color .2s,transform .2s}
+.related-links:not(.service-index)>ul a:hover{border-color:var(--accent);transform:translateY(-2px)}
+.related-links:not(.service-index)>ul b{display:block;font-size:16px;font-weight:600;color:var(--ink)}
+.related-links:not(.service-index)>ul small{display:block;margin-top:6px;font-size:13px;line-height:1.55;color:var(--muted)}
+.related-links:not(.service-index)>ul svg{flex-shrink:0;color:var(--accent)}
+.service-index-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:26px 32px}
+.service-index h3{font-size:16px;font-weight:650;margin-bottom:10px}
+.service-index h3 a:hover,.service-index li a:hover{color:var(--accent)}
+.service-index li+li{margin-top:6px}
+.service-index li a{font-size:14px;color:var(--muted)}
+.related-industries{margin-top:18px;font-size:14px}
+.related-industries a{color:var(--ink);font-weight:550;text-decoration:underline;text-underline-offset:3px}
+.related-industries a:hover{color:var(--accent)}
+.related-links a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}

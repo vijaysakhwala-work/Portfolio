@@ -1,3 +1,4 @@
+import {RelatedServices} from './RelatedLinks';
 import {lowerKeep} from './text';
 import {canon} from './links';
 import ServiceAcceptance from './ServiceAcceptance';
@@ -33,6 +34,7 @@ export default function ServiceSamplePage({service:s,sub}){
 
   {sub&&<ServiceAcceptance slug={sub.slug}/>}
 <ProjectReferences topic={sub?.slug||s.slug}/>
+<RelatedServices path={sub?sub.path:s.path}/>
 <section className="ai-cta ai-width"><div><h2>Discuss your <span>{sub?lowerKeep(sub.title):lowerKeep(s.title)} project.</span></h2><p>Share your requirements so we can agree a focused scope, dependencies and the next useful step.</p></div><a className="ai-button" href="/contact/">Start a conversation <ArrowRight size={18}/></a></section>
  </div>;
 }
