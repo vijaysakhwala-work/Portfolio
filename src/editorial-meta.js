@@ -5,3 +5,5 @@ export const articleFigures={'seo-aeo-geo-where-to-start':[],'choosing-your-ecom
 export const articleDates={'custom-software-development-cost':'2026-10-22','choosing-a-software-development-company':'2026-10-22','what-ai-automation-agencies-do':'2026-10-22'};
 export const articleUpdated=slug=>articleDates[slug]||reviewedDate;
 export const formatDate=(iso,month='long')=>new Intl.DateTimeFormat('en-GB',{day:'numeric',month,year:'numeric',timeZone:'UTC'}).format(new Date(iso+'T00:00:00Z'));
+// Original publication dates, supplied by the owner (slug -> 'YYYY-MM-DD'). Without an entry the schema omits datePublished.
+export const articlePublished={};
