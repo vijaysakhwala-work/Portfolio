@@ -56,6 +56,8 @@ for(const route of [...routes,'/404']){
  const dir=route==='/'?'dist':route==='/404'?'dist':path.join('dist',route.slice(1));
  await fs.mkdir(dir,{recursive:true});await fs.writeFile(path.join(dir,route==='/404'?'404.html':'index.html'),page);
 }
-await fs.writeFile('dist/robots.txt',`User-agent: *\nAllow: /\nDisallow: /api/\nSitemap: ${origin}/sitemap.xml\n`);
+// AI crawlers are named and allowed on purpose (the goal is to be found and cited). A named group replaces the wildcard group, so each repeats the /api/ block.
+const aiCrawlers=['GPTBot','OAI-SearchBot','ClaudeBot','PerplexityBot'];
+await fs.writeFile('dist/robots.txt',`User-agent: *\nAllow: /\nDisallow: /api/\n\n${aiCrawlers.map(agent=>`User-agent: ${agent}\nAllow: /\nDisallow: /api/\n`).join('\n')}\nSitemap: ${origin}/sitemap.xml\n`);
 await fs.writeFile('dist/sitemap.xml','<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">'+sitemapPages.map(p=>`<url><loc>${escape(p.canonical)}</loc>${p.images.map(i=>`<image:image><image:loc>${escape(origin+i.src)}</image:loc></image:image>`).join('')}</url>`).join('')+'</urlset>');
 console.log(`Generated ${routes.length} crawlable React pages, a 404 page and sitemap.`);
