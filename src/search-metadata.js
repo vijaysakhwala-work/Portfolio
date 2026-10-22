@@ -336,6 +336,18 @@ export const searchMetadata={
     "title": "AI Automation: 7 Business Workflows Worth Testing | Cubusify",
     "description": "Explore seven business automation workflows, how to rank them, where human review matters and how to measure a focused AI pilot."
   },
+  "/blog/custom-software-development-cost": {
+    "title": "What Drives Custom Software Development Cost | Cubusify",
+    "description": "Custom software cost depends on scope: data model, user roles, migration, automation rules and integrations. See what moves the price and how to compare quotes."
+  },
+  "/blog/choosing-a-software-development-company": {
+    "title": "How to Choose a Software Development Company | Cubusify",
+    "description": "Choose on evidence you can check: relevant work, a clear process, code ownership, review cadence and how problems are handled. Ten questions to ask."
+  },
+  "/blog/what-ai-automation-agencies-do": {
+    "title": "What AI Automation Agencies Do | Cubusify",
+    "description": "An AI automation agency picks a repeated task, connects the systems around it, builds a reviewed workflow and measures the result. See what the work covers."
+  },
   "/blog/planning-your-first-software-mvp": {
     "title": "How to Plan an MVP: Scope, Features & Validation | Cubusify",
     "description": "Plan a software MVP around one customer journey. Compare build options, prioritise features, set milestones and validate assumptions with real users."

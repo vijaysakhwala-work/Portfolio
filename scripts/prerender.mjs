@@ -6,7 +6,7 @@ import React from 'react';
 import {renderToString} from 'react-dom/server';
 import {routes,metadata,routeInfo} from '../src/catalog.js';
 import assets from '../src/showcase-assets.js';
-import {articleImages,reviewedDate} from '../src/editorial-meta.js';
+import {articleImages,articleUpdated} from '../src/editorial-meta.js';
 import {primaryPageImage,renderedPageImages,imageFromAsset} from '../src/seo-images.js';
 import {workContent} from '../src/work-content.js';
 import {enterpriseArchitectures} from '../src/enterprise-architectures.js';
@@ -45,7 +45,7 @@ for(const route of [...routes,'/404']){
   if(blueprint){const architectureId=canonical+'#enterprise-architecture';graph.push({'@type':'CreativeWork','@id':architectureId,name:'Proposed enterprise reference architecture: '+project.title,genre:'Reference architecture',description:'Illustrative enterprise scenario and proposed technology choices. '+blueprint.objective,url:architectureId,isPartOf:{'@id':projectId},author:{'@id':origin+'/#organization'}});graph.find(x=>x['@id']===projectId).hasPart={'@id':architectureId};}
  }
  if(route==='/about')graph.push({'@type':'Person','@id':origin+'/about/#founder',name:'Vijay Sakhwala',jobTitle:'Founder',worksFor:{'@id':origin+'/#organization'},image:origin+'/images/vijay-founder-1000.webp',url:origin+'/about/'});
- if(info.article)graph.push({'@type':'BlogPosting',headline:info.article.title,description:info.article.desc,url:canonical,mainEntityOfPage:{'@id':canonical+'#webpage'},inLanguage:'en',author:{'@type':'Organization',name:'Cubusify Editorial',url:origin+'/about/'},publisher:{'@id':origin+'/#organization'},dateModified:reviewedDate,image:origin+image});
+ if(info.article)graph.push({'@type':'BlogPosting',headline:info.article.title,description:info.article.desc,url:canonical,mainEntityOfPage:{'@id':canonical+'#webpage'},inLanguage:'en',author:{'@type':'Organization',name:'Cubusify Editorial',url:origin+'/about/'},publisher:{'@id':origin+'/#organization'},dateModified:articleUpdated(info.article.slug),image:origin+image});
  if(route!=='/'&&route!=='/404'){const parts=route.split('/').filter(Boolean);graph.push({'@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'Home',item:origin+'/'},...parts.map((part,n)=>({'@type':'ListItem',position:n+2,name:n===parts.length-1?m.title.replace(' | Cubusify',''):part.charAt(0).toUpperCase()+part.slice(1).replaceAll('-',' '),item:origin+'/'+parts.slice(0,n+1).join('/')+'/'}))]})}
  const schema={'@context':'https://schema.org','@graph':graph};
  const head=routeResources(info)+`<meta name="robots" content="${route==='/404'?'noindex,follow':'index,follow,max-image-preview:large'}"/><meta property="og:site_name" content="Cubusify"/><meta property="og:locale" content="en_IN"/><link rel="canonical" href="${canonical}"/><meta property="og:type" content="${info.article?'article':'website'}"/><meta property="og:title" content="${escape(m.title)}"/><meta property="og:description" content="${escape(m.description)}"/><meta property="og:url" content="${canonical}"/><meta property="og:image" content="${origin+image}"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="${escape(m.title)}"/><meta name="twitter:description" content="${escape(m.description)}"/><meta name="twitter:image" content="${origin+image}"/><script type="application/ld+json">${JSON.stringify(schema).replaceAll('<','\\u003c')}</script>`;

@@ -3,17 +3,16 @@ import React,{useState} from 'react';
 import {ArrowRight,Search} from 'lucide-react';
 import {articles} from './catalog';
 import {Image} from './Showcase';
-import {articleImages,reviewedDate} from './editorial-meta';
+import {articleImages,articleUpdated,formatDate} from './editorial-meta';
 import './blog-page.css';
 
-const categoryLabels={'AI & AUTOMATION':'AI & automation',ECOMMERCE:'Ecommerce','PRODUCT ENGINEERING':'Product engineering','SEARCH & GROWTH':'Search & growth'};
+const categoryLabels={'SOFTWARE DEVELOPMENT':'Software development','AI & AUTOMATION':'AI & automation',ECOMMERCE:'Ecommerce','PRODUCT ENGINEERING':'Product engineering','SEARCH & GROWTH':'Search & growth'};
 const categories=[...new Set(articles.map(article=>article.category))].sort((a,b)=>Object.keys(categoryLabels).indexOf(a)-Object.keys(categoryLabels).indexOf(b));
-const dateLabel=new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'}).format(new Date(reviewedDate+'T00:00:00Z'));
-function ArticleMeta(){return <p className="insights-meta">Cubusify Editorial <span aria-hidden="true">·</span> <time dateTime={reviewedDate}>{dateLabel}</time></p>}
+function ArticleMeta({slug}){const date=articleUpdated(slug);return <p className="insights-meta">Cubusify Editorial <span aria-hidden="true">·</span> <time dateTime={date}>{formatDate(date,'short')}</time></p>}
 function GuideCard({article,featured=false}){
  return <a className={featured?'insights-feature':'insights-card'} href={canon('/blog/'+article.slug)}>
   <div className="insights-image"><Image id={articleImages[article.slug]} eager={featured} sizes={featured?'(max-width: 760px) calc(100vw - 68px), 620px':'(max-width: 600px) calc(100vw - 68px), (max-width: 1000px) calc((100vw - 100px) / 2), 390px'}/></div>
-  <div className="insights-copy"><span className="insights-category">{featured&&<>FEATURED GUIDE <span aria-hidden="true">·</span> </>}{article.category}</span><h2>{article.title}</h2><p className="insights-description">{article.desc}</p><ArticleMeta/><span className="insights-read">Read the guide <ArrowRight size={17} aria-hidden="true"/></span></div>
+  <div className="insights-copy"><span className="insights-category">{featured&&<>FEATURED GUIDE <span aria-hidden="true">·</span> </>}{article.category}</span><h2>{article.title}</h2><p className="insights-description">{article.desc}</p><ArticleMeta slug={article.slug}/><span className="insights-read">Read the guide <ArrowRight size={17} aria-hidden="true"/></span></div>
  </a>;
 }
 export default function BlogPage(){

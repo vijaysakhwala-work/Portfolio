@@ -1088,5 +1088,374 @@ export default [
       "Define milestones as working outcomes and agree success metrics before building, so the result is a decision rather than an opinion.",
       "AI can speed up prototyping and research, but it cannot replace conversations with real customers."
     ]
+  },
+  {
+    "slug": "custom-software-development-cost",
+    "takeaways": [
+      "Custom software cost depends on scope, not a fixed rate: the data model, the number of user roles, migration work, automation rules, external connections and review needs.",
+      "A price follows a scoped workflow, which is why work starts with discovery rather than a number.",
+      "Compare the full operating cost of a build, including hosting, support and change, not only the first release.",
+      "Bring one complete workflow, a sample record and a list of connected systems, so that quotes price the same scope.",
+      "Configuring an existing product is often cheaper than building; a custom build needs a clear operational advantage."
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "Custom software cost depends on scope rather than a fixed rate. The main drivers are the data model, the number of user roles, migration work, automation rules, external connections and how much review the work needs. A reliable price follows a scoped workflow, which is why a project starts with discovery."
+      },
+      {
+        "t": "p",
+        "x": "This guide explains each driver in plain terms and how to ask for a quote you can compare. It gives no price figures: Cubusify agrees milestones and commercial terms before development begins, and a number quoted before that scope exists would be a guess."
+      },
+      {
+        "t": "h2",
+        "x": "What drives the cost of custom software?"
+      },
+      {
+        "t": "p",
+        "x": "Six things move the price more than any others. Each is a question you can answer before you speak to a supplier."
+      },
+      {
+        "t": "h3",
+        "x": "1. The data model"
+      },
+      {
+        "t": "p",
+        "x": "How many kinds of record exist, how they relate and which fields must be exact. A customer list with a few fields is a different job from a model with accounts, contracts, permissions and history."
+      },
+      {
+        "t": "h3",
+        "x": "2. User roles and permissions"
+      },
+      {
+        "t": "p",
+        "x": "Every role, such as administrator, manager, customer or partner, needs its own screens, rules and tests. A rule like “a sales user cannot open another team’s account” has to be built and checked, not assumed."
+      },
+      {
+        "t": "h3",
+        "x": "3. Migration from existing tools"
+      },
+      {
+        "t": "p",
+        "x": "Moving spreadsheets or an older system means mapping columns, resolving duplicates and reconciling the result. Poor source data adds work before any new feature does."
+      },
+      {
+        "t": "h3",
+        "x": "4. Automation rules"
+      },
+      {
+        "t": "p",
+        "x": "Routing, reminders, approvals and notifications each need explicit rules, exception handling and a way to recover when something fails."
+      },
+      {
+        "t": "h3",
+        "x": "5. External connections"
+      },
+      {
+        "t": "p",
+        "x": "Payments, email, accounting, identity and other systems each need an integration that someone designs, tests and maintains. Systems with weak or undocumented interfaces cost more to connect."
+      },
+      {
+        "t": "h3",
+        "x": "6. Review, testing and release"
+      },
+      {
+        "t": "p",
+        "x": "Acceptance checks, security review and a controlled release take time. Skipping them lowers the first price and raises the cost of problems later."
+      },
+      {
+        "t": "h2",
+        "x": "What does software cost to run after launch?"
+      },
+      {
+        "t": "p",
+        "x": "The build is not the whole cost. Hosting, third-party licences, monitoring, fixes and the changes your business will ask for all continue after release. Compare the full operating cost rather than only the build, as you would when weighing a Shopify, WooCommerce or custom store (see [how to choose an ecommerce platform](/blog/choosing-your-ecommerce-platform/))."
+      },
+      {
+        "t": "h2",
+        "x": "Should you build, buy or configure?"
+      },
+      {
+        "t": "p",
+        "x": "Start with the simplest option that could work. A custom build is worth exploring when an essential journey does not fit standard platform capabilities, when permissions or integrations cannot be met, or when the software is part of what you sell."
+      },
+      {
+        "t": "ul",
+        "items": [
+          "**Configure** when an existing product covers most of the workflow and you can accept its limits.",
+          "**Buy and connect** when two or three products together cover the need and the cost sits in the integration.",
+          "**Build** when the workflow is specific to you, or standard tools push important work into spreadsheets."
+        ]
+      },
+      {
+        "t": "h2",
+        "x": "How do you get quotes you can compare?"
+      },
+      {
+        "t": "p",
+        "x": "Quotes are comparable only when they price the same scope. Prepare these before you ask:"
+      },
+      {
+        "t": "ul",
+        "items": [
+          "One complete workflow, from the first input to the final output, written as steps.",
+          "A sample record with real field names (hide private data).",
+          "The systems it must connect to, with what each must send or receive.",
+          "The roles that will use it and what each may see or change.",
+          "How you will judge it finished: the checks you would accept."
+        ]
+      },
+      {
+        "t": "p",
+        "x": "Ask each supplier what is and is not included, how changes to scope are handled and what you receive at handover."
+      },
+      {
+        "t": "h2",
+        "x": "What should a scoped discovery produce?"
+      },
+      {
+        "t": "p",
+        "x": "A discovery step turns a loose brief into something that can be priced. It should produce a workflow map, a first-release scope, the data and integration questions that remain open, agreed milestones and acceptance checks. With those in hand, a price describes a defined piece of work."
+      },
+      {
+        "t": "h2",
+        "x": "What to do next"
+      },
+      {
+        "t": "p",
+        "x": "If you are budgeting a build, write down the one workflow that matters most and answer the six drivers above. Then compare [custom software development](/services/software/) with a focused first release through [MVP development](/services/product/mvp-development/). If you are weighing an outside team, read about [software development outsourcing](/services/software/software-outsourcing/) and [how to choose a software development company](/blog/choosing-a-software-development-company/)."
+      },
+      {
+        "t": "p",
+        "x": "To discuss your own scope, [contact Cubusify](/contact/)."
+      }
+    ]
+  },
+  {
+    "slug": "choosing-a-software-development-company",
+    "takeaways": [
+      "Choose on evidence you can check: relevant work, a clear process, who owns the code, how progress is reviewed and how problems are handled.",
+      "Ask for a scoped plan before a price; a price without scope cannot be compared.",
+      "Ask how the supplier handles scope change, handover and support before you sign.",
+      "Treat a case study as a description of a workflow unless it states a measured result and where the number comes from.",
+      "Speak to the people who will do the work, not only the sales contact."
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "A custom software development company designs, builds and maintains software around your specific workflow instead of selling a ready-made product. The best way to choose one is on evidence you can check: relevant work, a clear process, who owns the code, how progress is reviewed and how problems are handled. Ask for a scoped plan before a price."
+      },
+      {
+        "t": "h2",
+        "x": "What does a custom software development company do?"
+      },
+      {
+        "t": "p",
+        "x": "It takes a business need, shapes it into a scope, designs and builds the software, tests it, releases it and usually supports it afterwards. Some firms specialise in one kind of product; others cover web, mobile, integrations and AI. What matters is whether the work they have done resembles yours."
+      },
+      {
+        "t": "h2",
+        "x": "Which ten questions should you ask?"
+      },
+      {
+        "t": "p",
+        "x": "Put these to every supplier in writing, and compare the answers side by side."
+      },
+      {
+        "t": "ol",
+        "items": [
+          "**Process:** how does a project move from idea to release, and what do I receive at each stage?",
+          "**Ownership:** who owns the code, designs and data, and what do I receive at handover?",
+          "**Review:** how often will I see working software, and who decides that a milestone is accepted?",
+          "**Team:** who will work on my project, and can I speak to them directly?",
+          "**Relevant work:** which past projects resemble mine, and what can you show of them?",
+          "**Security and access:** who has access to my systems and data, and how is that access removed afterwards?",
+          "**Support:** what happens after release, and how are fixes and changes handled?",
+          "**Scope change:** how are new requests priced and approved?",
+          "**References:** can I speak to someone who has worked with you, or read reviews on an independent site?",
+          "**Tooling:** which tools and repositories will we share, and can I keep using them without you?"
+        ]
+      },
+      {
+        "t": "h2",
+        "x": "How should you read case studies and reviews?"
+      },
+      {
+        "t": "p",
+        "x": "A case study shows what a supplier built. It does not prove what the software achieved unless it states a measured result and where the number comes from. Look for the problem, the decisions made, who was involved and the outcome. Treat unnamed clients and unsourced figures with the caution you would give any claim."
+      },
+      {
+        "t": "p",
+        "x": "Independent review sites help, but read the reviews themselves and not only the rating."
+      },
+      {
+        "t": "h2",
+        "x": "What red flags should make you ask more questions?"
+      },
+      {
+        "t": "p",
+        "x": "None of these proves a problem. Each is a prompt to ask more."
+      },
+      {
+        "t": "ul",
+        "items": [
+          "A price with no scope: what exactly does it include?",
+          "A fixed delivery date before any discovery: what assumptions sit behind it?",
+          "No mention of testing or handover: how is quality checked and knowledge transferred?",
+          "Reluctance to say who will do the work: who are they, and where are they based?",
+          "Guarantees of outcomes the supplier does not control, such as rankings or revenue: what evidence supports them?"
+        ]
+      },
+      {
+        "t": "h2",
+        "x": "How does Cubusify answer these questions?"
+      },
+      {
+        "t": "p",
+        "x": "Using only what is published on this site: Cubusify agrees milestones and commercial terms before development begins. The project agreement defines ownership and handover, and the agreed code, designs and project assets are handed over to you. Cubusify is based in Surat, India and works with clients worldwide. Our [case studies](/work/) describe the supplied screens and project briefs behind each piece of work, and the site states that figures in screenshots are not claims of measured business performance."
+      },
+      {
+        "t": "h2",
+        "x": "What to do next"
+      },
+      {
+        "t": "p",
+        "x": "Write down the workflow you need, shortlist two or three suppliers and ask each the ten questions above. Compare their answers with [what drives the cost of custom software](/blog/custom-software-development-cost/), and read about [software development outsourcing](/services/software/software-outsourcing/) if you are deciding between an outside team and hiring. To put the questions to Cubusify, [contact us](/contact/)."
+      }
+    ]
+  },
+  {
+    "slug": "what-ai-automation-agencies-do",
+    "takeaways": [
+      "An AI automation agency picks a repeated task, connects the systems around it, builds a reviewed workflow and measures the result.",
+      "People stay in the loop where a decision matters; ask who reviews, who approves and how errors are caught.",
+      "The work usually falls into five areas: assistants, workflow automation, sales and marketing automation, voice and support, and integrations.",
+      "Start with one workflow and a number you can measure before and after.",
+      "Be cautious of savings promised before anyone has seen your data."
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "An AI automation agency picks a repeated task, connects the systems around it, builds a reviewed workflow and measures the result. People stay in the loop where a decision matters."
+      },
+      {
+        "t": "h2",
+        "x": "What does an AI automation agency do?"
+      },
+      {
+        "t": "p",
+        "x": "Most projects follow the same pattern:"
+      },
+      {
+        "t": "ol",
+        "items": [
+          "Choose a task that repeats often and has a clear owner.",
+          "Map the input, the decision, the output and the exceptions.",
+          "Connect the systems the task touches.",
+          "Build the workflow with review and approval where the action matters.",
+          "Test it on realistic examples and measure the result.",
+          "Release it, monitor it and adjust."
+        ]
+      },
+      {
+        "t": "h2",
+        "x": "What kinds of work fall under AI automation?"
+      },
+      {
+        "t": "h3",
+        "x": "AI assistants"
+      },
+      {
+        "t": "p",
+        "x": "Assistants that search approved business information, explain their sources and give people a way to review or escalate uncertain answers. See [AI assistants](/services/ai/ai-assistants/)."
+      },
+      {
+        "t": "h3",
+        "x": "Business automation"
+      },
+      {
+        "t": "p",
+        "x": "Workflows that connect enquiries, decisions and actions, with explicit routing rules, recovery steps and human approval where the action matters. See [business automation](/services/ai/business-automation/)."
+      },
+      {
+        "t": "h3",
+        "x": "Sales and marketing automation"
+      },
+      {
+        "t": "p",
+        "x": "Routing new leads and preparing relevant next steps. See [sales and marketing automation](/services/ai/sales-marketing-automation/)."
+      },
+      {
+        "t": "h3",
+        "x": "Voice and customer support"
+      },
+      {
+        "t": "p",
+        "x": "Support journeys with clear human handoffs. See [voice and customer support](/services/ai/voice-customer-support/)."
+      },
+      {
+        "t": "h3",
+        "x": "Integration solutions"
+      },
+      {
+        "t": "p",
+        "x": "Making existing tools work together through reliable APIs. See [integration solutions](/services/ai/integration-solutions/)."
+      },
+      {
+        "t": "h2",
+        "x": "How do you pick the first workflow?"
+      },
+      {
+        "t": "p",
+        "x": "Choose a task that repeats often, has a clear owner and can be checked quickly by a person. Start where a mistake is cheap to catch, such as drafting replies for approval, before touching anything that moves money or sends messages on its own. [AI automation for business: 7 workflows worth testing](/blog/where-ai-automation-saves-time/) ranks seven candidates."
+      },
+      {
+        "t": "h2",
+        "x": "What should you ask an agency?"
+      },
+      {
+        "t": "ul",
+        "items": [
+          "Which workflow would you start with, and why?",
+          "Where does a person review or approve, and what happens when the system is unsure?",
+          "What data will it read, who can see it and how is access controlled?",
+          "How will we measure success before and after?",
+          "What will it cost to run once it is live?",
+          "What do we receive at handover?"
+        ]
+      },
+      {
+        "t": "h2",
+        "x": "What should you measure?"
+      },
+      {
+        "t": "p",
+        "x": "Pick a number you can measure before and after, such as minutes per task, first response time or the share of drafts accepted without edits. Track accuracy, time saved, escalation frequency and running cost on a sample of realistic requests."
+      },
+      {
+        "t": "h2",
+        "x": "What are the limits of AI automation?"
+      },
+      {
+        "t": "p",
+        "x": "Leave a task alone when the process is unclear, the decision has serious consequences or there is no sample data to test against. A polished demo helps explain an idea, but production use needs integrations, permission boundaries, monitoring and quality checks."
+      },
+      {
+        "t": "h2",
+        "x": "Where can you see this kind of work?"
+      },
+      {
+        "t": "p",
+        "x": "Cubusify’s case studies [Nexa](/work/nexa/), [Relay](/work/relay/) and [Intake](/work/intake/) show an AI-assistant support workspace, a customer messaging workflow and lead qualification and routing. They describe supplied screens and project briefs, not measured business outcomes."
+      },
+      {
+        "t": "h2",
+        "x": "What to do next"
+      },
+      {
+        "t": "p",
+        "x": "Pick one workflow, write down who owns it and how you would measure it, then talk to an agency about that. To scope a reviewed pilot with Cubusify, see [AI and automation services](/services/ai/) or [contact us](/contact/)."
+      }
+    ]
   }
 ];
