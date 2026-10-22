@@ -53,7 +53,8 @@ const guides={
  'planning-your-first-software-mvp':['product/mvp-development','design/user-experience','software/saas-platforms'],
  'custom-software-development-cost':['software/software-outsourcing','product/mvp-development','software/custom-crm'],
  'choosing-a-software-development-company':['software/software-outsourcing','software/custom-crm','software/saas-platforms'],
- 'what-ai-automation-agencies-do':['ai/ai-assistants','ai/business-automation','ai/integration-solutions']
+ 'what-ai-automation-agencies-do':['ai/ai-assistants','ai/business-automation','ai/integration-solutions'],
+ 'how-custom-software-gets-built':['software/software-outsourcing','product/mvp-development','cloud/ci-cd-pipelines']
 };
 
 const byPath=new Map([[growth.path,growth]]);

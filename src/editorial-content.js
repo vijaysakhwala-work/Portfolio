@@ -1457,5 +1457,134 @@ export default [
         "x": "Pick one workflow, write down who owns it and how you would measure it, then talk to an agency about that. To scope a reviewed pilot with Cubusify, see [AI and automation services](/services/ai/) or [contact us](/contact/)."
       }
     ]
+  },
+  {
+    "slug": "how-custom-software-gets-built",
+    "takeaways": [
+      "Custom software moves from understanding the need, through shaping the approach and building, to review and improvement, with milestones agreed before development begins.",
+      "Each stage should end with something you can inspect: a workflow map, an agreed scope, working software, a review record.",
+      "Match the engagement model to the work: a project team for a defined release, a dedicated team for an ongoing roadmap, flexible support for specialist help.",
+      "Plan handover from the start so that code, designs and knowledge stay with your team.",
+      "Scope will change; agree how changes are raised, priced and approved before work begins."
+    ],
+    "body": [
+      {
+        "t": "p",
+        "x": "Custom software moves from understanding the need, through shaping the approach and building, to review and improvement. Milestones are agreed before development begins, so each stage ends with something you can inspect."
+      },
+      {
+        "t": "h2",
+        "x": "What are the stages of building custom software?"
+      },
+      {
+        "t": "h3",
+        "x": "1. Understand the need"
+      },
+      {
+        "t": "p",
+        "x": "Start with the problem, the existing systems and the people who will use the result. The output is a clear description of the workflow and of what success looks like."
+      },
+      {
+        "t": "h3",
+        "x": "2. Shape the approach"
+      },
+      {
+        "t": "p",
+        "x": "Compare a focused enhancement with a new build, define a first release and agree working milestones, acceptance checks and who owns decisions. Ownership and handover requirements are kept explicit from this point."
+      },
+      {
+        "t": "h3",
+        "x": "3. Build and connect"
+      },
+      {
+        "t": "p",
+        "x": "Build in working milestones and connect the systems the software depends on. Each milestone should run, not only exist as screens."
+      },
+      {
+        "t": "h3",
+        "x": "4. Review and improve"
+      },
+      {
+        "t": "p",
+        "x": "Review working outcomes with the people who use them, fix what is found and plan the next improvements."
+      },
+      {
+        "t": "h2",
+        "x": "Which engagement model fits the work?"
+      },
+      {
+        "t": "table",
+        "caption": "Three ways to organise a software team",
+        "head": [
+          "Model",
+          "Fits when",
+          "What it commits you to"
+        ],
+        "rows": [
+          [
+            "Project team",
+            "You need a defined release.",
+            "Working milestones, acceptance criteria and a scoped handover."
+          ],
+          [
+            "Dedicated team",
+            "You have an ongoing roadmap.",
+            "Backlog ownership, a review cadence and agreed capacity."
+          ],
+          [
+            "Flexible support",
+            "An existing team needs a review or specialist help.",
+            "Agreed availability, access and response expectations."
+          ]
+        ]
+      },
+      {
+        "t": "p",
+        "x": "These are the three arrangements described on our [Hire Team](/team/) page. [Software development outsourcing](/services/software/software-outsourcing/) explains when handing work to an outside team makes sense."
+      },
+      {
+        "t": "h2",
+        "x": "How do reviews work?"
+      },
+      {
+        "t": "p",
+        "x": "Reviews work best against agreed milestones. The team shows working software, you compare it with the acceptance checks, and the result is recorded as accepted or as a list of changes. Review working outcomes, document decisions and plan handover so that knowledge stays with the product team."
+      },
+      {
+        "t": "h2",
+        "x": "What should handover include?"
+      },
+      {
+        "t": "ul",
+        "items": [
+          "The agreed code, designs and project assets, as defined in the project agreement.",
+          "Setup and release steps, so that someone else can build and run the software.",
+          "The decisions made and why, and any open risks.",
+          "Access changes: who can reach which systems once the team has left."
+        ]
+      },
+      {
+        "t": "h2",
+        "x": "What can go wrong, and how do you plan for it?"
+      },
+      {
+        "t": "ul",
+        "items": [
+          "**The scope is unclear:** agree one complete workflow before anyone estimates.",
+          "**Requirements change midway:** agree how changes are raised, priced and approved before work starts.",
+          "**An integration behaves differently from its documentation:** test it early with real examples.",
+          "**Nobody owns decisions:** name one decision-maker on each side.",
+          "**Knowledge sits with one person:** document decisions as you go."
+        ]
+      },
+      {
+        "t": "h2",
+        "x": "What to do next"
+      },
+      {
+        "t": "p",
+        "x": "Write down the workflow you need and the milestone that would tell you the first release works. Then read [what drives the cost of custom software](/blog/custom-software-development-cost/) and [how to choose a software development company](/blog/choosing-a-software-development-company/). To talk through your own project, see [our services](/services/) or [contact us](/contact/)."
+      }
+    ]
   }
 ];

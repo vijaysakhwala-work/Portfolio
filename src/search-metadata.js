@@ -348,6 +348,10 @@ export const searchMetadata={
     "title": "What AI Automation Agencies Do | Cubusify",
     "description": "An AI automation agency picks a repeated task, connects the systems around it, builds a reviewed workflow and measures the result. See what the work covers."
   },
+  "/blog/how-custom-software-gets-built": {
+    "title": "How Custom Software Gets Built | Cubusify",
+    "description": "Custom software moves from understanding the need to shaping, building, review and improvement, with milestones agreed first. A stage-by-stage guide."
+  },
   "/blog/planning-your-first-software-mvp": {
     "title": "How to Plan an MVP: Scope, Features & Validation | Cubusify",
     "description": "Plan a software MVP around one customer journey. Compare build options, prioritise features, set milestones and validate assumptions with real users."
