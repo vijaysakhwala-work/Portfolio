@@ -6,6 +6,8 @@ await fs.rm(output+'/images/showcases/responsive',{recursive:true,force:true});
 const manifest=JSON.parse(await fs.readFile('src/image-delivery.json','utf8'));
 const keep=new Set(Object.values(manifest).flatMap(a=>a.variants.map(v=>v.src.split('/').at(-1))));
 for(const name of await fs.readdir(output+'/images/delivery'))if(!keep.has(name))await fs.rm(output+'/images/delivery/'+name);
+// Source files nothing references (the site serves the .webp award badges); kept in public/, left out of the deploy package.
+for(const name of ['cubusify-awards.png','vijay-founder-photo.jpg',...['appfutura','clutch','designrush','goodfirms-award','goodfirms-profile','it-rate'].map(n=>'awards/'+n+'.png')])await fs.rm(output+'/images/'+name,{force:true});
 // A composite Worker build serves static files from client/. Remove duplicate
 // frontend output at the root, retaining the Worker and deployment metadata.
 if(output==='dist/client')for(const name of await fs.readdir('dist'))if(!['client','server','.openai'].includes(name))await fs.rm('dist/'+name,{recursive:true,force:true});
