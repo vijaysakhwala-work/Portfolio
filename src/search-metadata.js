@@ -108,6 +108,10 @@ export const searchMetadata={
     "title": "SaaS Platform Development | Cubusify",
     "description": "Plan and build the first working version of a subscription software platform, from account setup and its core workflow to tenant permissions and administration."
   },
+  "/services/software/software-outsourcing": {
+    "title": "Software Development Outsourcing Company | Cubusify",
+    "description": "Outsource software development to a team in Surat, India working worldwide. Choose a project team, dedicated team or flexible support under an agreed scope."
+  },
   "/services/web": {
     "title": "Web Development Services | Cubusify",
     "description": "Build a website people understand or a web application they can use to finish a task. Choose the right mix of content, publishing tools and backend services."

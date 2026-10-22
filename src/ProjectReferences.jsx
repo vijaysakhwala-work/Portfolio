@@ -6,7 +6,7 @@ import {workContent} from './work-content';
 
 // Links indicate related project workflows, not an unconfirmed implementation stack.
 const references={
- software:['orbit','ledger','stockroom'],'custom-crm':['intake'],'business-dashboards':['ledger','stockroom'],
+ software:['orbit','ledger','stockroom'],'software-outsourcing':['orbit','stockroom'],'custom-crm':['intake'],'business-dashboards':['ledger','stockroom'],
  web:['forma','roam','orbit'],'business-websites':['forma'],'web-applications':['roam','orbit'],
  mobile:['basil','pulse','haven'],'ios-android-apps':['basil','haven'],'flutter-react-native':['pulse'],
  product:['orbit','intake'],design:['forma','dew'],'user-experience':['dew','haven'],'interface-design':['orbit','ledger'],'brand-visual-design':['forma','dew'],
