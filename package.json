@@ -8,7 +8,7 @@
     "build": "node scripts/build-complete.mjs",
     "preview": "vite preview --host 0.0.0.0 --port 4173 --strictPort false",
     "check": "node scripts/check-build.mjs && node scripts/check-ui.mjs && node scripts/check-showcases.mjs && node scripts/check-brief.mjs && node scripts/check-delivery.mjs && node scripts/audit-search.mjs && node scripts/check-content.mjs && node scripts/check-image-seo.mjs",
-    "build:frontend": "vite build && node scripts/prerender.mjs && node scripts/trim-build.mjs",
+    "build:frontend": "vite build && node scripts/prerender.mjs && node scripts/build-discovery.mjs && node scripts/trim-build.mjs",
     "check:frontend": "node scripts/check-build.mjs && node scripts/check-ui.mjs && node scripts/check-showcases.mjs && node scripts/check-brief.mjs && node scripts/check-delivery.mjs && node scripts/audit-search.mjs && node scripts/check-content.mjs && node scripts/check-image-seo.mjs",
     "test": "node --test tests/*.test.mjs"
   },
