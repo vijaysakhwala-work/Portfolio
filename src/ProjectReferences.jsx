@@ -12,7 +12,7 @@ const references={
  product:['orbit','intake'],design:['forma','dew'],'user-experience':['dew','haven'],'interface-design':['orbit','ledger'],'brand-visual-design':['forma','dew'],
  ecommerce:['dew','stockroom'],'custom-ecommerce':['dew'],'shopify-development':['dew'],'woocommerce-development':['dew'],
  ai:['nexa','relay','intake'],'ai-assistants':['nexa'],'business-automation':['relay','intake'],'sales-marketing-automation':['intake'],'voice-customer-support':['nexa'],'integration-solutions':['relay','stockroom'],
- 'conversion-optimisation':['dew','forma'],healthcare:['haven'],finance:['ledger'],
+ 'conversion-optimisation':['dew','forma'],healthcare:['haven'],finance:['ledger'],manufacturing:['stockroom'],logistics:['relay'],'real-estate':['intake'],
  'choosing-your-ecommerce-platform':['dew','stockroom'],'where-ai-automation-saves-time':['nexa','intake'],'custom-software-development-cost':['orbit','ledger'],'choosing-a-software-development-company':['orbit','stockroom','ledger'],'what-ai-automation-agencies-do':['nexa','relay','intake'],'how-custom-software-gets-built':['orbit','ledger'],'planning-your-first-software-mvp':['haven','orbit']
 };
 export default function ProjectReferences({topic,className='ai-width service-gallery-section'}){
