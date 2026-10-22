@@ -1,3 +1,4 @@
+import {canon} from './links';
 import React, {useEffect, useState} from 'react';
 import {Code2, BrainCircuit, MonitorSmartphone, Palette, Cloud, Headset, KeyRound} from 'lucide-react';
 
@@ -47,7 +48,7 @@ export default function BeamHero() {
         <image href="/images/company-logo.png" x="850" y="250" width="100" height="100" aria-hidden="true"/>
         {categories.map(([label,Icon,href],i)=>{const y=70+i*90;return <g key={label}>
           <g className="beam-icon-node" transform={`translate(${leftX[i]} ${y})`} aria-hidden="true"><circle r="43"/><Icon x="-21" y="-21" width="42" height="42" strokeWidth="1.8"/></g>
-          <a href={href} className="beam-service-link" aria-label={`Explore ${label}`}><rect className="beam-service-pill" x="1420" y={y-25} width="350" height="50" rx="25"/><Icon x="1443" y={y-16} width="32" height="32" strokeWidth="1.8"/><text x="1488" y={y+7}>{label}</text></a>
+          <a href={canon(href)} className="beam-service-link" aria-label={`Explore ${label}`}><rect className="beam-service-pill" x="1420" y={y-25} width="350" height="50" rx="25"/><Icon x="1443" y={y-16} width="32" height="32" strokeWidth="1.8"/><text x="1488" y={y+7}>{label}</text></a>
         </g>;})}
       </svg>
       <svg className="beam-phone-diagram" viewBox="0 0 400 310" role="group" aria-label="Cubusify connects six services through one team">
@@ -56,14 +57,14 @@ export default function BeamHero() {
           const paths=[`M48 ${y} C100 ${y} 112 ${145+i*2} 181 ${145+i*2}`,`M352 ${y} C300 ${y} 288 ${145+i*2} 219 ${145+i*2}`];
           return <g key={label} className={active===i?'beam-route beam-route-active':'beam-route'}>
             {paths.map((d,n)=><g key={n}><path className="beam-line" d={d}/>{active===i&&!reduced&&<><path className="beam-active-line" d={d}/><path className="beam-traveler" pathLength="1" d={d}/></>}</g>)}
-            {[27,373].map(x=><a key={x} href={href} aria-label={`Explore ${label}`} className="beam-phone-node"><circle cx={x} cy={y} r="22"/><Icon x={x-11} y={y-11} width="22" height="22" strokeWidth="1.8"/></a>)}
+            {[27,373].map(x=><a key={x} href={canon(href)} aria-label={`Explore ${label}`} className="beam-phone-node"><circle cx={x} cy={y} r="22"/><Icon x={x-11} y={y-11} width="22" height="22" strokeWidth="1.8"/></a>)}
           </g>;
         })}
         <g transform="translate(-275 -11) scale(.53)"><TechnologyPanel/></g>
         <g transform="translate(-275 1) scale(.53)"><TechnologyPanel bottom/></g>
         <image href="/images/company-logo.png" x="180" y="132" width="40" height="40" aria-hidden="true"/>
       </svg>
-      <div className="beam-mobile-services">{categories.map(([label,Icon,href])=><a href={href} key={label}><Icon size={22} aria-hidden="true"/>{label}</a>)}</div>
+      <div className="beam-mobile-services">{categories.map(([label,Icon,href])=><a href={canon(href)} key={label}><Icon size={22} aria-hidden="true"/>{label}</a>)}</div>
     </div>
     <div className="beam-hero-copy"><p>Software, websites and AI workflows built around your business.</p><h1 id="beam-hero-heading">Custom Software &amp; <span className="beam-typewriter">AI Automation<i/></span></h1></div>
   </section>;

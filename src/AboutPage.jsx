@@ -1,7 +1,8 @@
+import {canon} from './links';
 import React from 'react';
 import { ArrowUpRight, Target, Eye, Users, MessageCircle, Diamond, Leaf, Handshake } from 'lucide-react';
 import './about-page.css';
-function Action({ href = '/contact', children }) { return <a className="ap-action" href={href}>{children}<ArrowUpRight size={17} /></a> }
+function Action({ href = '/contact', children }) { return <a className="ap-action" href={canon(href)}>{children}<ArrowUpRight size={17} /></a> }
 function Tag({ children }) { return <span className="ap-tag">{children}<i /></span> }
 function AboutPhoto({name,alt,eager=false}) { return <figure className="ap-photo-frame"><img className="ap-photo" src={'/images/'+name+'-960.jpg'} srcSet={[480,960,1536].map(width=>'/images/'+name+'-'+width+'.jpg '+width+'w').join(', ')} sizes="(max-width: 900px) calc(100vw - 36px), (max-width: 1360px) calc((100vw - 80px) / 2), 640px" alt={alt} width="1536" height="1024" loading={eager?'eager':'lazy'} fetchPriority={eager?'high':'auto'} decoding="async"/></figure> }
 const values = [[Users, 'Ownership', 'We take responsibility and follow through.'], [MessageCircle, 'Transparency', 'Clear conversations. Honest expectations.'], [Diamond, 'Quality', 'Care in the details. Pride in the outcome.'], [Leaf, 'Long-term relationships', 'We stay invested beyond the first project.']];

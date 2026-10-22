@@ -15,7 +15,8 @@ for(const route of routes){
   if(!url.startsWith('/')||url.startsWith('//'))continue;
   const pathname=url.split(/[?#]/)[0];
   if(!pathname)continue;
-  if(routes.includes(pathname)){links++;continue}
+  const normal=pathname.length>1?pathname.replace(/\/$/,''):pathname;
+  if(routes.includes(normal)){links++;if(normal!=='/'&&!pathname.endsWith('/'))failures.push(route+': internal link without the canonical trailing slash '+url);continue}
   if(pathname.startsWith('/images/')||pathname.startsWith('/fonts/')||pathname.startsWith('/assets/')||pathname==='/favicon.png'){
    assets++;try{await fs.access(output+pathname)}catch{failures.push(route+': missing asset '+pathname)}
   }else failures.push(route+': unknown local URL '+url);

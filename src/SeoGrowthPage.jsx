@@ -1,3 +1,4 @@
+import {canon} from './links';
 import React,{useEffect,useRef,useState} from 'react';
 import {
   ArrowUpRight, Search, MessageCircle, Sparkles,
@@ -122,7 +123,7 @@ export default function SeoGrowthPage() {
             <h1>SEO, AEO &amp; GEO.<br/><span>Strategy &amp; Implementation.</span></h1>
             <p>Build a practical search plan around public accessibility, distinct service content, useful answers and a measurable enquiry journey. Start with a website audit and agree the highest-value implementation work.</p>
             <div className="sg-hero-actions">
-              <a className="sg-btn-primary" href="/contact">
+              <a className="sg-btn-primary" href="/contact/">
                 Discuss your goals <ArrowUpRight size={17}/>
               </a>
               <a className="sg-btn-secondary" href="#approach">See our approach ↓</a>
@@ -226,7 +227,7 @@ export default function SeoGrowthPage() {
         <h2>The right questions.<br/><span>In the right context.</span></h2>
         <div className="sg-usecases">
           {usecases.map(([t, c, url]) => (
-            <a href={url} key={t} className="sg-usecase-card">
+            <a href={canon(url)} key={t} className="sg-usecase-card">
               <h3>{t}</h3>
               <p>{c}</p>
               <span className="sg-usecase-arrow"><ArrowUpRight size={18}/></span>
@@ -258,9 +259,9 @@ export default function SeoGrowthPage() {
         <div className="sg-cta-orb" aria-hidden="true"/>
         <span className="sg-eyebrow sg-eyebrow-light">LET'S MAKE THE NEXT STEP CLEAR</span>
         <h2>Start with your website.<br/><span>Agree what to improve.</span></h2>
-        <p>Share your website, target customers and available search data. We can define a technical and content roadmap, then scope the implementation against your commercial priorities.</p><p>For focused page rewrites, explore <a href="/services/marketing/search-engine-optimisation">on-page SEO and content optimisation</a>. Prepare with our <a href="/blog/seo-aeo-geo-where-to-start">website improvement planning guide</a>.</p>
+        <p>Share your website, target customers and available search data. We can define a technical and content roadmap, then scope the implementation against your commercial priorities.</p><p>For focused page rewrites, explore <a href="/services/marketing/search-engine-optimisation/">on-page SEO and content optimisation</a>. Prepare with our <a href="/blog/seo-aeo-geo-where-to-start/">website improvement planning guide</a>.</p>
         <div className="sg-cta-actions">
-          <a className="sg-btn-primary" href="/contact">Talk to Cubusify <ArrowUpRight size={17}/></a>
+          <a className="sg-btn-primary" href="/contact/">Talk to Cubusify <ArrowUpRight size={17}/></a>
         </div>
       </section>
 

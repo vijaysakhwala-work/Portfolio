@@ -1,3 +1,4 @@
+import {canon} from './links';
 import {Image} from './Showcase';
 import {ServiceIcon} from './Redesign';
 import React from 'react';
@@ -97,7 +98,7 @@ export default function ServicesDirectory() {
         <div>
           <h1>Software Development<br/><span>&amp; Digital Services.</span></h1>
           <p>Compare services for a new product, an existing system or a workflow that needs improving. Start with the task and its constraints; we can help define the right mix of software, design, integration and support.</p>
-          <a className="ai-button sd-hero-cta" href="/contact">
+          <a className="ai-button sd-hero-cta" href="/contact/">
             Discuss your project <ArrowRight size={18}/>
           </a>
         </div>
@@ -124,7 +125,7 @@ export default function ServicesDirectory() {
               {items.map(([slug, subtitle]) => {
                 const s = services.find(x => x.slug === slug);
                 return (
-                  <a href={s.path} key={slug}>
+                  <a href={canon(s.path)} key={slug}>
                     <span className="directory-icon"><ServiceIcon service={s} size={22}/></span>
                     <div>
                       <h3>{s.title}</h3>
@@ -146,7 +147,7 @@ export default function ServicesDirectory() {
           <h2>SEO, AEO &amp; GEO.<br/>One connected approach.</h2>
           <p>Use the broader search strategy service for crawling, indexing and measurement; choose page-level SEO for existing copy, metadata and contextual links.</p>
         </div>
-        <a className="button sd-geo-btn" href="/services/seo-aeo-geo">
+        <a className="button sd-geo-btn" href="/services/seo-aeo-geo/">
           Explore visibility services <ArrowRight size={18}/>
         </a>
       </section>
@@ -168,7 +169,7 @@ export default function ServicesDirectory() {
           <h2>Not sure where to start?</h2>
           <p>Bring the current workflow, existing systems and the outcome you want to improve. We can compare configuration, a focused enhancement and a new build before agreeing scope.</p>
         </div>
-        <a className="ai-button" href="/contact">Start a conversation <ArrowUpRight size={18}/></a>
+        <a className="ai-button" href="/contact/">Start a conversation <ArrowUpRight size={18}/></a>
       </section>
 
     </div>

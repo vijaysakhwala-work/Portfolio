@@ -1,3 +1,4 @@
+import {canon} from './links';
 import React,{useState} from 'react';
 import {ArrowRight,Search} from 'lucide-react';
 import {articles} from './catalog';
@@ -10,7 +11,7 @@ const categories=[...new Set(articles.map(article=>article.category))].sort((a,b
 const dateLabel=new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'}).format(new Date(reviewedDate+'T00:00:00Z'));
 function ArticleMeta(){return <p className="insights-meta">Cubusify Editorial <span aria-hidden="true">·</span> <time dateTime={reviewedDate}>{dateLabel}</time></p>}
 function GuideCard({article,featured=false}){
- return <a className={featured?'insights-feature':'insights-card'} href={'/blog/'+article.slug}>
+ return <a className={featured?'insights-feature':'insights-card'} href={canon('/blog/'+article.slug)}>
   <div className="insights-image"><Image id={articleImages[article.slug]} eager={featured} sizes={featured?'(max-width: 760px) calc(100vw - 68px), 620px':'(max-width: 600px) calc(100vw - 68px), (max-width: 1000px) calc((100vw - 100px) / 2), 390px'}/></div>
   <div className="insights-copy"><span className="insights-category">{featured&&<>FEATURED GUIDE <span aria-hidden="true">·</span> </>}{article.category}</span><h2>{article.title}</h2><p className="insights-description">{article.desc}</p><ArticleMeta/><span className="insights-read">Read the guide <ArrowRight size={17} aria-hidden="true"/></span></div>
  </a>;

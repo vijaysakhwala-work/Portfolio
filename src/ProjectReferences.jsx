@@ -1,3 +1,4 @@
+import {canon} from './links';
 import React from 'react';
 import {ArrowUpRight} from 'lucide-react';
 import {Image} from './Showcase';
@@ -19,7 +20,7 @@ export default function ProjectReferences({topic,className='ai-width service-gal
  return <section className={className+' project-references'} aria-label="Related project case studies">
   <span className="eyebrow">PROJECT CASE STUDIES</span><h2>See the workflow in our project work</h2>
   <p>Explore the screens and decisions behind related user journeys. Each case study explains its project context; the service choice for your own project follows your requirements.</p>
-  <div className="article-grid">{slugs.slice(0,3).map(slug=>{const p=workContent[slug];return <a className="blog-card" href={'/work/'+slug} key={slug}>
+  <div className="article-grid">{slugs.slice(0,3).map(slug=>{const p=workContent[slug];return <a className="blog-card" href={canon('/work/'+slug)} key={slug}>
    <Image id={slug+'-desktop'} sizes="(max-width: 700px) calc(100vw - 40px), 390px"/>
    <div><h3>{p.title.replace(' Case Study','')}</h3><p>{p.features.join(' · ')}.</p><span className="subtle-link">Read the project case study <ArrowUpRight size={16}/></span></div>
   </a>})}</div>
