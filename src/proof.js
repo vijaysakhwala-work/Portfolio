@@ -5,5 +5,3 @@ export const founderProfile={bio:[],credentials:[],links:[]};
 export const articleAuthors={};
 // projectProof: case-study slug -> {client,result,source}. Add only a result the owner can stand behind, with where it comes from.
 export const projectProof={};
-// Directory profiles that exist. Set goodfirms to true once the GoodFirms profile is live; until then its link and schema entry are left out.
-export const profiles={goodfirms:false};

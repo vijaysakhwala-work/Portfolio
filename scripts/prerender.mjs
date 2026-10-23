@@ -7,7 +7,7 @@ import {renderToString} from 'react-dom/server';
 import {routes,metadata,routeInfo} from '../src/catalog.js';
 import assets from '../src/showcase-assets.js';
 import {articleImages,articleUpdated,articlePublished} from '../src/editorial-meta.js';
-import {founderProfile,articleAuthors,profiles} from '../src/proof.js';
+import {founderProfile,articleAuthors} from '../src/proof.js';
 import {primaryPageImage,renderedPageImages,imageFromAsset} from '../src/seo-images.js';
 import {workContent} from '../src/work-content.js';
 import {enterpriseArchitectures} from '../src/enterprise-architectures.js';
@@ -30,7 +30,7 @@ for(const route of [...routes,'/404']){
  const html=renderToString(React.createElement(App,{path:route,Page}));
  const canonical=origin+(route==='/'?'/':route+'/');
  const info=routeInfo(route);
- const organization={'@type':'Organization','@id':origin+'/#organization',name:'Cubusify',url:origin,description:'Cubusify builds custom software, AI workflows, websites and mobile apps.',email:'hello@cubusify.com',logo:origin+'/images/company-logo.png',founder:{'@type':'Person','@id':origin+'/about/#founder',name:'Vijay Sakhwala'},areaServed:'Worldwide',sameAs:['https://linkedin.com/company/cubusify','https://clutch.co/profile/cubusify',...(profiles.goodfirms?['https://www.goodfirms.co/company/cubusify']:[])],address:{'@type':'PostalAddress',addressLocality:'Surat',addressRegion:'Gujarat',addressCountry:'IN'}};
+ const organization={'@type':'Organization','@id':origin+'/#organization',name:'Cubusify',url:origin,description:'Cubusify builds custom software, AI workflows, websites and mobile apps.',email:'hello@cubusify.com',logo:origin+'/images/company-logo.png',founder:{'@type':'Person','@id':origin+'/about/#founder',name:'Vijay Sakhwala'},areaServed:'Worldwide',sameAs:['https://linkedin.com/company/cubusify','https://clutch.co/profile/cubusify','https://www.goodfirms.co/company/cubusify'],address:{'@type':'PostalAddress',addressLocality:'Surat',addressRegion:'Gujarat',addressCountry:'IN'}};
  const graph=[organization,{'@type':'WebSite','@id':origin+'/#website',url:origin+'/',name:'Cubusify',publisher:{'@id':origin+'/#organization'},inLanguage:'en'},{'@type':info.type==='contact'?'ContactPage':info.type==='about'?'AboutPage':'WebPage','@id':canonical+'#webpage',url:canonical,name:m.title,description:m.description,isPartOf:{'@id':origin+'/#website'},about:{'@id':origin+'/#organization'},inLanguage:'en'}];
  if(info.service||info.type==='growth')graph.push({'@type':'Service',name:info.sub?.title||info.service?.title||'SEO, AEO and GEO',description:m.description,url:canonical,provider:{'@id':origin+'/#organization'},mainEntityOfPage:{'@id':canonical+'#webpage'}});
  const primary=primaryPageImage(route,info);
