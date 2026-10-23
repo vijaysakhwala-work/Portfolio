@@ -4,6 +4,7 @@ import fs from 'node:fs/promises';
 import {routes,metadata,services,industries,articles} from '../src/catalog.js';
 import {workProjects} from '../src/work-projects.js';
 
+if(process.env.INDEXING==='off'){console.log('INDEXING=off: llms.txt and sitemap.md not written.');process.exit(0)}
 const origin=(process.env.SITE_URL||'https://cubusify.com').replace(/\/$/,'');
 const url=route=>origin+(route==='/'?'/':route+'/');
 const name=route=>metadata(route).title.replace(/\s*\|\s*Cubusify$/,'');

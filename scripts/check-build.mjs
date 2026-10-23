@@ -24,6 +24,12 @@ for(const route of routes){
  const ids=new Set([...html.matchAll(/\sid="([^"]+)"/g)].map(m=>m[1]));
  for(const [,href]of html.matchAll(/href="(#[^"]+)"/g))if(!ids.has(href.slice(1)))failures.push(route+': missing anchor '+href);
 }
+// Release guard: a production build must not carry a staging block, and a staging build (INDEXING=off) must block everything.
+const blocked=process.env.INDEXING==='off',robotsTxt=await fs.readFile(output+'/robots.txt','utf8'),headersFile=await fs.readFile(output+'/_headers','utf8').catch(()=>'');
+const rootBlock=/^Disallow:\s*\/\s*$/m.test(robotsTxt),headerBlock=/X-Robots-Tag/i.test(headersFile);
+if(blocked){if(!rootBlock||!headerBlock)failures.push('INDEXING=off build must block crawling in robots.txt and _headers')}
+else{if(rootBlock)failures.push('robots.txt blocks the whole site');if(headerBlock)failures.push('_headers sets X-Robots-Tag in a production build')}
+for(const route of routes){const html=await fs.readFile(path.join(output,route.slice(1),'index.html'),'utf8');const robots=html.match(/<meta name="robots" content="([^"]*)"/)?.[1]||'';if(blocked?!/noindex/.test(robots):/noindex|nofollow/.test(robots))failures.push(route+': robots meta "'+robots+'" does not match the build mode')}
 let files=0,largest=0,totalBytes=0;async function walk(dir){for(const item of await fs.readdir(dir,{withFileTypes:true})){const p=path.join(dir,item.name);if(item.isDirectory())await walk(p);else{files++;const size=(await fs.stat(p)).size;totalBytes+=size;largest=Math.max(largest,size)}}}await walk(output);
 if(totalBytes>256*1024*1024)failures.push('Static output exceeds the 256 MiB hosting package limit');
 if(files>1000||largest>25*1024*1024)failures.push('Cloudflare drag-and-drop limits exceeded');
