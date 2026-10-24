@@ -1,5 +1,5 @@
 import {services,articles,industries} from './catalog.js';
-import {industryContent} from './industry-content.js';
+import {industryServiceLinks} from './industry-service-links.js';
 
 // Editorial map of genuinely related pages, used for descriptive internal links.
 // Sub-service pages also link to their parent and to the next sibling (a ring, so every sibling is linked).
@@ -64,9 +64,8 @@ const unique=list=>{const seen=new Set();return list.filter(x=>x&&!seen.has(x.pa
 
 // Reverse of the industry pages' own service cards: which industry workflows feature a service.
 const industryNames=new Map(industries.map(i=>[i.slug,i.name]));
-const industriesByService=new Map();
-for(const [slug,content] of Object.entries(industryContent))for(const [,,href] of content.cards){const key=href.replace(/\/$/,'');if(!industriesByService.has(key))industriesByService.set(key,new Set());industriesByService.get(key).add(slug)}
-export function industriesFor(path){return [...(industriesByService.get(path.replace(/\/$/,''))||[])].map(slug=>({path:'/industries/'+slug,title:industryNames.get(slug)}))}
+// industryServiceLinks is generated from the industry pages (node scripts/gen-industry-links.mjs); check-content fails if it is stale.
+export function industriesFor(path){return (industryServiceLinks[path.replace(/\/$/,'')]||[]).map(slug=>({path:'/industries/'+slug,title:industryNames.get(slug)}))}
 export function titleForPath(path){return byPath.get(path.replace(/\/$/,''))?.title}
 export function relatedFor(path){
  const p=path.replace(/\/$/,'');

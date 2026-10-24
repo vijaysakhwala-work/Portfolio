@@ -3,10 +3,13 @@ import {JSDOM} from 'jsdom';
 import {routes,routeInfo,metadata} from '../src/catalog.js';
 import {enterpriseArchitectures} from '../src/enterprise-architectures.js';
 import {workProjects} from '../src/work-projects.js';
+import {industryServiceMap} from './gen-industry-links.mjs';
+import {industryServiceLinks} from '../src/industry-service-links.js';
 import {serviceAcceptance} from '../src/service-acceptance.js';
 
 const output=fs.existsSync('dist/client/index.html')?'dist/client':'dist';
 const failures=[],specialists=[];
+if(JSON.stringify(industryServiceMap())!==JSON.stringify(industryServiceLinks))failures.push('src/industry-service-links.js is stale: run node scripts/gen-industry-links.mjs');
 function phrases(text){
  const words=text.toLowerCase().replace(/[^a-z0-9 ]/g,' ').split(/\s+/).filter(Boolean);
  return new Set(words.slice(0,-4).map((_,n)=>words.slice(n,n+5).join(' ')));
