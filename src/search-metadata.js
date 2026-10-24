@@ -4,6 +4,10 @@ export const searchMetadata={
     "title": "SEO, AEO & GEO Strategy Services | Cubusify",
     "description": "Plan technical search foundations, useful answer content and measurement with Cubusify. Explore an audit-led SEO, AEO and GEO strategy for your website."
   },
+  "/work/nidan360": {
+    "title": "Health Claims Assistance Case Study: Nidan360 | Cubusify",
+    "description": "A bilingual healthcare and insurance claim assistance website with a business workspace that follows every case by stage. Live at nidan360.com."
+  },
   "/work/forma": {
     "title": "Interior Design Website Case Study: Forma | Cubusify",
     "description": "An interior-design website bringing project photography, room details, material choices and consultation enquiries into one browsing journey."

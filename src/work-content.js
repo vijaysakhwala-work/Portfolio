@@ -1,7 +1,23 @@
 // Project authenticity confirmed by the business owner on 2026-10-20.
 // Workflow descriptions refer to the supplied screenshots and project briefs.
 // No unconfirmed technology stack, client identity or measured result is asserted.
+// Exception: Nidan360 is a named client; its name, website address and screenshots were supplied by the owner on 2026-10-24.
 export const workContent={
+ nidan360:{
+  title:'Health Claims Assistance Website Case Study: Nidan360',
+  summary:'A bilingual public website and a business workspace for a healthcare, insurance and claim assistance service, connecting a family’s first request with the team’s view of every case.',
+  overview:'Nidan360 helps families with healthcare, insurance and claim assistance. The supplied screens show two connected surfaces: a public website in Hindi and English that explains services and offers one clear Get assistance action, and a business workspace where the team follows applications from receipt to closure. The live website is nidan360.com.',
+  sections:[
+   ['A clear first step for families','The home page opens with a plain promise, “Your family’s health. A little less worry.”, and one primary action, Get assistance. The navigation covers How it works, About us, Our services and Track application, and a language switch offers Hindi and English.'],
+   ['Services that are easy to choose on a phone','On mobile, each specialty, such as Orthopedics and Cardiology, is its own card with an illustration and a Get assistance button. A visitor can pick a service and start a request without searching through menus.'],
+   ['A workspace that shows every case','The business workspace opens on a dashboard with total applications, active cases, new applications and closed cases, plus a view of cases by stage: Received, Under review, Processing, Decision received and Closed. Applications and Reports sit in the side menu. The numbers in the supplied screen are a small sample, not performance results.']
+  ],
+  features:['Hindi and English website','Get assistance and Track application actions','Business workspace with cases by stage'],
+  captions:['Business workspace dashboard showing applications and cases by stage.','Mobile service list with a Get assistance action on each service.'],
+  service:'/services/web/business-websites',
+  relatedServices:['/services/web/web-applications','/services/software/business-dashboards'],
+  takeaway:'When a service involves worry and paperwork, make the first step obvious for the visitor and give the team one place to follow every case. Keep language choice and case status visible instead of buried.'
+ },
  forma:{
   title:'Interior Design Website Case Study: Forma',
   summary:'An interior-design website bringing project photography, room details, material choices and consultation enquiries into one browsing journey.',

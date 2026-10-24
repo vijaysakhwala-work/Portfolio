@@ -20,3 +20,6 @@ html[data-theme=dark] :is(.ht-page,.hf-width,.ai-page,.is-page,.ap-page,.wp-page
 
 /* Enquiry form: make the success message easy to see */
 .enquiry-notice.enquiry-sent{margin-top:16px;padding:14px 16px;border:1px solid #1f9d6b;border-radius:10px;background:rgba(31,157,107,.12);font-weight:600;line-height:1.5}
+
+/* Case studies for named clients: link to the live website */
+.wp-card-url{display:inline-block;margin-top:10px;font-weight:600;text-decoration:underline;text-underline-offset:3px}

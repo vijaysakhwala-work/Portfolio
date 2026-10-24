@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import {JSDOM} from 'jsdom';
 import {routes,routeInfo,metadata} from '../src/catalog.js';
 import {enterpriseArchitectures} from '../src/enterprise-architectures.js';
+import {workProjects} from '../src/work-projects.js';
 import {serviceAcceptance} from '../src/service-acceptance.js';
 
 const output=fs.existsSync('dist/client/index.html')?'dist/client':'dist';
@@ -23,7 +24,13 @@ for(const route of routes){
   specialists.push({route,service:info.service.slug,phrases:phrases(main.textContent)});
  }
  if(route.startsWith('/work/')&&(!main.textContent.includes('PROJECT CASE STUDY')||!main.querySelector('[data-project-status="owner-confirmed"]')))failures.push(route+': owner-confirmed project status missing');
- if(info.type==='work-detail'){
+ const named=info.type==='work-detail'?workProjects.find(p=>p.slug===info.slug)?.namedClient:false;
+ if(named){
+  const url=workProjects.find(p=>p.slug===info.slug).url;
+  if(main.querySelector('[data-architecture-status="reference"]'))failures.push(route+': a named client project must not carry an illustrative architecture');
+  if(![...main.querySelectorAll('a[href]')].some(a=>a.getAttribute('href')===url))failures.push(route+': live website link missing');
+ }
+ else if(info.type==='work-detail'){
   const design=enterpriseArchitectures[info.slug],section=main.querySelector('[data-architecture-status="reference"]');
   if(!design||design.stack.length!==5||design.challenges.length!==3||design.flow.length!==5||design.validation.length!==4)failures.push(route+': incomplete enterprise reference architecture');
   if(!section?.textContent.includes('illustrative architecture choices')||section.querySelectorAll('.wd-detail-notes article').length!==5)failures.push(route+': reference architecture or disclosure missing');

@@ -1,6 +1,8 @@
 import fs from 'node:fs/promises';
 import crypto from 'node:crypto';
-import assets from '../src/showcase-assets.js';
+import allAssets from '../src/showcase-assets.js';
+// Named-client images (owner-supplied, branded) are checked separately below; the 211-image anonymised batch is checked as before.
+const assets=Object.fromEntries(Object.entries(allAssets).filter(([,a])=>!a.namedClient)),named=Object.entries(allAssets).filter(([,a])=>a.namedClient);
 const report=JSON.parse(await fs.readFile('design/showcase-assets-report.json','utf8'));
 const approval=JSON.parse(await fs.readFile('design/debranding/approved.json','utf8'));
 const deferred=JSON.parse(await fs.readFile('design/debranding/deferred.json','utf8'));
@@ -23,6 +25,10 @@ for(const [id,a]of Object.entries(assets)){
   const path='public'+url;expected.add(path);
   try{const b=await fs.readFile(path);if(crypto.createHash('sha256').update(b).digest('hex')!==hash)failures.push(id+': hash differs');const [ew,eh]=size(b);if(ew!==w||eh!==h)failures.push(id+': dimension mismatch')}catch(e){failures.push(id+': '+e.message)}
  }
+}
+for(const [id,a]of named){
+ if(!a.client||!a.url?.startsWith('https://')||!a.alt||!a.label||!a.src.startsWith('/images/clients/'))failures.push(id+': named-client metadata incomplete');
+ try{const b=await fs.readFile('public'+a.src),[w,h]=size(b);if(w!==a.width||h!==a.height)failures.push(id+': dimension mismatch')}catch(e){failures.push(id+': '+e.message)}
 }
 for(const p of await fs.readdir('public/images/showcases',{recursive:true})){const full='public/images/showcases/'+p.replaceAll('\\','/');if((await fs.stat(full)).isFile()&&!expected.has(full))failures.push('Stray showcase file: '+p)}
 if(failures.length)throw Error(failures.join('\n'));

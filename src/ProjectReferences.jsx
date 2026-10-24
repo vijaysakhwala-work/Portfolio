@@ -7,12 +7,12 @@ import {workContent} from './work-content';
 // Links indicate related project workflows, not an unconfirmed implementation stack.
 const references={
  software:['orbit','ledger','stockroom'],'software-outsourcing':['orbit','stockroom'],'custom-crm':['intake'],'business-dashboards':['ledger','stockroom'],
- web:['forma','roam','orbit'],'business-websites':['forma'],'web-applications':['roam','orbit'],
+ web:['forma','roam','orbit'],'business-websites':['nidan360','forma'],'web-applications':['roam','orbit'],
  mobile:['basil','pulse','haven'],'ios-android-apps':['basil','haven'],'flutter-react-native':['pulse'],
  product:['orbit','intake'],design:['forma','dew'],'user-experience':['dew','haven'],'interface-design':['orbit','ledger'],'brand-visual-design':['forma','dew'],
  ecommerce:['dew','stockroom'],'custom-ecommerce':['dew'],'shopify-development':['dew'],'woocommerce-development':['dew'],
  ai:['nexa','relay','intake'],'ai-assistants':['nexa'],'business-automation':['relay','intake'],'sales-marketing-automation':['intake'],'voice-customer-support':['nexa'],'integration-solutions':['relay','stockroom'],
- 'conversion-optimisation':['dew','forma'],healthcare:['haven'],finance:['ledger'],manufacturing:['stockroom'],logistics:['relay'],'real-estate':['intake'],
+ 'conversion-optimisation':['dew','forma'],healthcare:['nidan360','haven'],finance:['ledger'],manufacturing:['stockroom'],logistics:['relay'],'real-estate':['intake'],
  'choosing-your-ecommerce-platform':['dew','stockroom'],'where-ai-automation-saves-time':['nexa','intake'],'custom-software-development-cost':['orbit','ledger'],'choosing-a-software-development-company':['orbit','stockroom','ledger'],'what-ai-automation-agencies-do':['nexa','relay','intake'],'how-custom-software-gets-built':['orbit','ledger'],'planning-your-first-software-mvp':['haven','orbit']
 };
 export default function ProjectReferences({topic,className='ai-width service-gallery-section'}){
