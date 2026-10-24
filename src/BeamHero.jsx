@@ -1,4 +1,5 @@
 import {canon} from './links';
+import {industries} from './catalog';
 import React, {useEffect, useState} from 'react';
 import {Code2, BrainCircuit, MonitorSmartphone, Palette, Cloud, Headset, KeyRound} from 'lucide-react';
 
@@ -17,6 +18,33 @@ function TechnologyPanel({bottom = false}) {
     <path d="M7 0H213Q220 0 220 7V73Q220 80 213 80H143Q136 80 136 73Q136 69 129 69H91Q84 69 84 73Q84 80 77 80H7Q0 80 0 73V7Q0 0 7 0Z"/>
     {bottom ? <>{Array.from({length:21},(_,i)=><circle key={i} cx={28+(i%7)*16} cy={24+Math.floor(i/7)*14} r="3.5" className="beam-tech-dot beam-keyboard-key" style={{'--key-delay':`${i*.16}s`}}/>)}<path className="beam-tech-track" d="M159 23H199"/><circle className="beam-keyboard-cursor" cx="177" cy="23" r="2.5" fill="#0965ff"/><circle className="beam-panel-status" cx="197" cy="59" r="5" fill="#0965ff"/></> : <><Cloud className="beam-cloud-icon" x="15" y="13" width="31" height="23" strokeWidth="1.3"/>{Array.from({length:6},(_,i)=><circle className="beam-connection-dot" style={{'--dot-delay':`${i*.3}s`}} key={i} cx={145+i*11} cy="20" r="3" fill={i===5?'#00b7e9':'#b7d9ff'}/>)}<path className="beam-tech-track" d="M19 47H151"/><path className="beam-tech-progress" d="M19 47H96"/><KeyRound className="beam-access-key" x="174" y="37" width="29" height="29" strokeWidth="2.5"/></>}
   </g>;
+}
+
+// The headline stays fixed. The line under it names who the work is for: "for your business" is what search engines and
+// screen readers get, and on screen it cycles through the industries that have their own pages.
+const typedWords = ['for your business', ...industries.map(i => 'for ' + i.name)];
+function Typewriter() {
+  const [text, setText] = useState(typedWords[0]);
+  useEffect(() => {
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    let word = 0, length = typedWords[0].length, erasing = true, timer;
+    const step = () => {
+      if (erasing) {
+        length -= 1;
+        setText(typedWords[word].slice(0, Math.max(length, 4)));
+        if (length <= 4) { erasing = false; word = (word + 1) % typedWords.length; length = 4; timer = setTimeout(step, 260); }
+        else timer = setTimeout(step, 38);
+      } else {
+        length += 1;
+        setText(typedWords[word].slice(0, length));
+        if (length >= typedWords[word].length) { erasing = true; timer = setTimeout(step, 2300); }
+        else timer = setTimeout(step, 80);
+      }
+    };
+    timer = setTimeout(step, 2800);
+    return () => clearTimeout(timer);
+  }, []);
+  return <span className="beam-typewriter" aria-hidden="true"><span className="beam-typewriter-text">{text}<i/></span></span>;
 }
 
 export default function BeamHero() {
@@ -66,6 +94,6 @@ export default function BeamHero() {
       </svg>
       <div className="beam-mobile-services">{categories.map(([label,Icon,href])=><a href={canon(href)} key={label}><Icon size={22} aria-hidden="true"/>{label}</a>)}</div>
     </div>
-    <div className="beam-hero-copy"><p>Software, websites and AI workflows built around your business.</p><h1 id="beam-hero-heading">Custom Software &amp; <span className="beam-typewriter">AI Automation<i/></span></h1></div>
+    <div className="beam-hero-copy"><p>Software, websites and AI workflows built around your business.</p><h1 id="beam-hero-heading" aria-label="Custom Software & AI Automation for your business">Custom Software &amp; AI&nbsp;Automation <Typewriter/></h1></div>
   </section>;
 }

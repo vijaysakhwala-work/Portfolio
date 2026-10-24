@@ -30,7 +30,7 @@ export default function ServiceSamplePage({service:s,sub}){
   <section className="ai-journey"><div className="ai-width"><div><h2>{sub?'Planning '+lowerKeep(sub.title):'From requirements to release'}</h2><ol>{d.steps.map(([title,copy],n)=><li key={title} id={'delivery-'+(n+1)}><span>{n+1}</span><div><h3>{title}</h3><p>{copy}</p></div></li>)}</ol></div><div><Picture slug={s.slug} part="preview"/></div></div></section>
   <ServiceGallery slug={s.slug} sub={sub?.slug}/>{!sub&&<CollaborationProcess/>}
 
-  <section className="ai-faq ai-width"><div><span className="ai-eyebrow">FAQ</span><h2>{sub?sub.title:s.title}</h2><p>Scope, tradeoffs and preparation for your project.</p></div><div>{d.faq.map(([question,answer],n)=><details key={question} open={n===0}><summary>{question}</summary><p>{answer}</p></details>)}</div></section>
+  <section className="ai-faq ai-width"><div><span className="ai-eyebrow">FAQ</span><h2>{sub?sub.title:s.title}</h2><p>Scope, tradeoffs and preparation for your project.</p></div><div>{d.faq.map(([question,answer],n)=><details name="faq" key={question} open={n===0}><summary>{question}</summary><p>{answer}</p></details>)}</div></section>
 
   {sub&&<ServiceAcceptance slug={sub.slug}/>}
 <ProjectReferences topic={sub?.slug||s.slug}/>

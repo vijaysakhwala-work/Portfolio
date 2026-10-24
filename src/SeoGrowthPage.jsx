@@ -120,7 +120,7 @@ export default function SeoGrowthPage() {
         <div className="sg-hero-layout">
           <div className="sg-hero-copy">
             <span className="sg-eyebrow">SEARCH &amp; ANSWER DISCOVERY</span>
-            <h1>SEO, AEO &amp; GEO.<br/><span>Strategy &amp; Implementation.</span></h1>
+            <h1>SEO, AEO &amp; GEO. <br/><span>Strategy &amp; Implementation.</span></h1>
             <p>Build a practical search plan around public accessibility, distinct service content, useful answers and a measurable enquiry journey. Start with a website audit and agree the highest-value implementation work.</p>
             <div className="sg-hero-actions">
               <a className="sg-btn-primary" href="/contact/">
@@ -159,7 +159,7 @@ export default function SeoGrowthPage() {
       <section className="sg-section container">
         <div className="sg-section-head">
           <span className="sg-eyebrow">THREE LENSES. ONE USEFUL WEBSITE.</span>
-          <h2>Clarity for people.<br/><span>Structure for discovery.</span></h2>
+          <h2>Clarity for people. <br/><span>Structure for discovery.</span></h2>
         </div>
         <div className="sg-disciplines">
           {disciplines.map(({name, label, icon: Icon, color, bg, title, copy, items}) => (
@@ -186,7 +186,7 @@ export default function SeoGrowthPage() {
         <div className="container">
           <div className="sg-section-head sg-head-light">
             <span className="sg-eyebrow sg-eyebrow-light">FROM BASELINE TO BETTER DECISIONS</span>
-            <h2>A practical plan.<br/><span>Visible work at every step.</span></h2>
+            <h2>A practical plan. <br/><span>Visible work at every step.</span></h2>
           </div>
           <div className="sg-process">
             {processSteps.map(([Icon, t, c], n) => (
@@ -207,7 +207,7 @@ export default function SeoGrowthPage() {
         <div className="sg-deliverables">
           <div>
             <span className="sg-eyebrow">WHAT YOU TAKE AWAY</span>
-            <h2>More than<br/><span>a list of keywords.</span></h2>
+            <h2>More than <br/><span>a list of keywords.</span></h2>
             <p>A plan your team can understand, improvements you can inspect and a clear handover.</p>
           </div>
           <ul className="sg-deliverables-list">
@@ -224,7 +224,7 @@ export default function SeoGrowthPage() {
       {/* ── USE CASES ── */}
       <section className="sg-section container">
         <span className="sg-eyebrow">BUILT AROUND YOUR BUSINESS</span>
-        <h2>The right questions.<br/><span>In the right context.</span></h2>
+        <h2>The right questions. <br/><span>In the right context.</span></h2>
         <div className="sg-usecases">
           {usecases.map(([t, c, url]) => (
             <a href={canon(url)} key={t} className="sg-usecase-card">
@@ -245,7 +245,7 @@ export default function SeoGrowthPage() {
           </div>
           <div className="sg-faq-list">
             {faqs.map(([q, a]) => (
-              <details key={q} className="sg-faq">
+              <details name="faq" key={q} className="sg-faq">
                 <summary>{q}<span className="sg-faq-icon">+</span></summary>
                 <p>{a}</p>
               </details>
@@ -258,7 +258,7 @@ export default function SeoGrowthPage() {
       <section className="sg-cta container">
         <div className="sg-cta-orb" aria-hidden="true"/>
         <span className="sg-eyebrow sg-eyebrow-light">LET'S MAKE THE NEXT STEP CLEAR</span>
-        <h2>Start with your website.<br/><span>Agree what to improve.</span></h2>
+        <h2>Start with your website. <br/><span>Agree what to improve.</span></h2>
         <p>Share your website, target customers and available search data. We can define a technical and content roadmap, then scope the implementation against your commercial priorities.</p><p>For focused page rewrites, explore <a href="/services/marketing/search-engine-optimisation/">on-page SEO and content optimisation</a>. Prepare with our <a href="/blog/seo-aeo-geo-where-to-start/">website improvement planning guide</a>.</p>
         <div className="sg-cta-actions">
           <a className="sg-btn-primary" href="/contact/">Talk to Cubusify <ArrowUpRight size={17}/></a>

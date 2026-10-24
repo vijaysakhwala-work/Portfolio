@@ -19,7 +19,7 @@ export default function AISamplePage({sub}){const d={...aiSamples[sub.slug],...a
 <section className="ai-journey"><div className="ai-width"><div><h2>Planning {lowerKeep(sub.title)}</h2>{d.journey&&<p className="ai-journey-intro">{d.journey}</p>}<ol>{d.steps.map(([t,c],n)=><li key={t}><span>{n+1}</span><div><h3>{t}</h3><p>{c}</p></div></li>)}</ol></div><div><Picture data={d} part="preview" alt={'Illustrative '+lowerKeep(sub.title)+' desktop and mobile interface with sample data'}/></div></div></section>
 <ServiceGallery slug="ai" sub={sub.slug}/>
 
-<section className="ai-faq ai-width"><div><span className="ai-eyebrow">FAQ</span><h2>{sub.title}</h2><p>Straightforward answers to common questions about {lowerKeep(sub.title)}.</p></div><div>{d.faq.map(([q,a],n)=><details key={q} open={n===0}><summary>{q}</summary><p>{a}</p></details>)}</div></section>
+<section className="ai-faq ai-width"><div><span className="ai-eyebrow">FAQ</span><h2>{sub.title}</h2><p>Straightforward answers to common questions about {lowerKeep(sub.title)}.</p></div><div>{d.faq.map(([q,a],n)=><details name="faq" key={q} open={n===0}><summary>{q}</summary><p>{a}</p></details>)}</div></section>
 
 <ServiceAcceptance slug={sub.slug}/>
 <ProjectReferences topic={sub.slug}/>

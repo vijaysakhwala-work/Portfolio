@@ -12,6 +12,8 @@ import './theme.css';
 import './theme-palette.css';
 import './refinements.css';
 import './review-fixes.css';
+// FAQ accordions: opening one closes the others (browsers that group <details name> do this natively; this covers the rest).
+document.addEventListener('toggle',e=>{const d=e.target;if(d instanceof HTMLDetailsElement&&d.open&&d.name)document.querySelectorAll('details[name="'+d.name+'"][open]').forEach(o=>{if(o!==d)o.open=false})},true);
 async function start(){const path=window.location.pathname.replace(/\/$/,'')||'/';const Page=await loadPage(path);const root=document.getElementById('root');if(root.dataset.prerendered==='true')hydrateRoot(root,<App path={path} Page={Page}/>);else createRoot(root).render(<App path={path} Page={Page}/>)}
 start().catch(error=>{console.error(error);const message=document.createElement('p');message.textContent='Interactive features could not load. Please refresh, or use the links on this page.';message.setAttribute('role','status');document.body.appendChild(message)});
 

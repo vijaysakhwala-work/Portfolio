@@ -15,7 +15,7 @@ export default function IndustrySamplePage({industry:i}){
   <section className="is-journey"><div className="is-width"><div><h2>Plan a focused {i.name.toLowerCase()} project</h2><ol>{d.steps.map(([title,copy],n)=><li key={title}><span>{n+1}</span><div><h3>{title}</h3><p>{copy}</p></div></li>)}</ol></div><div><Picture slug={i.slug} part="preview"/></div></div></section>
   <section className="is-width industry-screens"><Gallery ids={[i.slug+'-overview-tile',i.slug+'-workflow-workspace']} title={i.name+' workflows'}/></section>
 
-  <section className="is-faq is-width"><h2>{i.name} software</h2><div>{d.faq.map(([question,answer],n)=><details key={question} open={n===0}><summary>{question}</summary><p>{answer}</p></details>)}</div></section>
+  <section className="is-faq is-width"><h2>{i.name} software</h2><div>{d.faq.map(([question,answer],n)=><details name="faq" key={question} open={n===0}><summary>{question}</summary><p>{answer}</p></details>)}</div></section>
 <ProjectReferences topic={i.slug} className="is-width industry-screens"/>
 <section className="is-cta is-width"><div><h2>Discuss your <span>{i.name.toLowerCase()} workflow.</span></h2><p>Bring the current process, connected systems and the decision you want to improve. We can assess a practical first phase.</p></div><a className="is-button" href="/contact/">Start a conversation <ArrowRight size={18}/></a></section>
  </div>;

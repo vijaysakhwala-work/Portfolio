@@ -97,7 +97,7 @@ export default function ServicesDirectory() {
       {/* ── Hero ── */}
       <section className="sd-hero ai-width">
         <div>
-          <h1>Software Development<br/><span>&amp; Digital Services.</span></h1>
+          <h1>Software Development <br/><span>&amp; Digital Services.</span></h1>
           <p>Compare services for a new product, an existing system or a workflow that needs improving. Start with the task and its constraints; we can help define the right mix of software, design, integration and support.</p>
           <a className="ai-button sd-hero-cta" href="/contact/">
             Discuss your project <ArrowRight size={18}/>
@@ -147,7 +147,7 @@ export default function ServicesDirectory() {
       <section className="container growth-directory-link">
         <div>
           <span className="eyebrow">SEARCH & ANSWER DISCOVERY</span>
-          <h2>SEO, AEO &amp; GEO.<br/>One connected approach.</h2>
+          <h2>SEO, AEO &amp; GEO. <br/>One connected approach.</h2>
           <p>Use the broader search strategy service for crawling, indexing and measurement; choose page-level SEO for existing copy, metadata and contextual links.</p>
         </div>
         <a className="button sd-geo-btn" href="/services/seo-aeo-geo/">

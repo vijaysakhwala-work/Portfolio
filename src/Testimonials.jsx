@@ -18,7 +18,7 @@ export default function Testimonials(){
  return <section className="section container testimonials-section" aria-labelledby="tm-title">
   <div className="tm-head">
    <span className="eyebrow">CLIENT PERSPECTIVES</span>
-   <h2 id="tm-title">Trusted by teams who<br/><span>value real partnership.</span></h2>
+   <h2 id="tm-title">Trusted by teams who <br/><span>value real partnership.</span></h2>
    <p>Founders and operators share what it is like to build with Cubusify, in their own words.</p>
   </div>
   <div className="tm-marquee" role="region" aria-label="Client reviews" tabIndex={0}>

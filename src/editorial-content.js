@@ -53,6 +53,9 @@ export default [
         "x": "For example, a manufacturer seeking a production dashboard needs to understand the problems it can solve, which systems it connects to, how implementation is scoped and what information to prepare. A page that answers those questions gives the buyer a more useful starting point than a long list of technologies."
       },
       {
+        "t": "figure"
+      },
+      {
         "t": "ol",
         "items": [
           "Choose a priority service and define the type of enquiry you want.",
@@ -111,6 +114,9 @@ export default [
       {
         "t": "p",
         "x": "A parent service page should help buyers choose an approach. A specialist page should answer the next set of questions: what is included, which constraints matter, what information is needed and how implementation will be evaluated. Replacing only a title while repeating the parent’s benefits, process and FAQs provides little reason to read a second page."
+      },
+      {
+        "t": "figure"
       },
       {
         "t": "table",
@@ -1140,6 +1146,9 @@ export default [
         "x": "Moving spreadsheets or an older system means mapping columns, resolving duplicates and reconciling the result. Poor source data adds work before any new feature does."
       },
       {
+        "t": "figure"
+      },
+      {
         "t": "h3",
         "x": "4. Automation rules"
       },
@@ -1154,6 +1163,9 @@ export default [
       {
         "t": "p",
         "x": "Payments, email, accounting, identity and other systems each need an integration that someone designs, tests and maintains. Systems with weak or undocumented interfaces cost more to connect."
+      },
+      {
+        "t": "figure"
       },
       {
         "t": "h3",
@@ -1285,6 +1297,9 @@ export default [
         "x": "A case study shows what a supplier built. It does not prove what the software achieved unless it states a measured result and where the number comes from. Look for the problem, the decisions made, who was involved and the outcome. Treat unnamed clients and unsourced figures with the caution you would give any claim."
       },
       {
+        "t": "figure"
+      },
+      {
         "t": "p",
         "x": "Independent review sites help, but read the reviews themselves and not only the rating."
       },
@@ -1313,6 +1328,9 @@ export default [
       {
         "t": "p",
         "x": "Using only what is published on this site: Cubusify agrees milestones and commercial terms before development begins. The project agreement defines ownership and handover, and the agreed code, designs and project assets are handed over to you. Cubusify is based in Surat, India and works with clients worldwide. Our [case studies](/work/) describe the supplied screens and project briefs behind each piece of work, and the site states that figures in screenshots are not claims of measured business performance."
+      },
+      {
+        "t": "figure"
       },
       {
         "t": "h2",
@@ -1370,6 +1388,9 @@ export default [
         "x": "Assistants that search approved business information, explain their sources and give people a way to review or escalate uncertain answers. See [AI assistants](/services/ai/ai-assistants/)."
       },
       {
+        "t": "figure"
+      },
+      {
         "t": "h3",
         "x": "Business automation"
       },
@@ -1400,6 +1421,9 @@ export default [
       {
         "t": "p",
         "x": "Making existing tools work together through reliable APIs. See [integration solutions](/services/ai/integration-solutions/)."
+      },
+      {
+        "t": "figure"
       },
       {
         "t": "h2",
@@ -1501,6 +1525,9 @@ export default [
         "x": "Build in working milestones and connect the systems the software depends on. Each milestone should run, not only exist as screens."
       },
       {
+        "t": "figure"
+      },
+      {
         "t": "h3",
         "x": "4. Review and improve"
       },
@@ -1549,6 +1576,9 @@ export default [
       {
         "t": "p",
         "x": "Reviews work best against agreed milestones. The team shows working software, you compare it with the acceptance checks, and the result is recorded as accepted or as a list of changes. Review working outcomes, document decisions and plan handover so that knowledge stays with the product team."
+      },
+      {
+        "t": "figure"
       },
       {
         "t": "h2",

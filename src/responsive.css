@@ -70,5 +70,5 @@
   .beam-hero-copy{margin:0 auto}
   .beam-hero-copy>p{font-size:18px;line-height:1.5;margin:0 0 28px}
   .beam-hero h1{font-size:clamp(25px,7.4vw,34px);line-height:1.22;letter-spacing:-.035em}
-  .beam-hero h1 .beam-typewriter{min-height:2.44em;max-width:100%;overflow-wrap:normal}
+  .beam-hero h1 .beam-typewriter{min-height:1.25em;max-width:100%;overflow-wrap:normal}
 }
