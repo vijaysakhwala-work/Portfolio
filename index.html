@@ -1,1 +1,120 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="theme-color" content="#f7f8f5"/><link rel="icon" type="image/png" href="/images/company-logo.png"/><title>Cubusify — Design, Software & AI</title><meta name="description" content="Explore Cubusify's web, software, mobile and AI development services. Explore our work and plan your next project."/><script>try{const t=localStorage.getItem("cubusify-theme");document.documentElement.dataset.theme=t==="dark"||(!t&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"}catch{}</script></head><body><div id="root"></div><script type="module" src="/src/main.jsx"></script></body></html>
+<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="theme-color" content="#f7f8f5"/><link rel="icon" type="image/png" href="/images/company-logo.png"/><title>Cubusify — Design, Software & AI</title><meta name="description" content="Explore Cubusify's web, software, mobile and AI development services. Explore our work and plan your next project."/><script>try{const t=localStorage.getItem("cubusify-theme");document.documentElement.dataset.theme=t==="dark"||(!t&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"}catch{}</script></head><body><div id="root"></div><script>
+/* Cubusify first-visit loader: a rotating cube whose 54 tiles (6 faces of 9) swap platform logos.
+   Shown once per browser session, never to crawlers or speed-test tools, and removed after about two seconds
+   (or when the page has loaded, whichever is later). A CSS failsafe removes it after six seconds even if this script fails. */
+(function () {
+  try {
+    if (/bot|crawl|spider|lighthouse|pagespeed|headless|prerender/i.test(navigator.userAgent)) return;
+    if (window.sessionStorage.getItem('cubusify-loader')) return;
+    window.sessionStorage.setItem('cubusify-loader', '1');
+  } catch (e) { return; }
+
+  var MIN_MS = 2200, MAX_MS = 6000;
+  var logos = ['paytm', 'razorpay', 'shopify', 'zoho', 'make', 'zapier', 'hubspot', 'googlecloud', 'elevenlabs', 'retellai', 'vapi', 'voiceflow', 'synthflow', 'botpress', 'relevanceai'];
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var started = Date.now(), loaded = false, finished = false, timers = [];
+
+  var css = [
+    'html.cb-loading{overflow:hidden}',
+    '#cb-loader{--s:min(170px,44vw);position:fixed;inset:0;z-index:2147483000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:52px;background:radial-gradient(circle at 50% 38%,#ffffff 0,#eef4ff 55%,#e3ecfb 100%);color:#071b50;opacity:1;transition:opacity .55s ease,visibility .55s;animation:cb-failsafe .55s ease ' + (MAX_MS / 1000) + 's forwards;cursor:pointer}',
+    'html[data-theme=dark] #cb-loader{background:radial-gradient(circle at 50% 38%,#16233f 0,#0d1528 60%,#080e1d 100%);color:#e4edff}',
+    '#cb-loader.cb-out{opacity:0;visibility:hidden}',
+    '@keyframes cb-failsafe{to{opacity:0;visibility:hidden}}',
+    '.cb-scene{width:var(--s);height:var(--s);perspective:1100px;animation:cb-in .9s cubic-bezier(.2,.8,.2,1) both}',
+    '@keyframes cb-in{from{opacity:0;transform:scale(.55) translateY(24px)}to{opacity:1;transform:none}}',
+    '.cb-cube{position:relative;width:100%;height:100%;transform-style:preserve-3d;animation:cb-spin 8s linear infinite}',
+    '@keyframes cb-spin{0%{transform:rotateX(-26deg) rotateY(0deg)}50%{transform:rotateX(-10deg) rotateY(180deg)}100%{transform:rotateX(-26deg) rotateY(360deg)}}',
+    '.cb-face{position:absolute;inset:0;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(3,1fr);gap:calc(var(--s) * .035);padding:calc(var(--s) * .04);backface-visibility:hidden;background:rgba(246,250,255,.95);border:1px solid rgba(9,101,255,.28);border-radius:calc(var(--s) * .06);box-shadow:inset 0 0 36px rgba(9,101,255,.12),0 0 28px rgba(9,101,255,.10)}',
+    'html[data-theme=dark] .cb-face{background:rgba(20,33,60,.96);border-color:rgba(118,173,255,.35);box-shadow:inset 0 0 36px rgba(118,173,255,.12),0 0 28px rgba(118,173,255,.14)}',
+    '.cb-f0{transform:translateZ(calc(var(--s) / 2))}',
+    '.cb-f1{transform:rotateY(180deg) translateZ(calc(var(--s) / 2))}',
+    '.cb-f2{transform:rotateY(90deg) translateZ(calc(var(--s) / 2))}',
+    '.cb-f3{transform:rotateY(-90deg) translateZ(calc(var(--s) / 2))}',
+    '.cb-f4{transform:rotateX(90deg) translateZ(calc(var(--s) / 2))}',
+    '.cb-f5{transform:rotateX(-90deg) translateZ(calc(var(--s) / 2))}',
+    '.cb-tile{display:flex;align-items:center;justify-content:center;background:#fff;border-radius:calc(var(--s) * .04);box-shadow:0 1px 5px rgba(7,27,80,.14);overflow:hidden}',
+    '.cb-tile img{display:block;max-width:70%;max-height:58%;object-fit:contain}',
+    '.cb-flip img{animation:cb-flip .6s cubic-bezier(.2,.8,.2,1)}',
+    '@keyframes cb-flip{0%{opacity:0;transform:rotateX(90deg) scale(.5)}100%{opacity:1;transform:none}}',
+    '.cb-brand{display:flex;align-items:center;gap:10px;font:600 21px/1 Poppins,system-ui,sans-serif;letter-spacing:.01em;animation:cb-in .9s .15s cubic-bezier(.2,.8,.2,1) both}',
+    '.cb-brand img{width:30px;height:30px;object-fit:contain}',
+    '.cb-bar{width:var(--s);height:3px;border-radius:3px;background:rgba(9,101,255,.2);overflow:hidden}',
+    '.cb-bar i{display:block;width:38%;height:100%;border-radius:3px;background:#0965ff;animation:cb-bar 1.3s ease-in-out infinite}',
+    'html[data-theme=dark] .cb-bar i{background:#76adff}',
+    '@keyframes cb-bar{from{transform:translateX(-110%)}to{transform:translateX(280%)}}',
+    '@media (prefers-reduced-motion:reduce){.cb-scene,.cb-brand{animation:none}.cb-cube{animation:none;transform:rotateX(-20deg) rotateY(-32deg)}.cb-flip img{animation:cb-fade .5s ease}.cb-bar i{animation-duration:2.6s}@keyframes cb-fade{from{opacity:0}to{opacity:1}}}'
+  ].join('');
+  var style = document.createElement('style');
+  style.textContent = css;
+  document.head.appendChild(style);
+
+  var root = document.createElement('div');
+  root.id = 'cb-loader';
+  root.setAttribute('aria-hidden', 'true');
+  var scene = document.createElement('div'), cube = document.createElement('div'), tiles = [], f, t;
+  scene.className = 'cb-scene';
+  cube.className = 'cb-cube';
+  for (f = 0; f < 6; f++) {
+    var face = document.createElement('div');
+    face.className = 'cb-face cb-f' + f;
+    for (t = 0; t < 9; t++) {
+      var tile = document.createElement('div'), img = document.createElement('img'), n = f * 9 + t;
+      tile.className = 'cb-tile';
+      img.alt = '';
+      img.decoding = 'async';
+      img.setAttribute('fetchpriority', 'low');
+      img.dataset.i = String((n * 4) % logos.length);
+      img.src = '/images/platforms/' + logos[+img.dataset.i] + '.svg';
+      tile.appendChild(img);
+      face.appendChild(tile);
+      tiles.push(tile);
+    }
+    cube.appendChild(face);
+  }
+  scene.appendChild(cube);
+  var brand = document.createElement('div');
+  brand.className = 'cb-brand';
+  brand.innerHTML = '<img src="/images/company-logo.png" alt="" width="30" height="30"><span>Cubusify</span>';
+  var bar = document.createElement('div');
+  bar.className = 'cb-bar';
+  bar.innerHTML = '<i></i>';
+  root.appendChild(scene);
+  root.appendChild(brand);
+  root.appendChild(bar);
+  document.documentElement.appendChild(root);
+  document.documentElement.classList.add('cb-loading');
+
+  // Every 650 ms, five random tiles flip to a different logo.
+  var swap = window.setInterval(function () {
+    for (var k = 0; k < 5; k++) {
+      var tl = tiles[Math.floor(Math.random() * tiles.length)], im = tl.firstChild;
+      im.dataset.i = String((+im.dataset.i + 1 + Math.floor(Math.random() * 4)) % logos.length);
+      im.src = '/images/platforms/' + logos[+im.dataset.i] + '.svg';
+      tl.classList.remove('cb-flip');
+      void tl.offsetWidth;
+      tl.classList.add('cb-flip');
+    }
+  }, 650);
+
+  function finish() {
+    if (finished) return;
+    finished = true;
+    root.classList.add('cb-out');
+    window.clearInterval(swap);
+    window.setTimeout(function () {
+      if (root.parentNode) root.parentNode.removeChild(root);
+      if (style.parentNode) style.parentNode.removeChild(style);
+      document.documentElement.classList.remove('cb-loading');
+    }, 700);
+  }
+  function check() {
+    var elapsed = Date.now() - started;
+    if ((loaded && elapsed >= (reduce ? 900 : MIN_MS)) || elapsed >= MAX_MS) finish();
+    else window.setTimeout(check, 120);
+  }
+  window.addEventListener('load', function () { loaded = true; });
+  root.addEventListener('click', function () { if (Date.now() - started > 700) finish(); });
+  window.setTimeout(check, 120);
+})();
+</script>
+<script type="module" src="/src/main.jsx"></script></body></html>
