@@ -16,7 +16,7 @@ export default function EnterpriseArchitecture({slug}){
    <h3>How the proposed workflow fits together</h3><ol>{d.flow.map(step=><li key={step}>{step}</li>)}</ol>
    <h3 id="enterprise-validation">Acceptance and failure-path checks</h3><ul>{d.validation.map(check=><li key={check}>{check}</li>)}</ul>
    <h3>The tradeoff</h3><p>{d.tradeoff}</p>
-   <p>Architecture references: <a href="https://docs.aws.amazon.com/wellarchitected/latest/framework/reliability.html">AWS reliability guidance</a>, <a href="https://www.postgresql.org/docs/current/ddl-rowsecurity.html">PostgreSQL access policies</a>, <a href="https://docs.temporal.io/tasks">Temporal task execution</a> and <a href="https://kafka.apache.org/design/">Kafka delivery semantics</a>. These describe engineering patterns, rather than certify this project’s implementation.</p>
+   <p>Architecture references: {d.references.map(([label,url],n)=><React.Fragment key={url}>{n>0&&(n===d.references.length-1?' and ':', ')}<a href={url}>{label}</a></React.Fragment>)}. These describe engineering patterns, rather than certify this project’s implementation.</p>
   </div>
  </section>;
 }

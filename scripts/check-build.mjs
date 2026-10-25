@@ -17,7 +17,7 @@ for(const route of routes){
   if(!pathname)continue;
   const normal=pathname.length>1?pathname.replace(/\/$/,''):pathname;
   if(routes.includes(normal)){links++;if(normal!=='/'&&!pathname.endsWith('/'))failures.push(route+': internal link without the canonical trailing slash '+url);continue}
-  if(pathname.startsWith('/images/')||pathname.startsWith('/fonts/')||pathname.startsWith('/assets/')||pathname==='/favicon.png'){
+  if(pathname.startsWith('/images/')||pathname.startsWith('/fonts/')||pathname.startsWith('/assets/')||['/favicon.png','/favicon.ico','/favicon-192.png','/apple-touch-icon.png'].includes(pathname)){
    assets++;try{await fs.access(output+pathname)}catch{failures.push(route+': missing asset '+pathname)}
   }else failures.push(route+': unknown local URL '+url);
  }
